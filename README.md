@@ -1,1 +1,1 @@
-# topcoders-csshacks1.0
+# seekers-csshacks1.0
