@@ -1,0 +1,44 @@
+/* Everything */
+* {
+  padding: 0;
+  margin: 0;
+}
+/* /Everything */
+
+/* ProfileInfo */
+div#profile-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20vh;
+  width: 20vh;
+  background-color: #00D4B6;
+}
+
+div#profile-info div#profile-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* /ProfileInfo */
+
+/* Map */
+div#map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+div#map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+/* /Map */
+
+/* Info */
+/* /Info */
