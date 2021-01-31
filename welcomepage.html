@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Travelog</title>
+
+  <!--Google Fonts CDN Link-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap" rel="stylesheet">
+
+    <!--
+      Font CSS:
+      Poppins:
+      font-family: 'Poppins', sans-serif;
+      
+      Varela:
+      font-family: 'Varela', sans-serif;
+    -->
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./css/welcomepage.css">
+</head>
+<body>
+  <!--Background Pic Links
+    These pics are in the img folder, but use these links for faster loading from Google Photos. Notify for addition of extra pics or videos
+  
+    bg0 - https://lh3.googleusercontent.com/DuVolEJ-tvCsoyTPAkCVCR-LFmp3tzxilh7VVy9P7JiwHeg_2F0c0Kdfy785SXRkLdbS9Lx_XJx1MCcJ-qb2x4gBQnd5f0ezSgVgzoOPaZZGnVWQqfUocpAU0qwWN5LASzrcUnIU0fn0PvgCWU6Q1ff1ZPVLnB1bHqvS1iQHnRMbDKkkdToqzQKQ9UrOCTYfXCAho-W8xiHEIoA9rBJV91gMUF2w7BqKXS7ES-XMcU8FUnlryhxuEHgQYdO4YenmeyRBXdVfPspmPxfjJxgP_Rcs41iEij04aw7Ykg15DQUntgE1dS-T5EnXQ9JMW1zPjE8mGb3BbeuWxR3W1DylYjuBshxkOYa4Yi_daU-ESAri-XQx2y65j7miGUwgOJhX1aADcfAyE9879aOqMbgMiZWTJ3w4-kCVQBHFgHHvtS-_lwVP3DTWvXtoVWAlNbF3F8uYfqN0L-tSuHTDtaGmN76nHm6qgV_eyWohJ2Tu7FmOeAYcgd7Rfw6HkzEI5vhzEQtoxfUlOpXBWLFY8yiM5hgvqmBYvMu9XG_60TjMIrhferDnwmRCOO_ISI2MA5dicCAdmjQclHGAb0brI-uejorqqXTR4kmNEpZHbJAbzHHsDCV0eEC5qeUySmNjUQjH6Dctq4v2YOfGNSwWzFR9Mypl34ErtoOPrdEitijV0pCm4bnoctaY39RTJVeF6A=w1236-h695-no?authuser=0
+    bg1 - https://lh3.googleusercontent.com/qdPRWUmcoJ7mO5Tgu62vaxJXLlnpXL2l0FPWDpylHAGLfdmox_EW76U75yRmXqaP0WiKxAJKJgYd7xFirDncBekodJOocvFMy6NJguk0uBXmp5m0aHiWle7QYYKra7T5HFyhgg3HuqevD14_7NZtWytMuLo5IeCjJnQlQytbYdJ11ru8tR22iQjXEdOQXJ2x-2cxpGL88ARRnKoqF3fONV_EPpSUWz2hJZ1vkwMk0iFFHsr4omS55pXiLMKL0VvXm3wf6PtUxOc1_D3SJSXXy-qJirfDisFNyrTgimwVMDYzX7_90-_w-_RIg567d6antpTZRUJDGPz8kdukVTCxeuPnoat_dborLSwSifMOmO8Fq2zP5GLA25Jm7r-TTVM5YxV5t4IyM7a8Vt-OqWZ7ZdcV4vLWcHX3pd_1lgErfhqNkhD1XjV9u34W0z80xYiMiVYn5mThR4htoiG979p5PKb4OzV4rTOt98ASWH9t2zAQsK9L66OHMy8UsTHNHZekNBVOaXYBIhXwVME78daVBB0WVvuuyfWFPQ9VQgOzgN2aXcfwAn3_SUCm-1S6QXgg6-eh0SGYQFP_5k4erCGWgb4zc4kxndeJTRQauGnILDXGE4xlbFpDH2J2nkh604UEb_3yhWjeUWrtoO_B7XUsAMRJyj9-LH0IthpbhbYeHPalO0jr1TwocbYdOU6yYQ=w1236-h695-no?authuser=0
+    bg2 - https://lh3.googleusercontent.com/3QxcOtCl0QpXwb5Dmk1XV5nzBt8B9_TrUGBjrWcdtN-Cs_0OnTV-qnEFprLOtVlk_pwOVzU7XYn2n-KllMB4nZfqXFuYHpNs-KRA0xmTSyXWSkEQYvQk67js0iiQ1jyf2obqJYsVfcLvJqXDhB56jYRY5ZwaoT84tPv0Fqw9eX8J8phFahON7A76vfFWUJaacesMasMN_TdDl5e6LV2gFbOG4W1obQwpXhFBTpoqJ6z7_zwjNULmQ9vocnPcuFJqdya51O6fam_y7a76P1xUuOIIUvEVRslJrlA3Xv8TYSXb0o6Pmu3h4bFYh6xN77im5D3nZm-ToTPKR_eOMNencLYjxSXNZLLm0qHGBWCXtVxue1vVMXSujvqHiTgg5g0kpBgP3cluvlSsxmzB79MgJd101DV58bfvvtoczmYO9wTWo8zQ-vZ4DIFivLMiMvmtU8eKXktvkm7klyPGxVk4BXrSWfWJpfg7dIK4LW2bGUNbW4cynEE_JmZS9rp6gAW3HqSjVTAvfWoQmuwCnNZKWDrd1Iz4IknIQNwfNFEeeY7_rJRBLV7iHJLUVT1r6aTgGf10lauk8FiqCji4T537FFqDjakAU6wM2HdQvrvDgcxTeCAtq9ssLMO_BogkM42sei-8HDtI5I_hyIkwqrukKRAw8yly_I-zie6lzs_mDb5MB7WqQequhrRDLdFscA=w1236-h695-no?authuser=0
+
+  -->
+
+</body>
+  <!--JS Scripts-->
+  <script src="./js/backtotop.js"></script>
+  <script src="./js/navbar.js"></script>
+
+  <!--Fontawesome CDN-->
+  <script src="https://kit.fontawesome.com/0cd9f9ba48.js" crossorigin="anonymous"></script>
+
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>
