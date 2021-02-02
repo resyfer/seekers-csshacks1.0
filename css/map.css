@@ -168,15 +168,29 @@ div#navbar-container div#navbar-toggle-off {
 
 div#navbar-container div#menu-container {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: green;
+  width: 85%;
+  height: auto;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+div#menu-container a {
+  text-decoration: none;
 }
 
 div#navbar-container div.menu-items {
   position: relative;
-
-  top: 10vh;
+  background-color: red;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
 }
 /* /Navbar */
 
@@ -200,7 +214,7 @@ div#profile-info {
 }
 
 div#profile-info:hover {
-  box-shadow: 0 0 5px 3px rgb(125, 125, 125);
+  box-shadow: 0 0 10px 1px rgb(125, 125, 125);
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
   width: 400px;
