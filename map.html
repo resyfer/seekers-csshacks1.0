@@ -26,14 +26,18 @@
     Logo Link - https://i.imgur.com/3l1xTVm.png
   -->
 
-  <!--Background Pic Links
-    These pics are in the img folder, but use these links for faster loading from Imgur. Notify for addition of extra pics or videos
-  
-    bg0 - https://i.imgur.com/TvM31gX.jpg
-    bg1 - https://i.imgur.com/xqTLwoY.jpg
-    bg2 - https://i.imgur.com/Pg7A1Vy.jpg
-
-  -->
+  <!--Loader-->
+  <div id="loader-container">
+    <div id="loader-logo">
+      <img src="./img/logo.png" alt="Browser not supported">
+    </div>
+    <div class="loader-item" id="loader-item-1"></div>
+    <div class="loader-item" id="loader-item-2"></div>
+    <div class="loader-item" id="loader-item-3"></div>
+    <div class="loader-item" id="loader-item-4"></div>
+    <div class="loader-item" id="loader-item-5"></div>
+  </div>
+  <!--/Loader-->
 
   <!--Navbar-->
   <div id="navbar-toggle-on" onclick="openNav()">
@@ -42,6 +46,13 @@
   <div id="navbar-container">
     <div id="navbar-toggle-off" onclick="closeNav()">
       <i class="fas fa-chevron-left"></i>
+    </div>
+    <div id="menu-container">
+      <a href="#"><div class="menu-items">Home</div></a>
+      <a href="#"><div class="menu-items">Profile</div></a>
+      <a href="#"><div class="menu-items">Leaderboard</div></a>
+      <a href="#"><div class="menu-items">Friends</div></a>
+      <a href="#"><div class="menu-items">Sign Out</div></a>
     </div>
   </div>
   <!--/Navbar-->
@@ -99,14 +110,16 @@
   <!--Info-->
 
 </body>
-  <!--JS Scripts-->
-  <script src="./js/backtotop.js"></script>
-  <script src="./js/navbar.js"></script>
-  <script src="./js/mapinfotoggle.js"></script>
-
-  <!--Fontawesome CDN-->
+<!--  Fontawesome CDN-->
   <script src="https://kit.fontawesome.com/0cd9f9ba48.js" crossorigin="anonymous"></script>
 
   <!--JQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  <!--JS Scripts-->
+  <script src="./js/backtotop.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/mapinfotoggle.js"></script>
+  <script src="./js/loader.js"></script>
+
 </html>
