@@ -183,7 +183,7 @@ div#navbar-container div#menu-container {
 div#menu-container a {
   text-decoration: none;
   font-size: 2rem;
-  padding: 5px;
+  padding: 2px;
   /* font-family: ; */
 
 }
@@ -194,6 +194,7 @@ div#menu-container a:hover {
 div#navbar-container div.menu-items {
   position: relative;
   background-color: red;
+  padding: 20px;
   width: 80%;
   left: 50%;
   transform: translate(-50%, 0);
