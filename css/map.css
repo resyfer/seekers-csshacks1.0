@@ -182,6 +182,13 @@ div#navbar-container div#menu-container {
 
 div#menu-container a {
   text-decoration: none;
+  font-size: 2rem;
+  padding: 5px;
+  /* font-family: ; */
+
+}
+div#menu-container a:hover {
+  color: rgb(255, 253, 253);
 }
 
 div#navbar-container div.menu-items {
