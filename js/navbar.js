@@ -13,6 +13,9 @@ function openNav(){
     'width':'30%',
     'transition-duration': '0.5s',
   });
+  $('#menu-container').css({
+    'display':'block',
+  });
   setTimeout(function() {
     $('#menu-container').css({
       'opacity':'100%',
@@ -35,6 +38,9 @@ function closeNav(){
   $('#navbar-container').css({
     'width':'0',
     'transition-duration': '0.2s',
+  });
+  $('#menu-container').css({
+    'display':'none',
   });
   $('#menu-container').css({
     'opacity':'0',
