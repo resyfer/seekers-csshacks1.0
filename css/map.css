@@ -147,11 +147,11 @@ div#loader-container div#loader-item-5 {
 /* Navbar */
 div#navbar-toggle-on {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0;
   transform: translate(0, -50%);
   height: 10vh;
-  width: 4vh;
+  width: 3vh;
   text-align: center;
   line-height: 10.5vh;
   background-color: #00D4B6;
@@ -171,14 +171,17 @@ div#navbar-toggle-on:hover {
 
 div#navbar-container {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0;
-  height: 100%;
+  height: 80%;
   width: 0;
   transform: translate(0, -50%);
-  background-color: #00D4B6;
+  background-color: rgba(0, 214, 186, 0.6);
   z-index: +3;
   display: none;
+  box-shadow: 0 0 10px 2px rgb(73, 73, 73);
+  border-right: 0.2vh solid #EC5929;
+  border-radius: 0 2vh 2vh 0;
 }
 
 div#navbar-container div#navbar-toggle-off {
@@ -187,7 +190,7 @@ div#navbar-container div#navbar-toggle-off {
   right: 0;
   transform: translate(0, -50%);
   height: 10vh;
-  width: 4vh;
+  width: 3vh;
   text-align: center;
   line-height: 10.5vh;
   background-color: #00D4B6;
@@ -203,35 +206,43 @@ div#navbar-container div#navbar-toggle-off {
 
 div#navbar-container div#menu-container {
   position: absolute;
-  top: 5%;
-  left: 50%;
-  background-color: green;
+  top: 50%;
+  left: 48%;
   width: 85%;
   height: auto;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   opacity: 0;
 }
 
 div#menu-container a {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.68rem;
   padding: 2px;
-  /* font-family: ; */
 
 }
 div#menu-container a:hover {
-  color: rgb(255, 253, 253);
+  color: rgb(17, 16, 16);
+  transition: 0.2s ease;
+}
+div#menu-container div.menu-items:hover {
+  background-color: rgb(255, 112, 17);
+  transition: 0.2s ease;
+  box-shadow: 0 0 15px 2px rgb(255, 252, 252);
 }
 
 div#navbar-container div.menu-items {
   position: relative;
-  background-color: red;
-  padding: 20px;
-  width: 80%;
+  background-color: rgba(255, 255, 255, 0.815);
+  padding: 20px 50px;
+  box-sizing: border-box;
+  border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
+  box-sizing: border-box;
+  border: 0.2vh solid rgba(236, 90, 41, 0.58);
+  width: 100%;
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
