@@ -166,15 +166,16 @@ div#navbar-container div#navbar-toggle-off {
   z-index: +4;
 }
 
-div#navbar-container div.menu-container {
+div#navbar-container div#menu-container {
   position: absolute;
-  top: 70%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 div#navbar-container div.menu-items {
   position: relative;
+
   top: 10vh;
 }
 /* /Navbar */
