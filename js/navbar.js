@@ -17,9 +17,14 @@ function openNav(){
     'display':'block',
   });
   setTimeout(function() {
+    $('#menu-container').css({
+      'opacity':'100%',
+    });
+  }, 300);
+  setTimeout(function() {
     $("#navbar-toggle-on").css({
       'display':'none',
-    })
+    });
   }, 500);
 }
 
@@ -36,6 +41,9 @@ function closeNav(){
   });
   $('#menu-container').css({
     'display':'none',
+  });
+  $('#menu-container').css({
+    'opacity':'0',
   });
   $('#navbar-toggle-off').css({
     'opacity':'0',
