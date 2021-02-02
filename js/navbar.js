@@ -13,13 +13,15 @@ function openNav(){
     'width':'30%',
     'transition-duration': '0.5s',
   });
-  $('#menu-container').css({
-    'display':'block',
-  });
+  setTimeout(function() {
+    $('#menu-container').css({
+      'opacity':'100%',
+    });
+  }, 300);
   setTimeout(function() {
     $("#navbar-toggle-on").css({
       'display':'none',
-    })
+    });
   }, 500);
 }
 
@@ -35,7 +37,7 @@ function closeNav(){
     'transition-duration': '0.2s',
   });
   $('#menu-container').css({
-    'display':'none',
+    'opacity':'0',
   });
   $('#navbar-toggle-off').css({
     'opacity':'0',

@@ -213,6 +213,7 @@ div#navbar-container div#menu-container {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
+  opacity: 0;
 }
 
 div#menu-container a {
