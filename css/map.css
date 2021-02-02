@@ -12,6 +12,103 @@ body{
 }
 /* /Everything */
 
+/* Loader */
+div#loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  background-color: purple;
+  z-index: +100;
+  opacity: 100%;
+}
+
+div#loader-container div#loader-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 35vh;
+  width: 35vh;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.2vh solid white;
+  box-sizing: border-box;
+}
+
+div#loader-container div#loader-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+}
+
+div#loader-container div.loader-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 7vh;
+  width: 7vh;
+  box-sizing: border-box;
+  border: 0.2vh solid white;
+  border-radius: 50%;
+  background-color: red;
+}
+
+  /* Side = 30%*/
+
+div#loader-container div#loader-item-1 {
+  top: calc(50% - 30vh);
+  left: 50%;
+  animation-name: loader-item-1-anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-2 {
+  top: calc(50% - 9.27vh);
+  left: calc(50% - 28.53vh);
+  animation-name: loader-item-2-anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-3 {
+  top: calc(50% + 24.27vh);
+  left: calc(50% - 17.633vh);
+  animation-name: loader-item-3-anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-4 {
+  top: calc(50% + 24.27vh);
+  left: calc(50% +  17.633vh);
+  animation-name: loader-item-4-anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-5 {
+  top: calc(50% - 9.27vh);
+  left: calc(50% + 28.53vh);
+  animation-name: loader-item-5-anim;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+  /* Animation */
+@keyframes loader-item-1-anim {
+  0% {top: calc(50% - 30vh);left: 50%;}
+}
+  /* /Animation */
+/* /Loader */
+
 /* Navbar */
 div#navbar-toggle-on {
   position: absolute;
