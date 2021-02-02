@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*BACKGROUND*/
+div.background{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+video.background{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+/*logo*/
+div.logo{
+    position: absolute;
+    margin: 0;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: none;
+    border: 0.3vh solid black;
+    border-radius: 50%;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px 3px black;
+    height: 25vh;
+    width: 25vh;
+}
+
+img.logo{
+    object-fit: contain;    
+    height: 100%;
+    width: 100%;
+}
