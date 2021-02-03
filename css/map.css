@@ -180,7 +180,10 @@ div#loader-container div#loader-item-5 {
     right: 1vh;
     height: 5vh;
     width: 5vh;
-    background-color: red;
+    text-align: center;
+    font-size: 4.4vh;
+    line-height: 5.55vh;
+    color: #EC5929;
   }
 }
 
@@ -211,7 +214,7 @@ div#navbar-container {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   div#navbar-container div.navbar-toggle-off {
     position: absolute;
     top: 50%;
@@ -240,7 +243,15 @@ div#navbar-container {
     right: 1vh;
     height: 5vh;
     width: 5vh;
-    background-color: red;
+    text-align: center;
+    font-size: 4.4vh;
+    line-height: 5.55vh;
+    color: #EC5929;
+    border-radius: 1vh 1vh 1vh 1vh;
+  }
+  div.navbar-toggle-off:hover {
+    background-color: rgba(236, 90, 41, 0.774);
+    color: #00D4B6;
   }
 }
 
