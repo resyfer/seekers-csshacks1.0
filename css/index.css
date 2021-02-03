@@ -21,6 +21,16 @@ video.background{
     z-index: -1;
 }
 
+div.tint{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0,0,0,0.6);
+}
+
 /*logo*/
 
 span.logo_heading{
@@ -35,8 +45,8 @@ p.logo_heading{
     font-size: 10vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: white;
-    -webkit-text-stroke: 0.01vh black;
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px 3px rgb(0, 0, 0);
 }
 
 span.logo{
@@ -68,15 +78,17 @@ div.signin{
     text-align: center;
     font-size: 5vh;
     text-decoration: none;
-    border: 0.4vh solid #00D4B6 ;
+    border: 0.4vh solid #EC5929 ;
     border-radius:  1.5vh 1.5vh 1.5vh 1.5vh;
     font-family: 'Poppins', sans-serif;
-    color:  #EC5929;
+    color:  white;
     overflow: hidden;
 }
 
 div.signin:hover{
-    border: 0 solid #00D4B6;
+    border: 0 solid #EC5929;
+    color: #EC5929;
+    box-shadow: 0 0 0.8vh 0.4vh #EC5929;
     transition: 0.3s;
 }
 
@@ -86,7 +98,7 @@ div.signin::before{
     left: 0;
     height: 0%;
     width: 100%;
-    background-color: #00D4B6;
+    background-color: rgba(255, 255, 255 ,0.9);
     z-index: -1;
     transition: 0.3s;
     top: 0;
