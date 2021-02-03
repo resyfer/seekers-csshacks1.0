@@ -40,19 +40,31 @@
   <!--/Loader-->
 
   <!--Navbar-->
-  <div id="navbar-toggle-on" onclick="openNav()">
+    <!--Toggle On-->
+  <div class="navbar-toggle-on" id="navbar-toggle-pc-on" onclick="openNav()">
     <i class="fas fa-chevron-right"></i>
   </div>
-  <div id="navbar-container">
-    <div id="navbar-toggle-off" onclick="closeNav()">
+  <div class="navbar-toggle-on" id="navbar-toggle-mob-on" onclick="openMobNav()">
+    <i class="fas fa-bars"></i>
+  </div>
+    <!--/Toggle On-->
+    
+    <div id="navbar-container">
+    <!--Toggle Off-->
+    <div  class="navbar-toggle-off" id="navbar-toggle-pc-off" onclick="closeNav()">
       <i class="fas fa-chevron-left"></i>
     </div>
+    <div  class="navbar-toggle-off" id="navbar-toggle-mob-off" onclick="closeMobNav()">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--/Toggle Off-->
+    
     <div id="menu-container">
-      <a href="#"><div class="menu-items">Home</div></a>
-      <a href="#"><div class="menu-items">Profile</div></a>
-      <a href="#"><div class="menu-items">Leaderboard</div></a>
-      <a href="#"><div class="menu-items">Badges</div></a>
-      <a href="#"><div class="menu-items">Friends</div></a>
+      <a href="welcomepage.html"><div class="menu-items">Home</div></a>
+      <a href="map.html"><div class="menu-items active">Map</div></a>
+      <a href="visits.html"><div class="menu-items">Visits</div></a>
+      <a href="profile.html"><div class="menu-items">Profile</div></a>
+      <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
       <a href="#"><div class="menu-items">Sign Out</div></a>
     </div>
   </div>
@@ -66,8 +78,8 @@
       </div>
       
       <div id="profile-info-details">
-        Name : Your Name<br><br>
-        Level : 92
+        <div id="your-name">Name : Your Name</div>
+        <div id="your-level">Level : 92</div>
         <div id="progress-bar-total">
           <div id="progress-bar-done"></div>
         </div>
