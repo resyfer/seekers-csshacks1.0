@@ -22,23 +22,77 @@ video.background{
 }
 
 /*logo*/
-div.logo{
-    position: absolute;
-    margin: 0;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+span.logo_heading{
+    float: left;
+    left: 10%;
+    top: 10%;
+}
+
+p.logo_heading{
+    padding: 2vh;
+    text-align: left;
+    font-size: 10vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    -webkit-text-stroke: 0.01vh black;
+}
+
+span.logo{
+    position: fixed;
+    float: left;
     background-color: none;
-    border: 0.3vh solid black;
-    border-radius: 50%;
-    backdrop-filter: blur(2px);
-    box-shadow: 0 0 10px 3px black;
-    height: 25vh;
-    width: 25vh;
+    height: 16vh;
+    width: 20vh;
 }
 
 img.logo{
-    object-fit: contain;    
+    display: inline;
+    object-fit: cover;    
     height: 100%;
     width: 100%;
+}
+
+/*SIGN IN BUTTON*/
+
+div.signin{
+    position: absolute;
+    background-color: none;
+    left: 85%;
+    top: 80%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+    height: 8vh;
+    width: 20vh;
+    text-align: center;
+    font-size: 5vh;
+    text-decoration: none;
+    border: 0.4vh solid #00D4B6 ;
+    border-radius:  1.5vh 1.5vh 1.5vh 1.5vh;
+    font-family: 'Poppins', sans-serif;
+    color:  #EC5929;
+    overflow: hidden;
+}
+
+div.signin:hover{
+    border: 0 solid #00D4B6;
+    transition: 0.3s;
+}
+
+div.signin::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    background-color: #00D4B6;
+    z-index: -1;
+    transition: 0.3s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+div.signin:hover::before{
+    height: 180%;
+    transition: 0.8s;
 }
