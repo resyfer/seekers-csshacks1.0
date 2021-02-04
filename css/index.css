@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+:root {
+    --bg-1-100: #EC5929;
+    --fb-1-100: #00D4B6;
+}
+
 /*BACKGROUND*/
 div.background{
     position: fixed;
@@ -78,7 +83,7 @@ div.signin{
     text-align: center;
     font-size: 5vh;
     text-decoration: none;
-    border: 0.4vh solid #EC5929 ;
+    border: 0.4vh solid var(--bg-1-100) ;
     border-radius:  1.5vh 1.5vh 1.5vh 1.5vh;
     font-family: 'Poppins', sans-serif;
     color:  white;
@@ -86,9 +91,9 @@ div.signin{
 }
 
 div.signin:hover{
-    border: 0 solid #EC5929;
-    color: #EC5929;
-    box-shadow: 0 0 0.8vh 0.4vh #EC5929;
+    border: 0 solid var(--bg-1-100);
+    color: var(--bg-1-100);
+    box-shadow: 0 0 0.8vh 0.4vh var(--bg-1-100);
     transition: 0.3s;
 }
 
