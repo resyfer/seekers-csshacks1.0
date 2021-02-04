@@ -5,7 +5,7 @@
 
 :root {
     --bg-1-100: #EC5929;
-    --fb-1-100: #00D4B6;
+    --fg-1-100: #00D4B6;
 }
 
 /*BACKGROUND*/
@@ -27,13 +27,14 @@ video.background{
 }
 
 div.tint{
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
     height: 100vh;
     width: 100%;
     z-index: -1;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
 }
 
 /*logo*/
@@ -42,6 +43,7 @@ span.logo_heading{
     float: left;
     left: 10%;
     top: 10%;
+    transition: 0.3s;
 }
 
 p.logo_heading{
@@ -50,8 +52,8 @@ p.logo_heading{
     font-size: 10vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #ffffff;
-    text-shadow: 0.5px 0.5px 3px rgb(0, 0, 0);
+    color: white;
+    transition: 0.3s;
 }
 
 span.logo{
@@ -79,22 +81,22 @@ div.signin{
     transform: translate(-50%,-50%);
     transition: 0.3s;
     height: 8vh;
-    width: 20vh;
+    width: 25vh;
     text-align: center;
     font-size: 5vh;
     text-decoration: none;
     border: 0.4vh solid var(--bg-1-100) ;
     border-radius:  1.5vh 1.5vh 1.5vh 1.5vh;
     font-family: 'Poppins', sans-serif;
-    color:  white;
-    overflow: hidden;
+    color:  white ;
+    overflow: hidden; 
 }
 
 div.signin:hover{
-    border: 0 solid var(--bg-1-100);
-    color: var(--bg-1-100);
-    box-shadow: 0 0 0.8vh 0.4vh var(--bg-1-100);
     transition: 0.3s;
+    border: 0 solid var(--bg-1-100);
+    color: var(--fg-1-100);
+    box-shadow: 0 0 0.8vh 0.4vh var(--bg-1-100);
 }
 
 div.signin::before{
@@ -103,7 +105,7 @@ div.signin::before{
     left: 0;
     height: 0%;
     width: 100%;
-    background-color: rgba(255, 255, 255 ,0.9);
+    background-color:  #c3e5e7;
     z-index: -1;
     transition: 0.3s;
     top: 0;
@@ -111,5 +113,60 @@ div.signin::before{
 }
 div.signin:hover::before{
     height: 180%;
-    transition: 0.8s;
+    transition: 0.3s;
+}
+/*RESPONSIVE I PAD*/
+
+@media screen and (max-width: 1000px) {
+
+    /*BACKGROUND TINT*/
+
+    div.tint{
+        height: 100%;
+        width: 100%;
+    }
+
+    /*SIGN IN BUTTON*/
+    div.signin{
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*LOGO*/
+
+    span.logo_heading{
+        float: none;
+    }
+    p.logo_heading{
+        text-align: center;
+    }
+    span.logo{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        border: 0.15vh solid var(--bg-1-100);
+        box-shadow: 0 0 1.3vh 0.4vh var(--bg-1-100);
+        border-radius: 50%;
+        height: 20vh;
+        width: 20vh;
+    }
+}
+
+/*RESPONSIVE PHONE*/
+
+@media screen and (max-width: 600px) {
+    
+    /*LOGO HEADING*/
+    
+    span.logo_heading{
+        float: none;
+    }
+
+    p.logo_heading{
+        text-align: center;
+        font-size: 8vh;
+    }
 }
