@@ -1,0 +1,36 @@
+[33m8320181[m[33m ([m[1;36mHEAD -> [m[1;32mNB_030221[m[33m)[m added sign in btn & its hover effect
+[33mbf920d5[m modified logo & added heading
+[33m40c35d8[m corrected logo's box shadow
+[33mc510b79[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Merge pull request #8 from resyfer/VS_020221
+[33m11a9af0[m Improved Nav and menu bar
+[33m675669a[m Merge branch 'main' of https://github.com/resyfer/seekers-csshacks1.0 into VS_020221
+[33m5327729[m little css modification
+[33m7133c53[m changed navbar js
+[33m2fd224a[m Merge pull request #7 from resyfer/SP_020221_2
+[33m808c403[m Perfected loader and changed js and a bit of css of navbar
+[33mdc151d4[m Merge branch 'main' of https://github.com/resyfer/seekers-csshacks1.0 into SP_020221_2
+[33m0c8b5f8[m Merge pull request #6 from resyfer/NB_020221
+[33m823ca18[m Loader animation
+[33m8bf555a[m[33m ([m[1;31morigin/NB_020221[m[33m)[m Corrected dimensions and position of video and logo
+[33m99c74e0[m styled menu-items
+[33md17dff4[m added blur effect & border shadow of logo
+[33m48a2eea[m Added flex-box and space-around in menu bar
+[33m21fa5ee[m added div menu items
+[33m862211e[m Improved navbar js
+[33mf2d53e7[m Reset changes
+[33m4b41a2d[m Merge branch 'VS_020221' of https://github.com/resyfer/seekers-csshacks1.0 into VS_020221
+[33m6e7828f[m Added initial loader elements and js
+[33m2b7ba26[m added menu items and postion absolute
+[33mc04f23b[m added bg vid and logo
+[33mbcb0601[m Merge pull request #4 from resyfer/SP_020221
+[33m6e86287[m Changed width of navbar to 30% and made transitions smoother
+[33meb1c52d[m Merge pull request #3 from resyfer/SP_010221
+[33m81ce6bd[m[33m ([m[1;31morigin/SP_010221[m[33m)[m Initialized and added info toggle in mapinfotoggle.js;Added navbar open/close in navbar.js;Finished deskotp view of map.html/css;Added bg3/4/5,defaultprofilepic,mapsinfopic;Updated the image links to Imgur from Google Photos in html pages
+[33mcb15deb[m Merge pull request #2 from resyfer/SP_010221
+[33me5cb2b6[m Changed image links;Added Google maps,profile box in map.html and css(incomplete)
+[33m53b1571[m Merge pull request #1 from resyfer/SP_310121
+[33mbdc6699[m[33m ([m[1;31morigin/SP_310121[m[33m)[m Initialized leaderboard,map,profile,visits,welcomepage HTML/CSS,index.css,backtotop.js,navbar.js,loader.js,bg0.jpg,bg1.jpg,bg2.jpg,logo.png and added basic skeleton
+[33mf87919c[m Added Poppins Google Fonts CDN Link
+[33m2ba7a66[m Initialized index.html
+[33ma4ba4a5[m Update README.md
+[33m6652dd1[m Initial commit
