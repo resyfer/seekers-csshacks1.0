@@ -20,12 +20,11 @@
 
   <!--CSS-->
   <link rel="stylesheet" href="./css/map.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="./img/favicon.ico">
 </head>
 <body>
-  <!--
-    Logo Link - https://i.imgur.com/3l1xTVm.png
-  -->
-
   <!--Loader-->
   <div id="loader-container">
     <div id="loader-logo">
@@ -41,20 +40,20 @@
 
   <!--Navbar-->
     <!--Toggle On-->
-  <div class="navbar-toggle-on" id="navbar-toggle-pc-on" onclick="openNav()">
+  <div class="navbar-toggle-on" id="navbar-toggle-pc-on" onclick="openMapNav()">
     <i class="fas fa-chevron-right"></i>
   </div>
-  <div class="navbar-toggle-on" id="navbar-toggle-mob-on" onclick="openMobNav()">
+  <div class="navbar-toggle-on" id="navbar-toggle-mob-on" onclick="openMobMapNav()">
     <i class="fas fa-bars"></i>
   </div>
     <!--/Toggle On-->
     
     <div id="navbar-container">
     <!--Toggle Off-->
-    <div  class="navbar-toggle-off" id="navbar-toggle-pc-off" onclick="closeNav()">
+    <div  class="navbar-toggle-off" id="navbar-toggle-pc-off" onclick="closeMapNav()">
       <i class="fas fa-chevron-left"></i>
     </div>
-    <div  class="navbar-toggle-off" id="navbar-toggle-mob-off" onclick="closeMobNav()">
+    <div  class="navbar-toggle-off" id="navbar-toggle-mob-off" onclick="closeMobMapNav()">
       <i class="fas fa-times"></i>
     </div>
     <!--/Toggle Off-->
@@ -123,7 +122,7 @@
   <!--Info-->
 
 </body>
-<!--  Fontawesome CDN-->
+  <!--Fontawesome CDN-->
   <script src="https://kit.fontawesome.com/0cd9f9ba48.js" crossorigin="anonymous"></script>
 
   <!--JQuery-->
