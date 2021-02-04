@@ -56,7 +56,6 @@ function closeNav(){
 /* Mobile */
 function openMobNav(){
   $('#navbar-toggle-mob-on').css({
-    'left':'100%',
     'opacity':'0',
     'transition-duration': '0.5s',
   });
@@ -86,7 +85,6 @@ function openMobNav(){
 
 function closeMobNav(){
   $('#navbar-toggle-mob-on').css({
-    'left':'0',
     'display':'block',
     'opacity':'100',
     'transition-duration': '0.2s',
@@ -97,8 +95,6 @@ function closeMobNav(){
   });
   $('#menu-container').css({
     'display':'none',
-  });
-  $('#menu-container').css({
     'opacity':'0',
   });
   $('#navbar-toggle-mob-off').css({

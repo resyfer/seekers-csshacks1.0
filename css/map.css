@@ -1,3 +1,10 @@
+/* Root */
+:root {
+  --bg-1-100: rgb(236, 88, 39);
+  --fg-1-100: rgb(0, 212, 182);
+}
+/* /Root */
+
 /* Everything */
 * {
   padding: 0;
@@ -20,11 +27,12 @@ div#loader-container {
   transform: translate(-50%, -50%);
   height: 100vh;
   width: 100%;
-  background-color: #00D4B6;
+  background-color: var(--fg-1-100);
   z-index: +100;
   opacity: 100%;
 }
 
+  /* Loader Logo */
 div#loader-container div#loader-logo {
   position: absolute;
   top: 50%;
@@ -34,7 +42,7 @@ div#loader-container div#loader-logo {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   overflow: hidden;
-  border: 0.5vh solid #EC5929;
+  border: 0.5vh solid var(--bg-1-100);
   box-sizing: border-box;
 }
 
@@ -46,7 +54,8 @@ div#loader-container div#loader-logo img {
   height: 100%;
   width: 100%;
 }
-
+  /* /Loader Logo */
+  /* Loader Items */
 div#loader-container div.loader-item {
   position: absolute;
   top: 50%;
@@ -56,13 +65,11 @@ div#loader-container div.loader-item {
   width: 7vh;
   box-sizing: border-box;
   border-radius: 50%;
-  background-color: #EC5929;
+  background-color: var(--bg-1-100);
 }
 
-  /* Side = 30%*/
-
 div#loader-container div#loader-item-1 {
-  top: calc(50% - 30vh);
+  top: calc(50% - 30vh); /* Side = 30 vh */
   left: 50%;
   animation-name: loader-item-1-anim;
   animation-duration: 2s;
@@ -101,7 +108,7 @@ div#loader-container div#loader-item-5 {
   animation-iteration-count: infinite;
 }
 
-  /* Animation */
+    /* Loader Animation */
 @keyframes loader-item-1-anim {
   0% {top: calc(50% - 30vh);left: 50%;}
   20% {top: calc(50% - 9.27vh);left: calc(50% - 28.53vh);}
@@ -141,13 +148,12 @@ div#loader-container div#loader-item-5 {
   60% {top: calc(50% + 24.27vh);left: calc(50% - 17.633vh);}
   80% {top: calc(50% + 24.27vh);left: calc(50% +  17.633vh);}
 }
-  /* /Animation */
+    /* /Loader Animation */
+  /* /Loader Items */
 /* /Loader */
 
 /* Navbar */
-
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   div.navbar-toggle-on {
     position: absolute;
     top: 55%;
@@ -157,13 +163,13 @@ div#loader-container div#loader-item-5 {
     width: 3vh;
     text-align: center;
     line-height: 10.5vh;
-    background-color: #00D4B6;
+    background-color: var(--fg-1-100);
     border-radius: 0 1.5vh 1.5vh 0;
     box-sizing: border-box;
-    border: 0.3vh solid #EC5929;
+    border: 0.3vh solid var(--bg-1-100);
     border-left: none;
     cursor:pointer;
-    color: #EC5929;
+    color: var(--bg-1-100);
     box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
     z-index: +3;
   }
@@ -173,7 +179,7 @@ div#loader-container div#loader-item-5 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div.navbar-toggle-on {
     position: absolute;
     top: 1vh;
@@ -183,7 +189,7 @@ div#loader-container div#loader-item-5 {
     text-align: center;
     font-size: 4.4vh;
     line-height: 5.55vh;
-    color: #EC5929;
+    color: var(--bg-1-100);
   }
 }
 
@@ -198,11 +204,11 @@ div#navbar-container {
   z-index: +3;
   display: none;
   box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
-  border-right: 0.2vh solid #EC5929;
+  border-right: 0.2vh solid var(--bg-1-100);
   border-radius: 0 2vh 2vh 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#navbar-container {
     top: 50%;
     left: 0;
@@ -214,7 +220,7 @@ div#navbar-container {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   div#navbar-container div.navbar-toggle-off {
     position: absolute;
     top: 50%;
@@ -224,19 +230,19 @@ div#navbar-container {
     width: 3vh;
     text-align: center;
     line-height: 10.5vh;
-    background-color: #00D4B6;
+    background-color: var(--fg-1-100);
     border-radius: 1.5vh 0 0 1.5vh;
     box-sizing: border-box;
-    border: 0.3vh solid #EC5929;
+    border: 0.3vh solid var(--bg-1-100);
     border-right: none;
     cursor: pointer;
-    color: #EC5929;
+    color: var(--bg-1-100);
     box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
     z-index: +4;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div.navbar-toggle-off {
     position: absolute;
     top: 1vh;
@@ -246,22 +252,22 @@ div#navbar-container {
     text-align: center;
     font-size: 4.4vh;
     line-height: 5.55vh;
-    color: #EC5929;
+    color: var(--bg-1-100);
     border-radius: 1vh 1vh 1vh 1vh;
   }
   div.navbar-toggle-off:hover {
     background-color: rgba(236, 90, 41, 0.774);
-    color: #00D4B6;
+    color: var(--fg-1-100);
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   div#navbar-toggle-mob-on, div#navbar-toggle-mob-off {
     display: none;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#navbar-toggle-pc-on, div#navbar-toggle-pc-off {
     display: none;
   }
@@ -285,7 +291,7 @@ div#menu-container a {
   text-decoration: none;
   font-size: 2.7vh;
   padding: 0.2vh;
-  color: #EC5929;
+  color: var(--bg-1-100);
   text-transform: uppercase;
 }
 
@@ -313,8 +319,8 @@ div#menu-container div.menu-items:hover {
   transition: 0.2s ease;
   box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
   color: rgba(255, 255, 255, 0.815);
-  /* /Navbar */
 }
+/* /Navbar */
 
 /* ProfileInfo */
 a#profile-redirect {
@@ -328,15 +334,13 @@ div#profile-info {
   left: 1vh;
   height: 17.5vh;
   width: 17.5vh;
-  background-color: #00D4B6;
+  background-color: var(--fg-1-100);
   box-sizing: border-box;
-  border: 0.25vh solid #EC5929;
+  border: 0.25vh solid var(--bg-1-100);
   border-radius: 1.5vh;
 }
 
-/* Profile PC */
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   
   div#profile-info:hover {
     box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
@@ -345,18 +349,14 @@ div#profile-info {
     width: 57.5vh;
   }
 }
-    /* /Profile PC */
-
-    /* Profile Phone */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   
   div#profile-info {
     height: 12.5vh;
     width: 47.5vh;
   }
 }
-    /* Profile Phone */
-
+  /* Profile Pic */
 div#profile-info div#profile-pic {
   position: absolute;
   top: 50%;
@@ -365,7 +365,7 @@ div#profile-info div#profile-pic {
   height: 80%;
   width: calc(17.5vh * 8 / 10);
   box-sizing: border-box;
-  border: 0.25vh solid #EC5929;
+  border: 0.25vh solid var(--bg-1-100);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -379,7 +379,7 @@ div#profile-info div#profile-pic img {
   width: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#profile-info div#profile-pic {
     left: 6.1vh;
     height: 80%;
@@ -387,6 +387,7 @@ div#profile-info div#profile-pic img {
   }
 }
 
+  /* Profile Info Details*/
 div#profile-info div#profile-info-details {
   position: absolute;
   top: 50%;
@@ -407,7 +408,7 @@ div#profile-info div#profile-info-details {
   justify-content: space-around;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   div#profile-info:hover div#profile-info-details {
     transition-delay: 0.2s;
     transition-duration: 0.2s;
@@ -416,8 +417,7 @@ div#profile-info div#profile-info-details {
   }
 }
 
-/* Profile Details PC */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#profile-info div#profile-info-details {
     font-size: 1.75vh;
     left: 12.5vh;
@@ -425,10 +425,7 @@ div#profile-info div#profile-info-details {
     opacity: 100%;
   }
 }
-    /* /Profile Details PC */
-
-    /* Profile Details Phone */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#profile-info div#profile-info-details {
     transition-delay: 0.2s;
     transition-duration: 0.2s;
@@ -436,8 +433,8 @@ div#profile-info div#profile-info-details {
     opacity: 100%;
   }
 }
-    /* Profile Details Phone */
 
+    /* Progress bar*/
 div#profile-info div#profile-info-details div#progress-bar-total {
   position: relative;
   height: 0.5vh;
@@ -452,7 +449,7 @@ div#profile-info div#profile-info-details div#progress-bar-total div#progress-ba
   transform: translate(0, -50%);
   height: 100%;
   width: calc(100% * (4123/5000));
-  background-color: #EC5929;
+  background-color: var(--bg-1-100);
 }
 
 div#profile-info div#profile-info-details div#xp-count {
@@ -460,6 +457,8 @@ div#profile-info div#profile-info-details div#xp-count {
   text-align: right;
   padding-right: 1vh;
 }
+    /* /Progress Bar */
+  /* /Profile Info Details*/
 /* /ProfileInfo */
 
 /* Map */
@@ -490,13 +489,13 @@ div#info-container {
   height: 95%;
   width: 35%;
   box-sizing: border-box;
-  border: 0.3vh solid #EC5929;
+  border: 0.3vh solid var(--bg-1-100);
   border-radius: 1.5vh;
   background-color: rgba(0, 212, 184, 0.8);
   box-shadow: 0 0 0.5vh 0.2vh rgb(125, 125, 125);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#info-container {
     top: 25%;
     left: 50%;
@@ -504,8 +503,8 @@ div#info-container {
     height: 75%;
     width: 100%;
     border-radius: 0.75vh 0.75vh 0 0;
-    border: 0 solid #EC5929;
-    border-top: 0.3vh solid #EC5929;
+    border: 0 solid var(--bg-1-100);
+    border-top: 0.3vh solid var(--bg-1-100);
     overflow-y: scroll;
   }
 }
@@ -518,7 +517,7 @@ div#info-container div#info-title {
   height: 7.8%;
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid #EC5929;
+  border: 0.3vh solid var(--bg-1-100);
   box-sizing: border-box;
   padding: 2vh;
   font-size: 3vh;
@@ -527,7 +526,7 @@ div#info-container div#info-title {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#info-container div#info-title {
     top: 2.5%;
     left: 2%;
@@ -542,7 +541,7 @@ div#info-container div#info-close {
   top: 5.125%;
   right: 2.5vh;
   transform: translate(0, -50%);
-  color: #EC5929;
+  color: var(--bg-1-100);
   height: 4vh;
   width: 4vh;
   text-align: center;
@@ -552,7 +551,7 @@ div#info-container div#info-close {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#info-container div#info-close {
     top: 6%;
     right: 3vh;
@@ -576,7 +575,7 @@ div#info-container div#info-pic {
   transform: translate(-50%, 0);
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid #EC5929;
+  border: 0.3vh solid var(--bg-1-100);
   overflow: hidden;
 }
 
@@ -589,7 +588,7 @@ div#info-container div#info-pic img {
   width: auto;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#info-container div#info-pic {
     top: 12.5%;
   }
@@ -608,21 +607,21 @@ div#info-container div#info-details {
   transform: translate(-50%, 0);
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid #EC5929;
+  border: 0.3vh solid var(--bg-1-100);
   box-sizing: border-box;
   padding: 2vh;
   text-align: justify;
   font-size: 2.3vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   div#info-container div#info-details {
     height: 45%;
     overflow-y: scroll;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   div#info-container div#info-details {
     top: 56.5%;
     height: auto;
