@@ -1,16 +1,17 @@
 /* Root */
 :root {
-  --bg-1-100: rgb(236, 88, 39);
-  --fg-1-100: rgb(0, 212, 182);
+  --fg-1-100: #EC5929;
+  --bg-1-100: #00D4B6;
 }
 /* /Root */
 
 /* Everything */
-* {
-  padding: 0;
+*{
   margin: 0;
+  padding: 0;
   font-family: 'Varela', sans-serif;
 }
+/* /Everything */
 
 body{
   width: 100%;
@@ -37,8 +38,8 @@ div#loader-container div#loader-logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 35vh;
-  width: 35vh;
+  height: 20vh;
+  width: 20vh;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   overflow: hidden;
@@ -55,6 +56,7 @@ div#loader-container div#loader-logo img {
   width: 100%;
 }
   /* /Loader Logo */
+
   /* Loader Items */
 div#loader-container div.loader-item {
   position: absolute;
@@ -66,6 +68,7 @@ div#loader-container div.loader-item {
   box-sizing: border-box;
   border-radius: 50%;
   background-color: var(--bg-1-100);
+  box-shadow: 0 0 3vh 1vh white;
 }
 
 div#loader-container div#loader-item-1 {
@@ -497,10 +500,10 @@ div#info-container {
 
 @media screen and (max-width: 1000px) {
   div#info-container {
-    top: 25%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, 0);
-    height: 75%;
+    height: 55%;
     width: 100%;
     border-radius: 0.75vh 0.75vh 0 0;
     border: 0 solid var(--bg-1-100);
@@ -532,7 +535,8 @@ div#info-container div#info-title {
     left: 2%;
     width: 85%;
     height: 7.8%;
-    line-height: 1.5vh;
+    line-height: 0.3vh;
+    font-size: 2.75vh;
   }
 }
 

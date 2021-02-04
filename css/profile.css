@@ -1,0 +1,217 @@
+/* Root */
+:root {
+  --fg-1-100: #EC5929;
+	--bg-1-100: #00D4B6;
+	font-family: 'Varela', sans-serif;
+}
+/* /Root */
+
+/* Everything */
+*{
+  margin: 0;
+  padding: 0;
+}
+/* /Everything */
+
+/* Loader */
+div#loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  background-color: var(--bg-1-100);
+  z-index: +100;
+  opacity: 100%;
+}
+
+  /* Loader Logo */
+div#loader-container div#loader-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 20vh;
+  width: 20vh;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 0.5vh solid var(--fg-1-100);
+  box-sizing: border-box;
+}
+
+div#loader-container div#loader-logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+}
+  /* /Loader Logo */
+
+  /* Loader Items */
+div#loader-container div.loader-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 7vh;
+  width: 7vh;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: var(--fg-1-100);
+  box-shadow: 0 0 3vh 1vh white;
+}
+
+div#loader-container div#loader-item-1 {
+  top: calc(50% - 30vh); /* Side = 30 vh */
+  left: 50%;
+  animation-name: loader-item-1-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-2 {
+  top: calc(50% - 9.27vh);
+  left: calc(50% - 28.53vh);
+  animation-name: loader-item-2-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-3 {
+  top: calc(50% + 24.27vh);
+  left: calc(50% - 17.633vh);
+  animation-name: loader-item-3-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-4 {
+  top: calc(50% + 24.27vh);
+  left: calc(50% +  17.633vh);
+  animation-name: loader-item-4-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+div#loader-container div#loader-item-5 {
+  top: calc(50% - 9.27vh);
+  left: calc(50% + 28.53vh);
+  animation-name: loader-item-5-anim;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+    /* Loader Animation */
+@keyframes loader-item-1-anim {
+  0% {top: calc(50% - 30vh);left: 50%;}
+  20% {top: calc(50% - 9.27vh);left: calc(50% - 28.53vh);}
+  40% {top: calc(50% + 24.27vh);left: calc(50% - 17.633vh);}
+  60% {top: calc(50% + 24.27vh);left: calc(50% +  17.633vh);}
+  80% {top: calc(50% - 9.27vh);left: calc(50% + 28.53vh);}
+}
+
+@keyframes loader-item-2-anim {
+  0% {top: calc(50% - 9.27vh);left: calc(50% - 28.53vh);}
+  20% {top: calc(50% + 24.27vh);left: calc(50% - 17.633vh);}
+  40% {top: calc(50% + 24.27vh);left: calc(50% +  17.633vh);}
+  60% {top: calc(50% - 9.27vh);left: calc(50% + 28.53vh);}
+  80% {top: calc(50% - 30vh);left: 50%;}
+}
+
+@keyframes loader-item-3-anim {
+  0% {top: calc(50% + 24.27vh);left: calc(50% - 17.633vh);}
+  20% {top: calc(50% + 24.27vh);left: calc(50% +  17.633vh);}
+  40% {top: calc(50% - 9.27vh);left: calc(50% + 28.53vh);}
+  60% {top: calc(50% - 30vh);left: 50%;}
+  80% {top: calc(50% - 9.27vh);left: calc(50% - 28.53vh);}
+}
+
+@keyframes loader-item-4-anim {
+  0% {top: calc(50% + 24.27vh);left: calc(50% +  17.633vh);}
+  20% {top: calc(50% - 9.27vh);left: calc(50% + 28.53vh);}
+  40% {top: calc(50% - 30vh);left: 50%;}
+  60% {top: calc(50% - 9.27vh);left: calc(50% - 28.53vh);}
+  80% {top: calc(50% + 24.27vh);left: calc(50% - 17.633vh);}
+}
+
+@keyframes loader-item-5-anim {
+  0% {top: calc(50% - 9.27vh);left: calc(50% + 28.53vh);}
+  20% {top: calc(50% - 30vh);left: 50%;}
+  40% {top: calc(50% - 9.27vh);left: calc(50% - 28.53vh);}
+  60% {top: calc(50% + 24.27vh);left: calc(50% - 17.633vh);}
+  80% {top: calc(50% + 24.27vh);left: calc(50% +  17.633vh);}
+}
+    /* /Loader Animation */
+  /* /Loader Items */
+/* /Loader */
+
+/* Navbar */
+div#navbar-toggle-on {
+	position: absolute;
+	top: 1vh;
+	left: 1vh;
+	height: 5vh;
+	width: 5vh;
+	text-align: center;
+	font-size: 5vh;
+	line-height: 5vh;
+	z-index: +2;
+	color: var(--fg-1-100);
+}
+
+div#navbar-container {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-100%, -50%);
+	height: 100%;
+	width: 35%;
+	background-color: rgba(0, 214, 186, 0.8);
+	z-index: +3;
+	box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
+	border-right: 0.2vh solid var(--fg-1-100);
+	border-radius: 0 2vh 2vh 0;
+}
+
+@media screen and (max-width: 1000px) {
+	div#navbar-container {
+		width: 100%;
+		transform: translate(0, -50%);
+		border-radius: 0;
+		background-color: rgba(0, 214, 186, 0.9);
+	}
+}
+
+div#navbar-container div#navbar-toggle-off {
+	position: absolute;
+	top: 1vh;
+	left: 1vh;
+	height: 5vh;
+	width: 5vh;
+	text-align: center;
+	font-size: 5vh;
+	line-height: 5vh;
+	z-index: +3;
+	color: var(--fg-1-100);
+}
+
+div#navbar-container div#menu-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+/* Navbar */
+
+div#travelog-logo {
+	position: relative;
+	text-align: center;
+}
