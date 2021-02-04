@@ -28,7 +28,7 @@ div#loader-container {
   transform: translate(-50%, -50%);
   height: 100vh;
   width: 100%;
-  background-color: var(--fg-1-100);
+  background-color: var(--bg-1-100);
   z-index: +100;
   opacity: 100%;
 }
@@ -43,7 +43,7 @@ div#loader-container div#loader-logo {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   overflow: hidden;
-  border: 0.5vh solid var(--bg-1-100);
+  border: 0.5vh solid var(--fg-1-100);
   box-sizing: border-box;
 }
 
@@ -67,7 +67,7 @@ div#loader-container div.loader-item {
   width: 7vh;
   box-sizing: border-box;
   border-radius: 50%;
-  background-color: var(--bg-1-100);
+  background-color: var(--fg-1-100);
   box-shadow: 0 0 3vh 1vh white;
 }
 
@@ -166,13 +166,13 @@ div#loader-container div#loader-item-5 {
     width: 3vh;
     text-align: center;
     line-height: 10.5vh;
-    background-color: var(--fg-1-100);
+    background-color: var(--bg-1-100);
     border-radius: 0 1.5vh 1.5vh 0;
     box-sizing: border-box;
-    border: 0.3vh solid var(--bg-1-100);
+    border: 0.3vh solid var(--fg-1-100);
     border-left: none;
     cursor:pointer;
-    color: var(--bg-1-100);
+    color: var(--fg-1-100);
     box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
     z-index: +3;
   }
@@ -192,7 +192,7 @@ div#loader-container div#loader-item-5 {
     text-align: center;
     font-size: 4.4vh;
     line-height: 5.55vh;
-    color: var(--bg-1-100);
+    color: var(--fg-1-100);
   }
 }
 
@@ -207,7 +207,7 @@ div#navbar-container {
   z-index: +3;
   display: none;
   box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
-  border-right: 0.2vh solid var(--bg-1-100);
+  border-right: 0.2vh solid var(--fg-1-100);
   border-radius: 0 2vh 2vh 0;
 }
 
@@ -233,13 +233,13 @@ div#navbar-container {
     width: 3vh;
     text-align: center;
     line-height: 10.5vh;
-    background-color: var(--fg-1-100);
+    background-color: var(--bg-1-100);
     border-radius: 1.5vh 0 0 1.5vh;
     box-sizing: border-box;
-    border: 0.3vh solid var(--bg-1-100);
+    border: 0.3vh solid var(--fg-1-100);
     border-right: none;
     cursor: pointer;
-    color: var(--bg-1-100);
+    color: var(--fg-1-100);
     box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
     z-index: +4;
   }
@@ -255,12 +255,12 @@ div#navbar-container {
     text-align: center;
     font-size: 4.4vh;
     line-height: 5.55vh;
-    color: var(--bg-1-100);
+    color: var(--fg-1-100);
     border-radius: 1vh 1vh 1vh 1vh;
   }
   div.navbar-toggle-off:hover {
     background-color: rgba(236, 90, 41, 0.774);
-    color: var(--fg-1-100);
+    color: var(--bg-1-100);
   }
 }
 
@@ -337,9 +337,9 @@ div#profile-info {
   left: 1vh;
   height: 17.5vh;
   width: 17.5vh;
-  background-color: var(--fg-1-100);
+  background-color: var(--bg-1-100);
   box-sizing: border-box;
-  border: 0.25vh solid var(--bg-1-100);
+  border: 0.25vh solid var(--fg-1-100);
   border-radius: 1.5vh;
 }
 
@@ -368,7 +368,7 @@ div#profile-info div#profile-pic {
   height: 80%;
   width: calc(17.5vh * 8 / 10);
   box-sizing: border-box;
-  border: 0.25vh solid var(--bg-1-100);
+  border: 0.25vh solid var(--fg-1-100);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -452,7 +452,7 @@ div#profile-info div#profile-info-details div#progress-bar-total div#progress-ba
   transform: translate(0, -50%);
   height: 100%;
   width: calc(100% * (4123/5000));
-  background-color: var(--bg-1-100);
+  background-color: var(--fg-1-100);
 }
 
 div#profile-info div#profile-info-details div#xp-count {
@@ -492,7 +492,7 @@ div#info-container {
   height: 95%;
   width: 35%;
   box-sizing: border-box;
-  border: 0.3vh solid var(--bg-1-100);
+  border: 0.3vh solid var(--fg-1-100);
   border-radius: 1.5vh;
   background-color: rgba(0, 212, 184, 0.8);
   box-shadow: 0 0 0.5vh 0.2vh rgb(125, 125, 125);
@@ -506,8 +506,8 @@ div#info-container {
     height: 55%;
     width: 100%;
     border-radius: 0.75vh 0.75vh 0 0;
-    border: 0 solid var(--bg-1-100);
-    border-top: 0.3vh solid var(--bg-1-100);
+    border: 0 solid var(--fg-1-100);
+    border-top: 0.3vh solid var(--fg-1-100);
     overflow-y: scroll;
   }
 }
@@ -520,7 +520,7 @@ div#info-container div#info-title {
   height: 7.8%;
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid var(--bg-1-100);
+  border: 0.3vh solid var(--fg-1-100);
   box-sizing: border-box;
   padding: 2vh;
   font-size: 3vh;
@@ -545,7 +545,7 @@ div#info-container div#info-close {
   top: 5.125%;
   right: 2.5vh;
   transform: translate(0, -50%);
-  color: var(--bg-1-100);
+  color: var(--fg-1-100);
   height: 4vh;
   width: 4vh;
   text-align: center;
@@ -579,7 +579,7 @@ div#info-container div#info-pic {
   transform: translate(-50%, 0);
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid var(--bg-1-100);
+  border: 0.3vh solid var(--fg-1-100);
   overflow: hidden;
 }
 
@@ -611,7 +611,7 @@ div#info-container div#info-details {
   transform: translate(-50%, 0);
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid var(--bg-1-100);
+  border: 0.3vh solid var(--fg-1-100);
   box-sizing: border-box;
   padding: 2vh;
   text-align: justify;
