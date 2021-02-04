@@ -27,9 +27,10 @@ video.background{
 }
 
 div.tint{
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
     height: 100vh;
     width: 100%;
     z-index: -1;
@@ -42,6 +43,7 @@ span.logo_heading{
     float: left;
     left: 10%;
     top: 10%;
+    transition: 0.3s;
 }
 
 p.logo_heading{
@@ -51,6 +53,7 @@ p.logo_heading{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: white;
+    transition: 0.3s;
 }
 
 span.logo{
@@ -111,4 +114,59 @@ div.signin::before{
 div.signin:hover::before{
     height: 180%;
     transition: 0.3s;
+}
+/*RESPONSIVE I PAD*/
+
+@media screen and (max-width: 1000px) {
+
+    /*BACKGROUND TINT*/
+
+    div.tint{
+        height: 100%;
+        width: 100%;
+    }
+
+    /*SIGN IN BUTTON*/
+    div.signin{
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -50%);
+    }
+
+    /*LOGO*/
+
+    span.logo_heading{
+        float: none;
+    }
+    p.logo_heading{
+        text-align: center;
+    }
+    span.logo{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-50%);
+        border: 0.15vh solid var(--bg-1-100);
+        box-shadow: 0 0 1.3vh 0.4vh var(--bg-1-100);
+        border-radius: 50%;
+        height: 20vh;
+        width: 20vh;
+    }
+}
+
+/*RESPONSIVE PHONE*/
+
+@media screen and (max-width: 600px) {
+    
+    /*LOGO HEADING*/
+    
+    span.logo_heading{
+        float: none;
+    }
+
+    p.logo_heading{
+        text-align: center;
+        font-size: 8vh;
+    }
 }
