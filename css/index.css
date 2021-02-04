@@ -28,7 +28,7 @@ div.tint{
     height: 100vh;
     width: 100%;
     z-index: -1;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.5);
 }
 
 /*logo*/
@@ -45,8 +45,7 @@ p.logo_heading{
     font-size: 10vh;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #ffffff;
-    text-shadow: 0.5px 0.5px 3px rgb(0, 0, 0);
+    color: white;
 }
 
 span.logo{
@@ -74,20 +73,20 @@ div.signin{
     transform: translate(-50%,-50%);
     transition: 0.3s;
     height: 8vh;
-    width: 20vh;
+    width: 25vh;
     text-align: center;
     font-size: 5vh;
     text-decoration: none;
     border: 0.4vh solid #EC5929 ;
     border-radius:  1.5vh 1.5vh 1.5vh 1.5vh;
     font-family: 'Poppins', sans-serif;
-    color:  white;
-    overflow: hidden;
+    color:  white ;
+    overflow: hidden; 
 }
 
 div.signin:hover{
     border: 0 solid #EC5929;
-    color: #EC5929;
+    color:  #008bde;
     box-shadow: 0 0 0.8vh 0.4vh #EC5929;
     transition: 0.3s;
 }
@@ -98,7 +97,7 @@ div.signin::before{
     left: 0;
     height: 0%;
     width: 100%;
-    background-color: rgba(255, 255, 255 ,0.9);
+    background-color:  #c3e5e7;
     z-index: -1;
     transition: 0.3s;
     top: 0;
@@ -106,5 +105,5 @@ div.signin::before{
 }
 div.signin:hover::before{
     height: 180%;
-    transition: 0.8s;
+    transition: 0.3s;
 }
