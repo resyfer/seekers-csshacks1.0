@@ -243,7 +243,82 @@ div#menu-container div.menu-items:hover {
 }
 /* Navbar */
 
-div#travelog-logo {
-	position: relative;
-	text-align: center;
+/* Profile */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
+
+div#travelog-logo {
+  text-align: center;
+  width: 100%;
+}
+
+div#profile-items-container {
+  position: absolute;
+  background-color: red;
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+div#profile-items-container div.profile-items {
+  position: relative;
+  margin: 1vh 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1000px) {
+  div#profile-items-container {
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+}
+  
+@media screen and (max-width: 1000px) {
+  div#profile-items-container {
+    top: 20%;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  div#profile-items-container div.profile-items {
+    width: 100%;
+  }
+}
+
+div#profile-info {
+  height: 42vh;
+  width: 60%;
+  background-color:green;
+}
+
+div#stats {
+  height: 42vh;
+  width: 38%;
+  background-color: blue;
+}
+
+div#history {
+  height: 25vh;
+  width: 60%;
+  background-color: yellow;
+}
+
+div#medals {
+  position: relative;
+  width: 38%;
+  height: 25vh;
+  background-color: black;
+}
+
+/* /Profile */
