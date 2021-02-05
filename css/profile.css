@@ -287,6 +287,8 @@ div#profile-items-container div.profile-items {
 @media screen and (max-width: 1000px) {
   div#profile-items-container {
     top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
     flex-direction: column;
     flex-wrap: wrap;
   }
