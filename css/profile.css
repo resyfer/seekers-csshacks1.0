@@ -10,6 +10,7 @@
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 /* /Everything */
 
@@ -168,7 +169,8 @@ div#navbar-container {
 	left: 0;
 	transform: translate(-100%, -50%);
 	height: 100%;
-	width: 35%;
+  width: 30%;
+  box-sizing: border-box;
 	background-color: rgba(0, 214, 186, 0.8);
 	z-index: +3;
 	box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
@@ -200,18 +202,199 @@ div#navbar-container div#navbar-toggle-off {
 
 div#navbar-container div#menu-container {
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0);
 	height: auto;
-	width: auto;
+  width: 90%;
+  box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+  justify-content: space-between;
+  font-size: 3vh;
+}
+
+div#menu-container div.menu-items {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.815);
+  padding: 2vh 5vh;
+  box-sizing: border-box;
+  border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
+  border: 0.25vh solid rgba(236, 90, 41, 0.58);
+  width: 100%;
+  left: 47.5%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1vh;
+  color: var(--fg-1-100);
+}
+
+div#navbar-container div.active {
+  background-color: rgba(255, 112, 17, 0.9);
+  color: rgba(255, 255, 255, 0.815);
+}
+
+div#menu-container div.menu-items:hover {
+  background-color:var(--fg-1-100);
+  color: white;
+  transition-duration: 0.15s;
+  box-shadow: white;
+  box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
 }
 /* Navbar */
 
-div#travelog-logo {
-	position: relative;
-	text-align: center;
+/* Profile */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 }
+
+div#travelog-logo {
+  text-align: center;
+  width: 100%;
+}
+
+div#profile-items-container {
+  position: absolute;
+  background-color: red;
+  height: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+div#profile-items-container div.profile-items {
+  position: relative;
+  margin: 1vh 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1000px) {
+  div#profile-items-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+}
+  
+@media screen and (max-width: 1000px) {
+  div#profile-items-container {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  div#profile-items-container div.profile-items {
+    width: 100%;
+  }
+}
+
+div#profile-info {
+  height: 42vh;
+  width: 60%;
+  background-color:green;
+}
+
+div#profile-info div#profile-container {
+  position: absolute;
+  left: 0;
+  padding: 1vh;
+  font-size: 3.3vh;
+  background-color: #fff;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  border-radius: 0.5vh 0.5vh ;
+}
+
+div#profile-info div#profile-pic {
+  position: absolute;
+  height: 25vh;
+  width: 25vh;
+  top: 25%;
+  left: 7%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+div#profile-info div#profile-pic img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+div#stats {
+  height: 42vh;
+  width: 38%;
+  background-color: blue;
+}
+
+div#stats div#stats-container-heading {
+  position: absolute;
+  left: 0;
+  padding: 1vh;
+  font-size: 3vh;
+  background-color: #fff;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  border-radius: 0.5vh 0.5vh;
+}
+
+div#stats div#stats-container-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  line-height: 4vh;
+  transform: translate(-75%, -50%);
+  font-size: 2vh;
+
+}
+
+div#history {
+  height: 25vh;
+  width: 60%;
+  background-color: yellow;
+}
+
+div#history div#history-container-heading {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  margin: 1vh 1vh;
+  font-size: 3vh;
+  box-sizing: border-box;
+  padding: 0.8vh 1vh;
+  border-radius: 0.5vh 0.5vh;
+}
+
+div#medals {
+  position: relative;
+  width: 38%;
+  height: 25vh;
+  background-color: black;
+}
+
+div#medals div#medals-container-heading {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: red;
+  margin: 1vh 1vh;
+  font-size: 3vh;
+  padding: 0.8vh 1vh;
+  border-radius: 0.5vh 0.5vh;
+}
+/* /Profile */
