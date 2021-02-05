@@ -169,7 +169,8 @@ div#navbar-container {
 	left: 0;
 	transform: translate(-100%, -50%);
 	height: 100%;
-	width: 35%;
+  width: 30%;
+  box-sizing: border-box;
 	background-color: rgba(0, 214, 186, 0.8);
 	z-index: +3;
 	box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
@@ -225,8 +226,8 @@ div#menu-container div.menu-items {
   transform: translate(-50%, 0);
   text-align: center;
   text-transform: uppercase;
-  margin: 1.2vh;
-  color: rgb(236, 90, 41);
+  margin: 1vh;
+  color: var(--fg-1-100);
 }
 
 div#navbar-container div.active {
@@ -235,7 +236,7 @@ div#navbar-container div.active {
 }
 
 div#menu-container div.menu-items:hover {
-  background-color:rgb(236, 90, 41);
+  background-color:var(--fg-1-100);
   color: white;
   transition-duration: 0.15s;
   box-shadow: white;
