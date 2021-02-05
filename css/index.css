@@ -189,7 +189,7 @@ span.logo_heading{
 p.logo_heading{
 	padding: 2vh;
 	text-align: left;
-	font-size: 10vh;
+	font-size: 15vh;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	color: white;
@@ -200,8 +200,8 @@ span.logo{
 	position: fixed;
 	float: left;
 	background-color: none;
-	height: 16vh;
-	width: 20vh;
+	height: 25vh;
+	width: 25vh;
 }
 
 img.logo{
@@ -258,7 +258,7 @@ div.signin:hover::before{
 }
 /*RESPONSIVE I PAD*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 
 	/*BACKGROUND TINT*/
 
@@ -281,6 +281,7 @@ div.signin:hover::before{
 	}
 	p.logo_heading{
 		text-align: center;
+		font-size: 10vh;
 	}
 	span.logo{
 		display: block;
