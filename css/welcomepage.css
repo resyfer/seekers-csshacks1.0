@@ -1,3 +1,4 @@
+
 /* Root */
 :root {
   --fg-1-100: #EC5929;
@@ -6,6 +7,12 @@
 }
 /* /Root */
 
+/*body*/
+body{
+  background-color: #008bde;
+}
+/*body*/
+
 /* Everything */
 *{
   margin: 0;
@@ -13,12 +20,6 @@
   text-decoration: none;
 }
 /* /Everything */
-
-/*body*/
-body{
-  background-color: #008bde;
-}
-/*body*/
 
 /* Loader */
 div#loader-container {
@@ -187,7 +188,7 @@ div#navbar-container {
 @media screen and (max-width: 1000px) {
 	div#navbar-container {
 		width: 100%;
-		transform: translate(0, -50%);
+		transform: translate(-100%, -50%);
 		border-radius: 0;
 		background-color: rgba(0, 214, 186, 0.9);
 	}

@@ -181,7 +181,7 @@ div#navbar-container {
 @media screen and (max-width: 1000px) {
 	div#navbar-container {
 		width: 100%;
-		transform: translate(0, -50%);
+		transform: translate(-100%, -50%);
 		border-radius: 0;
 		background-color: rgba(0, 214, 186, 0.9);
 	}
@@ -275,7 +275,7 @@ div#profile-items-container div.profile-items {
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1200px) {
   div#profile-items-container {
     top: 50%;
     left: 50%;
@@ -285,10 +285,11 @@ div#profile-items-container div.profile-items {
   }
 }
   
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   div#profile-items-container {
     top: 20%;
     left: 50%;
+    width: 90%;
     transform: translate(-50%, 0);
     flex-direction: column;
     flex-wrap: wrap;
@@ -303,6 +304,12 @@ div#profile-info {
   height: 42vh;
   width: 60%;
   background-color:green;
+}
+
+@media screen and (max-width: 1200px) {
+  div#profile-info {
+    height: 52vh;
+  }
 }
 
 div#profile-info div#profile-container {
@@ -340,6 +347,13 @@ div#stats {
   background-color: blue;
 }
 
+
+@media screen and (max-width: 1200px) {
+  div#stats {
+    height: 52vh;
+  }
+}
+
 div#stats div#stats-container-heading {
   position: absolute;
   left: 0;
@@ -368,6 +382,13 @@ div#history {
   background-color: yellow;
 }
 
+
+@media screen and (max-width: 1200px) {
+  div#history {
+    height: 35vh;
+  }
+}
+
 div#history div#history-container-heading {
   position: absolute;
   left: 0;
@@ -386,6 +407,12 @@ div#medals {
   width: 38%;
   height: 25vh;
   background-color: black;
+}
+
+@media screen and (max-width: 1200px) {
+  div#medals {
+    height: 35vh;
+  }
 }
 
 div#medals div#medals-container-heading {
