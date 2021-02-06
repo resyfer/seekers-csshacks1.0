@@ -243,3 +243,56 @@ div#menu-container div.menu-items:hover {
   box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
 }
 /* Navbar */
+
+/*PROFILE*/
+
+div.profile{
+  position: fixed;
+  height: 100vh;
+  width: 30%;
+  background-color: var(--bg-1-100);
+  border: 0.6vh double var(--fg-1-100);
+}
+
+div.profile_pic{
+ 
+  position: absolute;
+  height: 35vh;
+  width: 35vh;
+  top: 30%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  border: 3px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+img.profile_pic{
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+div.stats{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  height: 25vh;
+  width: 40vh;
+  text-align: center;
+  color: white;
+}
+div.stats h2{
+  font-size: 4vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+p.level{
+  text-align: left;
+  padding: 2vh;
+  font-size: 3vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*PROFILE*/
