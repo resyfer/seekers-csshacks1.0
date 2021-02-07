@@ -2,7 +2,8 @@
 :root {
   --fg-1-100: #EC5929;
 	--bg-1-100: #00D4B6;
-	font-family: 'Varela', sans-serif;
+  --pbg:rgba(255, 255, 255, 0.411);
+  --fc: #EC5929;
 }
 /* /Root */
 
@@ -11,6 +12,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'Rubik', sans-serif;
 }
 /* /Everything */
 
@@ -252,14 +254,32 @@ body {
   align-content: space-between;
 }
 
+div#profile-bg-img {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  z-index: -3;
+}
+
+div#profile-bg-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
 div#travelog-logo {
   text-align: center;
   width: 100%;
+  color:#fff;
+  font-size: 3.5vh;
+  text-shadow: 0 0 5vh var(--fg-1-100);
 }
 
 div#profile-items-container {
   position: absolute;
-  background-color: red;
   height: auto;
   width: 80%;
   display: flex;
@@ -303,7 +323,8 @@ div#profile-items-container div.profile-items {
 div#profile-info {
   height: 42vh;
   width: 60%;
-  background-color:green;
+  background-color: var(--pbg);
+  border-radius: 1vh 0 0 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -317,10 +338,38 @@ div#profile-info div#profile-container {
   left: 0;
   padding: 1vh;
   font-size: 3.3vh;
+  color: var(--fc);
   background-color: #fff;
   margin-top: 1vh;
   margin-left: 1vh;
   border-radius: 0.5vh 0.5vh ;
+}
+
+div#profile-info div#profile-name {
+  position: absolute;
+  text-transform: uppercase;
+  width: 25vh;
+  left: 7%;
+  bottom: 1vh;
+  text-align: center;
+}
+
+span#profile-uid {
+  font-size: 1.65vh;
+}
+
+div#profile-info div#user-info {
+  position: absolute;
+  right: 4%;
+  bottom: 11%;
+  width: 60%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.014);
+}
+
+div#profile-info div#user-info span {
+  font-size: 6vh;
+  color: rgb(77, 76, 76);
 }
 
 div#profile-info div#profile-pic {
@@ -344,7 +393,8 @@ div#profile-info div#profile-pic img {
 div#stats {
   height: 42vh;
   width: 38%;
-  background-color: blue;
+  background-color: var(--pbg);
+  border-radius: 0 1vh 0 0;
 }
 
 
@@ -360,6 +410,7 @@ div#stats div#stats-container-heading {
   padding: 1vh;
   font-size: 3vh;
   background-color: #fff;
+  color: var(--fc);
   margin-top: 1vh;
   margin-left: 1vh;
   border-radius: 0.5vh 0.5vh;
@@ -369,7 +420,7 @@ div#stats div#stats-container-items {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #fff;
+  color: white;
   line-height: 4vh;
   transform: translate(-75%, -50%);
   font-size: 2vh;
@@ -379,7 +430,8 @@ div#stats div#stats-container-items {
 div#history {
   height: 25vh;
   width: 60%;
-  background-color: yellow;
+  background-color: var(--pbg);
+  border-radius: 0 0 0 1vh;
 }
 
 
@@ -393,8 +445,8 @@ div#history div#history-container-heading {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgb(0, 0, 0);
-  color: #fff;
+  background-color: rgb(255, 255, 255);
+  color: var(--fc);
   margin: 1vh 1vh;
   font-size: 3vh;
   box-sizing: border-box;
@@ -406,7 +458,8 @@ div#medals {
   position: relative;
   width: 38%;
   height: 25vh;
-  background-color: black;
+  background-color:var(--pbg);
+  border-radius: 0 0 1vh 0;
 }
 
 @media screen and (max-width: 1200px) {
@@ -418,7 +471,7 @@ div#medals {
 div#medals div#medals-container-heading {
   position: absolute;
   background-color: rgb(255, 255, 255);
-  color: red;
+  color: var(--fc);
   margin: 1vh 1vh;
   font-size: 3vh;
   padding: 0.8vh 1vh;
