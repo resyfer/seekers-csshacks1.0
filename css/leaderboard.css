@@ -10,6 +10,7 @@
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 /* /Everything */
 
@@ -147,3 +148,98 @@ div#loader-container div#loader-item-5 {
     /* /Loader Animation */
   /* /Loader Items */
 /* /Loader */
+
+/* Navbar */
+div#navbar-toggle-on {
+	position: absolute;
+	top: 1vh;
+	left: 1vh;
+	height: 5vh;
+	width: 5vh;
+	text-align: center;
+	font-size: 5vh;
+	line-height: 5vh;
+	z-index: +2;
+	color: var(--fg-1-100);
+}
+
+div#navbar-container {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(-100%, -50%);
+	height: 100%;
+  width: 30%;
+  box-sizing: border-box;
+	background-color: rgba(0, 214, 186, 0.8);
+	z-index: +3;
+	box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
+	border-right: 0.2vh solid var(--fg-1-100);
+	border-radius: 0 2vh 2vh 0;
+}
+
+@media screen and (max-width: 1000px) {
+	div#navbar-container {
+		width: 100%;
+		transform: translate(-100%, -50%);
+		border-radius: 0;
+		background-color: rgba(0, 214, 186, 0.9);
+	}
+}
+
+div#navbar-container div#navbar-toggle-off {
+	position: absolute;
+	top: 1vh;
+	left: 1vh;
+	height: 5vh;
+	width: 5vh;
+	text-align: center;
+	font-size: 5vh;
+	line-height: 5vh;
+	z-index: +3;
+	color: var(--fg-1-100);
+}
+
+div#navbar-container div#menu-container {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: auto;
+  width: 90%;
+  box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+  font-size: 3vh;
+}
+
+div#menu-container div.menu-items {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.815);
+  padding: 2vh 5vh;
+  box-sizing: border-box;
+  border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
+  border: 0.25vh solid rgba(236, 90, 41, 0.58);
+  width: 100%;
+  left: 47.5%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1vh;
+  color: var(--fg-1-100);
+}
+
+div#navbar-container div.active {
+  background-color: rgba(255, 112, 17, 0.9);
+  color: rgba(255, 255, 255, 0.815);
+}
+
+div#menu-container div.menu-items:hover {
+  background-color:var(--fg-1-100);
+  color: white;
+  transition-duration: 0.15s;
+  box-shadow: white;
+  box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
+}
+/* Navbar */
