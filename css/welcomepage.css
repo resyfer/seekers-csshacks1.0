@@ -309,11 +309,12 @@ p.level{
 /*service box*/
 div.services{
   position: fixed;
-  left: 31%;
+  left: 0;
   top: 0;
   height: 100vh;
-  width: 50%;
-  background-color: #008bde;
+  width: 75%;
+  border: 0.2vh solid black;
+  background-color: none;
   overflow: auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -333,6 +334,7 @@ div#service_heading{
 
 div.services h2{
   padding: 3vh;
+  padding-left: 10vh;
   font-size: 6vh;
   position: static;
   font-family: 'Poppins', sans-serif;
@@ -341,8 +343,8 @@ div.services h2{
 /*service item box*/
 
 div.service_item{
-  height: 15vh;
-  width: 90%;
+  height: 60vh;
+  width: 95%;
   border: 0.2vh solid var(--bg-1-100);
   box-shadow: 0 0 1vh 0.2vh var(--bg-1-100);
   border-radius: 2vh 2vh 2vh 2vh;
@@ -356,17 +358,17 @@ div.service_item{
 
 div.service_img{
   float: left;
-  height: 10vh;
-  width: 10vh;
+  height: 55vh;
+  width: 80vh;
   border: 0.2vh solid black;
-  border-radius: 50%;
+  border-radius: 2vh 2vh 2vh 2vh;
   overflow: hidden;
   margin: 2vh;
 }
 
 div.service_img img{
   height: 100%;
-  width: auto;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -375,7 +377,11 @@ div.service_img img{
 /*service para*/
 
 div.service_content{
+  text-align: left;
+  color: black;
+  text-decoration: none;
   padding-top: 2vh;
+  font-size: 3vh;
   overflow: hidden;
 }
 
@@ -383,3 +389,67 @@ div.service_content{
 
 
 /*SERVICES*/
+
+/*STORIES*/
+
+/*story heading*/
+div.story_heading{
+  height: 11vh;
+  width: 23%;
+}
+
+div.story_heading p{
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate( -50%, -50%);
+  font-size: 3vh;
+  font-family: 'Poppins', sans-serif; 
+  text-align: center;
+}
+
+/*story heading*/
+
+/*story container*/
+
+div.story_container{
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate( -50%, 0);
+}
+
+/*story container*/
+
+
+
+div.stories{
+  position: absolute;
+  top: 0;
+  left:75%;
+  height: 99.2vh;
+  width: 24%;
+  border: 0.3vh solid black;
+  background-color: red;
+  overflow: auto;
+}
+
+/*story img*/
+
+div.story_img{
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 5vh;
+}
+
+img.story{
+  height: 100%;
+  width: 100%;
+}
+
+/*story img*/
+
+
+/*STORIES*/
