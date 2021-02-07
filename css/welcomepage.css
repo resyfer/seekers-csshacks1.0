@@ -255,52 +255,40 @@ div#menu-container div.menu-items:hover {
 /*PROFILE*/
 
 div.profile{
-  position: fixed;
-  height: 100vh;
-  width: 30%;
-  background-color: var(--bg-1-100);
-  border: 0.6vh double var(--fg-1-100);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate( -50%, 0);
+  border-radius: 0 0 4vh 4vh;
+  height: 20vh;
+  width: 50%;
+  overflow: hidden;
+  background-color: red;
+  z-index: 3;
 }
 
 div.profile_pic{
- 
-  position: absolute;
-  height: 35vh;
-  width: 35vh;
-  top: 30%;
-  left: 50%;
-  transform: translate( -50%, -50%);
-  border: 0.4vh solid black;
+  float: left;
+  height: 15vh;
+  width: 15vh;
   border-radius: 50%;
   overflow: hidden;
+  margin: 2.5vh;
 }
 
 img.profile_pic{
   height: 100%;
   width: auto;
-  object-fit: cover;
 }
 
 div.stats{
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate( -50%, -50%);
-  height: 25vh;
-  width: 40vh;
-  text-align: center;
-  color: white;
-}
-div.stats h2{
-  font-size: 4vh;
-  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
-p.level{
-  text-align: left;
-  padding-left: 2vh;
-  font-size: 3vh;
-  font-family: 'Poppins', sans-serif;
+div.stats h2{
+  float: left;
 }
 
 /*PROFILE*/
@@ -310,10 +298,10 @@ p.level{
 /*service box*/
 div.services{
   position: fixed;
-  left: 0;
+  left: 10%;
   top: 0;
   height: 100vh;
-  width: 75%;
+  width: 60%;
   border: none;
   background-color: none;
   overflow: auto;
@@ -330,13 +318,13 @@ div.services::-webkit-scrollbar{
 div#service_heading{
   position: sticky;
   top: 0;
-  background-color:white;
+  background-color: var(--bg-1-100);
+  color: white;
   z-index: 1;
 }
 
 div.services h2{
   padding: 3vh;
-  padding-left: 10vh;
   font-size: 6vh;
   position: static;
   font-family: 'Poppins', sans-serif;
@@ -345,8 +333,9 @@ div.services h2{
 /*service item box*/
 
 div.service_item{
-  height: 60vh;
-  width: 95%;
+  height: 70vh;
+  width: 96%;
+  background-color: rgb(31, 31, 31);
   border: 0.2vh solid var(--fg-1-100);
   box-shadow: 0 0 1vh 0.2vh var(--fg-1-100);
   border-radius: 2vh 2vh 2vh 2vh;
@@ -359,13 +348,16 @@ div.service_item{
 /*Service img*/
 
 div.service_img{
-  float: left;
-  height: 55vh;
-  width: 80vh;
-  border: 0.2vh solid black;
+  position: relative;
+  top: 40%;
+  left: 49.5%;
+  transform: translate( -50%, -50%);
+  height: 50vh;
+  width: 70%;
+  background-color: red;
+  border: none;
   border-radius: 2vh 2vh 2vh 2vh;
   overflow: hidden;
-  margin: 2vh;
 }
 
 div.service_img img{
@@ -384,9 +376,10 @@ div.service_content{
   right:0;
   transform:translate(0,-50%);
   text-align: left;
-  color: black;
+  color: white;
   text-decoration: none;
-  padding-top: 2vh;
+  margin: 3vh;
+  margin-top: 6vh;
   font-size: 3vh;
   overflow: hidden;
 }
@@ -468,7 +461,7 @@ div.story_img{
   border-radius: 50%;
   border: 1vh solid white;
   overflow: hidden;
-  margin-top: 8vh;
+  margin-top: 7vh;
 }
 
 img.story{
