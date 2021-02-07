@@ -254,7 +254,42 @@ div#menu-container div.menu-items:hover {
 
 /*PROFILE*/
 
+div.profile{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate( -50%, 0);
+  border-radius: 0 0 4vh 4vh;
+  height: 20vh;
+  width: 50%;
+  overflow: hidden;
+  background-color: red;
+  z-index: 3;
+}
 
+div.profile_pic{
+  float: left;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2.5vh;
+}
+
+img.profile_pic{
+  height: 100%;
+  width: auto;
+}
+
+div.stats{
+  height: 100%;
+  width: 100%;
+}
+
+div.stats h2{
+  float: left;
+}
 
 /*PROFILE*/
 
