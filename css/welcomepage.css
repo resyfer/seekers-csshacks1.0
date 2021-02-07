@@ -394,8 +394,9 @@ div.service_content{
 
 /*story heading*/
 div.story_heading{
-  height: 11vh;
-  width: 23%;
+  height: 7vh;
+  width: 100%;
+  border: 0.3vh solid black;
 }
 
 div.story_heading p{
