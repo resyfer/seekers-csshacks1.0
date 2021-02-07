@@ -2,7 +2,7 @@
 :root {
   --fg-1-100: #EC5929;
 	--bg-1-100: #00D4B6;
-  --pbg:rgba(255, 255, 255, 0.411);
+  --pbg:rgba(36, 36, 36, 0.411);
   --fc: #EC5929;
 }
 /* /Root */
@@ -173,11 +173,10 @@ div#navbar-container {
 	height: 100%;
   width: 30%;
   box-sizing: border-box;
-	background-color: rgba(0, 214, 186, 0.8);
+	background-color: rgba(3, 3, 2, 0.589);
 	z-index: +3;
-	box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
-	border-right: 0.2vh solid var(--fg-1-100);
-	border-radius: 0 2vh 2vh 0;
+	box-shadow: 0 0 0.8vh 0.2vh rgb(0, 0, 0);
+	border-radius: 0 1vh 1vh 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -242,7 +241,7 @@ div#menu-container div.menu-items:hover {
   color: white;
   transition-duration: 0.15s;
   box-shadow: white;
-  box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
+  box-shadow: 0 0 1vh 0.1vh var(--fg-1-100);
 }
 /* Navbar */
 
@@ -262,7 +261,27 @@ div#profile-bg-img {
   z-index: -3;
 }
 
-div#profile-bg-img img {
+div#profile-bg-img div#bg-img-tint {
+  position: absolute;
+  background-color: rgba(39, 40, 34, 0.432);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: +1;
+}
+
+div#profile-bg-img div#bg-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+div#profile-bg-img div#bg-img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -271,11 +290,16 @@ div#profile-bg-img img {
 }
 
 div#travelog-logo {
-  text-align: center;
-  width: 100%;
-  color:#fff;
-  font-size: 3.5vh;
-  text-shadow: 0 0 5vh var(--fg-1-100);
+  position: absolute;
+  height: 8vh;
+  width: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+}
+
+div#travelog-logo img {
+  height: 100%;
 }
 
 div#profile-items-container {
@@ -364,12 +388,15 @@ div#profile-info div#user-info {
   bottom: 11%;
   width: 60%;
   height: 60%;
-  background-color: rgba(255, 255, 255, 0.014);
 }
 
 div#profile-info div#user-info span {
   font-size: 6vh;
   color: rgb(77, 76, 76);
+}
+
+div#profile-info hr {
+  background-color: var(--fc);
 }
 
 div#profile-info div#profile-pic {
