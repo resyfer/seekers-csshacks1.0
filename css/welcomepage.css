@@ -330,6 +330,7 @@ div#service_heading{
   position: sticky;
   top: 0;
   background-color: #008bde;
+  z-index: 1;
 }
 
 div.services h2{
@@ -377,12 +378,20 @@ div.service_img img{
 /*service para*/
 
 div.service_content{
+  position: relative;
+  top:30%;
+  right:0;
+  transform:translate(0,-50%);
   text-align: left;
   color: black;
   text-decoration: none;
   padding-top: 2vh;
   font-size: 3vh;
   overflow: hidden;
+}
+
+i.fas{
+  color: #F24B6A;
 }
 
 /*service para*/
