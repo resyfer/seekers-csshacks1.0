@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome - Travelog</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome - Travelog</title>
 
-  <!--Google Fonts CDN Link-->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap" rel="stylesheet">
+    <!--Google Fonts CDN Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap"
+      rel="stylesheet"
+    />
 
     <!--
       Font CSS:
@@ -18,55 +21,55 @@
       font-family: 'Varela', sans-serif;
     -->
 
-  <!--CSS-->
-  <link rel="stylesheet" href="./css/welcomepage.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/welcomepage.css" />
 
-  <!--Favicon-->
-  <link rel="shortcut icon" href="./img/favicon.png">
-</head>
-<body>
-  <!--
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png" />
+  </head>
+  <body>
+    <!--
     Logo Link - https://i.imgur.com/3l1xTVm.png
   -->
-  
-  <!--Loader-->
-  <div id="loader-container">
-    <div id="loader-logo">
-      <img src="./img/logo.png" alt="Browser not supported">
-    </div>
-    <div class="loader-item" id="loader-item-1"></div>
-    <div class="loader-item" id="loader-item-2"></div>
-    <div class="loader-item" id="loader-item-3"></div>
-    <div class="loader-item" id="loader-item-4"></div>
-    <div class="loader-item" id="loader-item-5"></div>
-  </div>
-  <!--/Loader-->
 
-  <!--Navbar-->
+    <!--Loader-->
+    <div id="loader-container">
+      <div id="loader-logo">
+        <img src="./img/logo.png" alt="Browser not supported" />
+      </div>
+      <div class="loader-item" id="loader-item-1"></div>
+      <div class="loader-item" id="loader-item-2"></div>
+      <div class="loader-item" id="loader-item-3"></div>
+      <div class="loader-item" id="loader-item-4"></div>
+      <div class="loader-item" id="loader-item-5"></div>
+    </div>
+    <!--/Loader-->
+
+    <!--Navbar-->
     <!--Toggle On-->
-  <div id="navbar-toggle-on" onclick="openNav()">
-    <i class="fas fa-bars"></i>
-  </div>
+    <div id="navbar-toggle-on" onclick="openNav()">
+      <i class="fas fa-bars"></i>
+    </div>
     <!--/Toggle On-->
-    
-  <div id="navbar-container">
-    <!--Toggle Off-->
-    <div id="navbar-toggle-off" onclick="closeNav()">
-      <i class="fas fa-times"></i>
-    </div>
-    <!--/Toggle Off-->
-    
-    <div id="menu-container">
-      <a href="welcomepage.html"><div class="menu-items active">Home</div></a>
-      <a href="map.html"><div class="menu-items">Map</div></a>
-      <a href="profile.html"><div class="menu-items">Profile</div></a>
-      <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
-      <a href="#"><div class="menu-items">Sign Out</div></a>
-    </div>
-  </div>
-  <!--/Navbar-->
 
-  <!--PROFILE PIC-->
+    <div id="navbar-container">
+      <!--Toggle Off-->
+      <div id="navbar-toggle-off" onclick="closeNav()">
+        <i class="fas fa-times"></i>
+      </div>
+      <!--/Toggle Off-->
+
+      <div id="menu-container">
+        <a href="welcomepage.html"><div class="menu-items active">Home</div></a>
+        <a href="map.html"><div class="menu-items">Map</div></a>
+        <a href="profile.html"><div class="menu-items">Profile</div></a>
+        <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
+        <a href="#"><div class="menu-items">Sign Out</div></a>
+      </div>
+    </div>
+    <!--/Navbar-->
+
+    <!--PROFILE PIC
     <div class="profile">
       <div class="profile_pic">
         <img class="profile_pic" src="img/defaultprofilepic.jpg" alt="this is an image">
@@ -76,61 +79,202 @@
         <p class="level">Level: 10</p>
       </div>
     </div>
-  <!--PROFILE PIC-->
+  PROFILE PIC-->
 
-  <!--SERVICES-->
+    <!--SERVICES-->
 
-  <div class="services">
-    <div id="service_heading">
-      <h2>Services</h2>
+    <div class="services">
+      <div id="service_heading">
+        <h2>Services</h2>
+      </div>
+      <a href="#">
+        <div class="service_item">
+          <div class="service_img">
+            <img
+              loading="lazy"
+              src="img/defaultprofilepic.jpg"
+              alt="this is an image"
+            />
+          </div>
+          <div class="service_content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="service_item">
+          <div class="service_img">
+            <img
+              loading="lazy"
+              src="img/defaultprofilepic.jpg"
+              alt="this is an image"
+            />
+          </div>
+          <div class="service_content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="service_item">
+          <div class="service_img">
+            <img
+              loading="lazy"
+              src="img/defaultprofilepic.jpg"
+              alt="this is an image"
+            />
+          </div>
+          <div class="service_content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="service_item">
+          <div class="service_img">
+            <img
+              loading="lazy"
+              src="img/defaultprofilepic.jpg"
+              alt="this is an image"
+            />
+          </div>
+          <div class="service_content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="service_item">
+          <div class="service_img">
+            <img
+              loading="lazy"
+              src="img/defaultprofilepic.jpg"
+              alt="this is an image"
+            />
+          </div>
+          <div class="service_content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="service_item">
+          <div class="service_img">
+            <img
+              loading="lazy"
+              src="img/defaultprofilepic.jpg"
+              alt="this is an image"
+            />
+          </div>
+          <div class="service_content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
     </div>
 
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis soluta odio itaque exercitationem? Ullam aut fuga cumque.</p></div>
+    <!--SERVICES-->
+
+    <!--STORIES-->
+
+    <div class="stories">
+      <div class="story_heading">
+        <p>Stories</p>
+      </div>
+
+      <div class="story_container">
+        <div class="story_img">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/bg4.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="story_img">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/bg4.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="story_img">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/bg4.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="story_img">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/bg4.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="story_img">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/bg4.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="story_img">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/bg4.jpg"
+            alt="this is an image"
+          />
+        </div>
+      </div>
     </div>
 
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quam sequi nisi ex suscipit reiciendis sit provident aut.</p></div>
-    </div>
-
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis soluta odio itaque exercitationem? Ullam aut fuga cumque.</p></div>
-    </div>
-    
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis soluta odio itaque exercitationem? Ullam aut fuga cumque.</p></div>
-    </div>
-
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis soluta odio itaque exercitationem? Ullam aut fuga cumque.</p></div>
-    </div>
-
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis soluta odio itaque exercitationem? Ullam aut fuga cumque.</p></div>
-    </div>
-
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis soluta odio itaque exercitationem? Ullam aut fuga cumque.</p></div>
-    </div>
-
-    <div class="service_item">
-      <div class="service_img"><img src="img/defaultprofilepic.jpg" alt="this is an image"></div>
-      <div class="service_content"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat reiciendis soluta odio itaque exercitationem? Ullam aut fuga cumque.</p></div>
-    </div>
-
-  </div>
-
-  <!--SERVICES-->
-</body>
+    <!--STORIES-->
+  </body>
   <!--Fontawesome CDN-->
-  <script src="https://kit.fontawesome.com/0cd9f9ba48.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/0cd9f9ba48.js"
+    crossorigin="anonymous"
+  ></script>
 
   <!--JQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -139,5 +283,4 @@
   <script src="./js/backtotop.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/loader.js"></script>
-
 </html>
