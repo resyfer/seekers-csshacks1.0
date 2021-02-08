@@ -345,11 +345,11 @@ div#service_heading p{
 /*service item box*/
 
 div.service_item{
-  height: 70vh;
+  height: 73vh;
   width: 96%;
-  background-color: rgb(25, 25, 25);
-  border: 0.2vh solid var(--fg-1-100);
-  box-shadow: 0 0 1vh 0.2vh var(--fg-1-100);
+  background-color: rgba(25, 25, 25, 0.7);
+  border: 0.2vh solid rgba(236, 89, 41, 0.5);
+  box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5);
   border-radius: 2vh 2vh 2vh 2vh;
   overflow: hidden;
   margin: 2vh;
@@ -366,7 +366,7 @@ div.service_img{
   top: 40%;
   left: 49.5%;
   transform: translate( -50%, -50%);
-  height: 50vh;
+  height: 48vh;
   width: 70%;
   background-color: red;
   border: none;
@@ -386,7 +386,7 @@ div.service_img img{
 
 div.service_content{
   position: relative;
-  top:8%;
+  top:10%;
   transform:translate(0,-50%);
   text-align: left;
   color: white;
@@ -454,10 +454,10 @@ div.stories{
   left:77%;
   height: 82vh;
   width: 20%;
-  border: 0.3vh solid var(--fg-1-100);
-  background-color: rgb(31, 31, 31);
+  border: 0.2vh solid rgba(236, 89, 41, 0.5);
+  background-color: rgba(25, 25, 25, 0.7);
   border-radius: 4vh 4vh 4vh 4vh;
-  box-shadow: 0 0 1.3vh 0.4vh var(--fg-1-100);
+  box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5);
   overflow: auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -473,9 +473,10 @@ div.story_img{
   height: 19vh;
   width: 19vh;
   border-radius: 50%;
-  border: 1vh solid white;
+  border: 0.5vh solid white;
   overflow: hidden;
-  margin-top: 7vh;
+  margin-top: 6vh;
+  margin-bottom: 8vh;
 }
 
 img.story{
