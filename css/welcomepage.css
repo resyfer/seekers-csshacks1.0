@@ -321,8 +321,8 @@ div#service_heading{
   
   top: 0;
   height:12vh;
-  background-color: var(--fg-1-100);
-  color: white;
+  background-color: white;
+  color: var(--fg-1-100);
   z-index: 1;
   border-radius: 0;
 }
