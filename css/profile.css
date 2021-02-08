@@ -615,6 +615,89 @@ div#history div#history-container-heading {
   border-radius: 0.5vh 0.5vh;
 }
 
+div#history div.past-trips {
+  position: absolute;
+  height: 65%;
+  width: 93%;
+  right: 1vh;
+  bottom: 2vh;
+}
+
+div#history div.past-trips div#past-trip-1 {
+  position: absolute;
+  width: 17%;
+  height: 40%;
+  line-height: 3vh;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.623);
+  border: 0.3vh solid rgba(255, 255, 255, 0.219);
+  border-radius: 0.5ch;
+  padding: 0.5vh 0.6vh;
+}
+
+div#history div.past-trips div#past-trip-2 {
+  position: absolute;
+  width: 17%;
+  height: 40%;
+  line-height: 3vh;
+  left: 20%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.623);
+  border: 0.3vh solid rgba(255, 255, 255, 0.219);
+  border-radius: 0.5ch;
+  padding: 0.5vh 0.6vh;
+}
+
+div#history div.past-trips div#past-trip-3 {
+  position: absolute;
+  width: 17%;
+  height: 40%;
+  line-height: 3vh;
+  left: 40%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.623);
+  border: 0.3vh solid rgba(255, 255, 255, 0.219);
+  border-radius: 0.5ch;
+  padding: 0.5vh 0.6vh;
+}
+
+div#history div.past-trips div#past-trip-4 {
+  position: absolute;
+  width: 17%;
+  height: 40%;
+  line-height: 3vh;
+  left: 60%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.623);
+  border: 0.3vh solid rgba(255, 255, 255, 0.219);
+  border-radius: 0.5ch;
+  padding: 0.5vh 0.6vh;
+}
+
+div#history div.past-trips div#view-all {
+  position: absolute;
+  width: 13%;
+  height: 20%;
+  line-height: 3vh;
+  left: 80%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 2vh;
+  color: rgba(255, 255, 255, 0.616);
+  border: 0.3vh solid rgba(255, 255, 255, 0.219);
+  border-radius: 0.5ch;
+  padding: 0.5vh 0.6vh;
+}
+
 div#medals {
   position: relative;
   width: 38%;
