@@ -1,7 +1,7 @@
 /* Root */
 :root {
   --fg-1-100: #EC5929;
-	--bg-1-100: #00D4B6;
+  --bg-1-100: rgba(36, 36, 36, 1);
 	font-family: 'Varela', sans-serif;
 }
 /* /Root */
@@ -61,7 +61,7 @@ div#loader-container div.loader-item {
   box-sizing: border-box;
   border-radius: 50%;
   background-color: var(--fg-1-100);
-  box-shadow: 0 0 3vh 1vh white;
+  box-shadow: 0 0 1vh 0.5vh white;
 }
 
 div#loader-container div#loader-item-1 {

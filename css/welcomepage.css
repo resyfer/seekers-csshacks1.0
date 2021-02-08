@@ -348,12 +348,8 @@ div#service_heading{
   
   top: 0;
   height:12vh;
-<<<<<<< HEAD
-  color: white;
-=======
   background-color: white;
   color: var(--fg-1-100);
->>>>>>> 3d9ff918481495c70e4e5fb822a09d27850db686
   z-index: 1;
   border-radius: 0;
 }
