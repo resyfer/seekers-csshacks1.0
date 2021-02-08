@@ -357,13 +357,21 @@ div#profile-info {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#profile-info {
+    border-top: 0.1vh solid rgba(255, 255, 255, 0.5);
+    border-left: 0.1vh solid rgba(255, 255, 255, 0.5)
+  }
+}
+
 div#profile-info div#profile-container {
   position: absolute;
   left: 0;
   padding: 1vh;
   font-size: 3.3vh;
   color: var(--fc);
-  background-color: #fff;
+  border: 0.22vh solid white;
+  box-sizing: border-box;
   margin-top: 1vh;
   margin-left: 1vh;
   border-radius: 0.5vh 0.5vh ;
@@ -373,9 +381,16 @@ div#profile-info div#profile-name {
   position: absolute;
   text-transform: uppercase;
   width: 25vh;
-  left: 7%;
+  left: 5.5%;
   bottom: 1vh;
   text-align: center;
+  font-size: 2.5vh;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+hr {
+  height: 0.1vh;
+  border: 0.2vh solid grey;
 }
 
 span#profile-uid {
@@ -392,8 +407,80 @@ div#profile-info div#user-info {
 
 div#profile-info div#user-info span {
   font-size: 6vh;
-  color: rgb(77, 76, 76);
+  color: rgb(134, 134, 134);
 }
+
+div#xp-bar {
+  position: relative;
+  top: 1.25vh;
+  width: auto;
+  height: 32.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+div#xp-bar-total {
+  position: relative;
+  width: 95%;
+  height: 2.5vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 0.75vh;
+  overflow: hidden;
+  background-color: rgba(90, 90, 90, 0.7);
+}
+
+div#xp-bar-total div#xp-bar-count {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc((4123/5000)*100%);
+  background-color: rgba(21, 191, 177, 0.5);
+  height: 100%;
+}
+
+div#xp-bar div#xp-bar-num {
+  position: relative;
+  text-align: right;
+  font-size: 2.63vh;
+}
+
+div#user-info-short-stats {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: green; */
+  text-align: center;
+  line-height: 7.5vh;
+  font-size: 2.75vh;
+  color: rgba(255, 255, 255, 0.733);
+  /* background-color: red; */
+  top: 2vh;
+}
+
+div#user-info-short-stats i.fa-trophy {
+  color: #cc7722;
+}
+
+div#user-info-short-stats i.fa-user-friends {
+  color: #4267B2;
+}
+
+div#user-info-short-stats i.fa-heart {
+  color: #F24B6A;
+}
+
+div#user-info-short-stats i.fa-coins {
+  color: #ffae00;
+}
+
 
 div#profile-info hr {
   background-color: var(--fc);
@@ -403,8 +490,8 @@ div#profile-info div#profile-pic {
   position: absolute;
   height: 25vh;
   width: 25vh;
-  top: 25%;
-  left: 7%;
+  top: 22%;
+  left: 5.5%;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -431,13 +518,20 @@ div#stats {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#stats {
+    border-top: 0.1vh solid rgba(255, 255, 255, 0.5);
+    border-right: 0.1vh solid rgba(255, 255, 255, 0.5)
+  }
+}
+
 div#stats div#stats-container-heading {
   position: absolute;
   left: 0;
   padding: 1vh;
   font-size: 3vh;
-  background-color: #fff;
   color: var(--fc);
+  border: 0.22vh solid white;
   margin-top: 1vh;
   margin-left: 1vh;
   border-radius: 0.5vh 0.5vh;
@@ -468,12 +562,19 @@ div#history {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#history {
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.5);
+    border-left: 0.1vh solid rgba(255, 255, 255, 0.5)
+  }
+}
+
 div#history div#history-container-heading {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgb(255, 255, 255);
   color: var(--fc);
+  border: 0.22vh solid white;
   margin: 1vh 1vh;
   font-size: 3vh;
   box-sizing: border-box;
@@ -495,10 +596,17 @@ div#medals {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#medals {
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.8);
+    border-right: 0.1vh solid rgba(255, 255, 255, 0.8)
+  }
+}
+
 div#medals div#medals-container-heading {
   position: absolute;
-  background-color: rgb(255, 255, 255);
   color: var(--fc);
+  border: 0.22vh solid white;
   margin: 1vh 1vh;
   font-size: 3vh;
   padding: 0.8vh 1vh;
