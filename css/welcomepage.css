@@ -10,7 +10,12 @@
 
 /*body*/
 body{
-  background-color:rgb(39, 39, 39);
+  background-image: url("../img/bg7.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 /*body*/
 
@@ -299,7 +304,7 @@ div.stats h2{
 div.services{
   position: fixed;
   left: 10%;
-  top: 14%;
+  top: 12%;
   height: 100vh;
   width: 60%;
   border: none;
@@ -321,7 +326,6 @@ div#service_heading{
   
   top: 0;
   height:12vh;
-  background-color: var(--fg-1-100);
   color: white;
   z-index: 1;
   border-radius: 0;
@@ -343,12 +347,14 @@ div#service_heading p{
 div.service_item{
   height: 70vh;
   width: 96%;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(25, 25, 25);
   border: 0.2vh solid var(--fg-1-100);
   box-shadow: 0 0 1vh 0.2vh var(--fg-1-100);
   border-radius: 2vh 2vh 2vh 2vh;
   overflow: hidden;
   margin: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 /*service item box*/
@@ -380,8 +386,7 @@ div.service_img img{
 
 div.service_content{
   position: relative;
-  top:20%;
-  right:0;
+  top:8%;
   transform:translate(0,-50%);
   text-align: left;
   color: white;
@@ -406,9 +411,8 @@ i.fas{
 /*story heading*/
 div.story_heading{
   position: sticky;
-  background-color: white;
-  border: 0.2vh solid var(--fg-1-100);
-  border-radius: 4vh 4vh 0 0  ;
+  background-color: rgb(25, 25, 25);
+  border-radius: 4vh 4vh 0 0 ;
   top: 0%;
   left: 0%;
   height: 10vh;
@@ -422,6 +426,7 @@ div.story_heading p{
   top: 50%;
   width: 50%;
   transform: translate( -50%, -50%);
+  color: white;
   font-size: 3vh;
   font-weight: 700;
   font-family: 'Poppins', sans-serif; 
@@ -450,7 +455,7 @@ div.stories{
   height: 82vh;
   width: 20%;
   border: 0.3vh solid var(--fg-1-100);
-  background-color: none;
+  background-color: rgb(31, 31, 31);
   border-radius: 4vh 4vh 4vh 4vh;
   box-shadow: 0 0 1.3vh 0.4vh var(--fg-1-100);
   overflow: auto;
