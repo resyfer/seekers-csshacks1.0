@@ -2,7 +2,7 @@
 /* Root */
 :root {
   --fg-1-100: #EC5929;
-	--bg-1-100: #00D4B6;
+  --bg-1-100: rgba(36, 36, 36, 1);
   --fg-1-50: rgba(236, 89, 41, 0.5);
 	font-family: 'Varela', sans-serif;
 }
@@ -70,7 +70,7 @@ div#loader-container div.loader-item {
   box-sizing: border-box;
   border-radius: 50%;
   background-color: var(--fg-1-100);
-  box-shadow: 0 0 3vh 1vh white;
+  box-shadow: 0 0 1vh 0.5vh white;
 }
 
 div#loader-container div#loader-item-1 {
@@ -179,11 +179,10 @@ div#navbar-container {
 	height: 100%;
   width: 30%;
   box-sizing: border-box;
-	background-color: rgba(0, 214, 186, 0.8);
+	background-color: rgba(36, 36, 36, 0.9);
 	z-index: +3;
 	box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
 	border-right: 0.2vh solid var(--fg-1-100);
-	border-radius: 0 2vh 2vh 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -191,7 +190,7 @@ div#navbar-container {
 		width: 100%;
 		transform: translate(-100%, -50%);
 		border-radius: 0;
-		background-color: rgba(0, 214, 186, 0.9);
+		background-color: rgba(36, 36, 36, 0.9);
 	}
 }
 
