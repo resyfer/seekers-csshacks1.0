@@ -305,7 +305,7 @@ div.stats h2{
   color: #EC4D37;
 }
 
-div#stats{
+div.sid{
   position: absolute;
   top: 50%;
   left: 20vh;
@@ -368,6 +368,7 @@ div#service_heading p{
 /*service item box*/
 
 div.service_item{
+  position:
   height: 73vh;
   width: 96%;
   background-color: rgba(25, 25, 25, 0.7);
@@ -409,8 +410,7 @@ div.service_img img{
 
 div.service_content{
   position: relative;
-  top:10%;
-  transform:translate(0,-50%);
+  top:3%;
   text-align: left;
   color: white;
   text-decoration: none;
@@ -439,7 +439,7 @@ div.story_heading{
   top: 0%;
   left: 0%;
   height: 10vh;
-  width: 99%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -466,15 +466,22 @@ div.story_container{
   top: 10%;
   transform: translate( -50%, 0);
 }
-
+@media screen and (max-width:1080px){
+  div.story_container{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    margin:auto;
+    width:50%;
+  }
 /*story container*/
 
 
 
 div.stories{
-  position: absolute;
-  top: 15%;
-  left:77%;
+  position: realtive;
+  top: 0%;
+  left:0%;
   height: 82vh;
   width: 20%;
   border: 0.2vh solid rgba(236, 89, 41, 0.5);
@@ -484,6 +491,16 @@ div.stories{
   overflow: auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+/* @media screen and (max-width:1080px){
+  div.stories{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: row;
+    margin:auto;
+    width:50%;
+  } */
+  
 }
 
 div.stories::-webkit-scrollbar{
