@@ -10,7 +10,12 @@
 
 /*body*/
 body{
-  background-color:rgb(39, 39, 39);
+  background-image: url("../img/bg9.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 /*body*/
 
@@ -261,9 +266,10 @@ div.profile{
   transform: translate( -50%, 0);
   border-radius: 0 0 4vh 4vh;
   height: 20vh;
-  width: 50%;
+  width: 60%;
   overflow: hidden;
-  background-color: red;
+  background-color: rgb(31, 31, 31);
+  border: 0.2vh solid #EC4D37;
   z-index: 3;
 }
 
@@ -287,7 +293,29 @@ div.stats{
 }
 
 div.stats h2{
-  float: left;
+  position: absolute;
+  top: 50%;
+  right: 2vh;
+  transform: translate( 0%, -50%);
+  width: 45%;
+  height: auto;
+  font-size: 4vh;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #EC4D37;
+}
+
+div#stats{
+  position: absolute;
+  top: 50%;
+  left: 20vh;
+  transform: translate( 0,-50%);
+  overflow: hidden;
+  height: auto;
+  width: 30%;
+  font-size: 2.5vh;
+  font-family: 'Poppins', sans-serif;
+  color: #EC4D37;
 }
 
 /*PROFILE*/
@@ -296,10 +324,9 @@ div.stats h2{
 
 /*service box*/
 div.services{
-  position: fixed;
+  position: absolute;
   left: 10%;
-  top: 14%;
-  height: 100vh;
+  height: 85vh;
   width: 60%;
   border: none;
   background-color: none;
@@ -320,7 +347,7 @@ div#service_heading{
   
   top: 0;
   height:12vh;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--fg-1-100);
   z-index: 1;
   border-radius: 0;
@@ -329,6 +356,7 @@ div#service_heading{
 div#service_heading p{
   position: absolute;
   width: 85%;
+  height: auto;
   top: 50%; 
   left: 50%;
   transform: translate( -50%, -50%) ;
@@ -340,14 +368,19 @@ div#service_heading p{
 /*service item box*/
 
 div.service_item{
-  height: 70vh;
+  position: relative;
+  height: 73vh;
   width: 96%;
-  background-color: rgb(31, 31, 31);
-  border: 0.2vh solid var(--fg-1-100);
-  box-shadow: 0 0 1vh 0.2vh var(--fg-1-100);
+  left: 48%;
+  transform: translate( -50%, 0);
+  background-color: rgba(25, 25, 25, 0.7);
+  border: 0.2vh solid rgba(236, 89, 41, 0.5);
+  box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5);
   border-radius: 2vh 2vh 2vh 2vh;
   overflow: hidden;
   margin: 2vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 /*service item box*/
@@ -359,9 +392,8 @@ div.service_img{
   top: 40%;
   left: 49.5%;
   transform: translate( -50%, -50%);
-  height: 50vh;
+  height: 48vh;
   width: 70%;
-  background-color: red;
   border: none;
   border-radius: 2vh 2vh 2vh 2vh;
   overflow: hidden;
@@ -379,8 +411,7 @@ div.service_img img{
 
 div.service_content{
   position: relative;
-  top:20%;
-  right:0;
+  top:10%;
   transform:translate(0,-50%);
   text-align: left;
   color: white;
@@ -405,9 +436,8 @@ i.fas{
 /*story heading*/
 div.story_heading{
   position: sticky;
-  background-color: white;
-  border: 0.2vh solid var(--fg-1-100);
-  border-radius: 4vh 4vh 0 0  ;
+  background-color: rgb(25, 25, 25);
+  border-radius: 4vh 4vh 0 0 ;
   top: 0%;
   left: 0%;
   height: 10vh;
@@ -421,6 +451,7 @@ div.story_heading p{
   top: 50%;
   width: 50%;
   transform: translate( -50%, -50%);
+  color: white;
   font-size: 3vh;
   font-weight: 700;
   font-family: 'Poppins', sans-serif; 
@@ -448,10 +479,10 @@ div.stories{
   left:77%;
   height: 82vh;
   width: 20%;
-  border: 0.3vh solid var(--fg-1-100);
-  background-color: none;
+  border: 0.2vh solid rgba(236, 89, 41, 0.5);
+  background-color: rgba(25, 25, 25, 0.7);
   border-radius: 4vh 4vh 4vh 4vh;
-  box-shadow: 0 0 1.3vh 0.4vh var(--fg-1-100);
+  box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5);
   overflow: auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -467,9 +498,10 @@ div.story_img{
   height: 19vh;
   width: 19vh;
   border-radius: 50%;
-  border: 1vh solid white;
+  border: 0.5vh solid white;
   overflow: hidden;
-  margin-top: 7vh;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
 img.story{
@@ -482,3 +514,109 @@ img.story{
 
 
 /*STORIES*/
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1200px){
+
+  div#service_heading{
+    height: 10vh;
+  }
+
+  div.services{
+    top: 30%;
+    left: 50%;
+    transform: translate( -50%, 0);
+    width: 80%;
+    height: 67vh;
+  }
+
+  div.stories{
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%,0);
+    height: 15vh;
+    width: 90%;
+  }
+  
+  div.story_heading{
+    display: none;
+  }
+  
+
+  div.story_container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    height: 11vh;
+    width: 90%;
+    overflow: auto;
+  }
+
+  div.story_container::-webkit-scrollbar{
+    display: none;
+  }
+  
+  div.story_img{
+    position: relative;
+    flex-shrink: 0;
+    height: 10vh;
+    width: 10vh;
+    margin: 0;
+    margin-right: 6vh;
+  }
+
+  img.story{
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 900px){
+
+  div#service_heading{
+    position: relative;
+  }
+
+  div#service_heading p{
+    left: 50%;
+    top: 50%;
+    text-align: center;
+  }
+
+  div.services{
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  div.service_item{
+    margin: 0;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 95%;
+    height: 65vh;
+    left: 50%;
+    transform: translate( -50%, 0);
+  }
+
+  div.service_img{
+    top: 25vh;
+    height: 35vh;
+    width: 80%;
+  }
+
+  div.service_content{
+    top: 13vh;
+  }
+
+  div.stories{
+    width: 95%;
+  }
+
+}
+
+/*RESPONSIVE*/
