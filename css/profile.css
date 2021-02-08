@@ -1,7 +1,7 @@
 /* Root */
 :root {
   --fg-1-100: #EC5929;
-	--bg-1-100: #00D4B6;
+  --bg-1-100: rgba(36, 36, 36, 1);
   --pbg:rgba(36, 36, 36, 0.411);
   --fc: #EC5929;
 }
@@ -24,7 +24,7 @@ div#loader-container {
   transform: translate(-50%, -50%);
   height: 100vh;
   width: 100%;
-  background-color: var(--bg-1-100);
+  background-color: rgba(36, 36, 36, 1);
   z-index: +100;
   opacity: 100%;
 }
@@ -64,7 +64,7 @@ div#loader-container div.loader-item {
   box-sizing: border-box;
   border-radius: 50%;
   background-color: var(--fg-1-100);
-  box-shadow: 0 0 3vh 1vh white;
+  box-shadow: 0 0 1vh 0.5vh white;
 }
 
 div#loader-container div#loader-item-1 {
@@ -166,17 +166,17 @@ div#navbar-toggle-on {
 }
 
 div#navbar-container {
-	position: absolute;
+  position: fixed;
 	top: 50%;
 	left: 0;
 	transform: translate(-100%, -50%);
 	height: 100%;
   width: 30%;
   box-sizing: border-box;
-	background-color: rgba(3, 3, 2, 0.589);
+	background-color: rgba(36, 36, 36, 0.9);
 	z-index: +3;
 	box-shadow: 0 0 0.8vh 0.2vh rgb(0, 0, 0);
-	border-radius: 0 1vh 1vh 0;
+	border-right: 0.2vh solid var(--fg-1-100);
 }
 
 @media screen and (max-width: 1000px) {
@@ -184,7 +184,6 @@ div#navbar-container {
 		width: 100%;
 		transform: translate(-100%, -50%);
 		border-radius: 0;
-		background-color: rgba(0, 214, 186, 0.9);
 	}
 }
 
@@ -286,7 +285,18 @@ div#profile-bg-img div#bg-img img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  div#profile-bg-img div#bg-img img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  div#profile-bg-img div#bg-img img {
+    height: 100%;
+  }
 }
 
 div#travelog-logo {
@@ -294,14 +304,22 @@ div#travelog-logo {
   height: 8vh;
   width: 20%;
   left: 50%;
+  top: 2vh;
   transform: translate(-50%, 0);
   overflow: hidden;
 }
 
-div#travelog-logo img {
-  height: 100%;
+@media screen and (max-width: 1200px) {
+  div#travelog-logo img {
+    width: 100%;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  div#travelog-logo img {
+    height: 100%;
+  }
+}
 div#profile-items-container {
   position: absolute;
   height: auto;
@@ -357,13 +375,21 @@ div#profile-info {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#profile-info {
+    border-top: 0.1vh solid rgba(255, 255, 255, 0.5);
+    border-left: 0.1vh solid rgba(255, 255, 255, 0.5)
+  }
+}
+
 div#profile-info div#profile-container {
   position: absolute;
   left: 0;
   padding: 1vh;
   font-size: 3.3vh;
   color: var(--fc);
-  background-color: #fff;
+  border: 0.22vh solid white;
+  box-sizing: border-box;
   margin-top: 1vh;
   margin-left: 1vh;
   border-radius: 0.5vh 0.5vh ;
@@ -373,9 +399,16 @@ div#profile-info div#profile-name {
   position: absolute;
   text-transform: uppercase;
   width: 25vh;
-  left: 7%;
+  left: 5.5%;
   bottom: 1vh;
   text-align: center;
+  font-size: 2.5vh;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+hr {
+  height: 0.1vh;
+  border: 0.2vh solid grey;
 }
 
 span#profile-uid {
@@ -385,15 +418,103 @@ span#profile-uid {
 div#profile-info div#user-info {
   position: absolute;
   right: 4%;
-  bottom: 11%;
   width: 60%;
   height: 60%;
+  top: 60%;
+  transform: translate(0, -50%);
+}
+
+@media screen and (max-width: 1200px) {
+  div#profile-info div#user-info {
+    width: 50%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
 }
 
 div#profile-info div#user-info span {
   font-size: 6vh;
-  color: rgb(77, 76, 76);
+  color: rgb(134, 134, 134);
 }
+
+div#xp-bar {
+  position: relative;
+  top: 1.25vh;
+  width: auto;
+  height: 32.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+div#xp-bar-total {
+  position: relative;
+  width: 95%;
+  height: 2.5vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 0.75vh;
+  overflow: hidden;
+  background-color: rgba(90, 90, 90, 0.7);
+}
+
+div#xp-bar-total div#xp-bar-count {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: calc((4123/5000)*100%);
+  background-color: rgba(21, 191, 177, 0.5);
+  height: 100%;
+}
+
+div#xp-bar div#xp-bar-num {
+  position: relative;
+  text-align: right;
+  font-size: 2.63vh;
+}
+
+@media screen and (max-width: 1200px) {
+  div#xp-bar div#xp-bar-num {
+    text-align: center;
+    font-size: 2.25vw;
+  }
+}
+
+div#user-info-short-stats {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 30%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* background-color: green; */
+  text-align: center;
+  line-height: 7.5vh;
+  font-size: 2.75vh;
+  color: rgba(255, 255, 255, 0.733);
+  /* background-color: red; */
+  top: 2vh;
+}
+
+div#user-info-short-stats i.fa-trophy {
+  color: #cc7722;
+}
+
+div#user-info-short-stats i.fa-user-friends {
+  color: #4267B2;
+}
+
+div#user-info-short-stats i.fa-heart {
+  color: #F24B6A;
+}
+
+div#user-info-short-stats i.fa-coins {
+  color: #ffae00;
+}
+
 
 div#profile-info hr {
   background-color: var(--fc);
@@ -403,8 +524,8 @@ div#profile-info div#profile-pic {
   position: absolute;
   height: 25vh;
   width: 25vh;
-  top: 25%;
-  left: 7%;
+  top: 22%;
+  left: 5.5%;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -431,13 +552,20 @@ div#stats {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#stats {
+    border-top: 0.1vh solid rgba(255, 255, 255, 0.5);
+    border-right: 0.1vh solid rgba(255, 255, 255, 0.5)
+  }
+}
+
 div#stats div#stats-container-heading {
   position: absolute;
   left: 0;
   padding: 1vh;
   font-size: 3vh;
-  background-color: #fff;
   color: var(--fc);
+  border: 0.22vh solid white;
   margin-top: 1vh;
   margin-left: 1vh;
   border-radius: 0.5vh 0.5vh;
@@ -445,13 +573,12 @@ div#stats div#stats-container-heading {
 
 div#stats div#stats-container-items {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   color: white;
-  line-height: 4vh;
+  line-height: 5vh;
   transform: translate(-75%, -50%);
   font-size: 2vh;
-
 }
 
 div#history {
@@ -468,12 +595,19 @@ div#history {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#history {
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.5);
+    border-left: 0.1vh solid rgba(255, 255, 255, 0.5)
+  }
+}
+
 div#history div#history-container-heading {
   position: absolute;
   left: 0;
   top: 0;
-  background-color: rgb(255, 255, 255);
   color: var(--fc);
+  border: 0.22vh solid white;
   margin: 1vh 1vh;
   font-size: 3vh;
   box-sizing: border-box;
@@ -495,13 +629,51 @@ div#medals {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  div#medals {
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.8);
+    border-right: 0.1vh solid rgba(255, 255, 255, 0.8)
+  }
+}
+
 div#medals div#medals-container-heading {
   position: absolute;
-  background-color: rgb(255, 255, 255);
   color: var(--fc);
+  border: 0.22vh solid white;
   margin: 1vh 1vh;
   font-size: 3vh;
   padding: 0.8vh 1vh;
   border-radius: 0.5vh 0.5vh;
+}
+
+div#medals div#medals-medals {
+  position: relative;
+  width: 95%;
+  height: 50%;
+  top: 40%;
+  left: 2.5%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+}
+
+div#medals div#medals-medals::-webkit-scrollbar {
+  width: 0;
+}
+
+div#medals-medals img {
+  position: relative;
+  top: 25%;
+  left: 2%;
+  height: 7.5vh;
+  width: 7.5vh;
+}
+
+div#medals-count {
+  position: absolute;
+  top: 32.75%;
+  left: 5%;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 2.5vh;
 }
 /* /Profile */
