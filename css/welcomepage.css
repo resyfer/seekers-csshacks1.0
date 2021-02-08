@@ -260,7 +260,7 @@ div#menu-container div.menu-items:hover {
 /*PROFILE*/
 
 div.profile{
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 0;
   left: 50%;
@@ -512,3 +512,31 @@ img.story{
 
 
 /*STORIES*/
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 1300px){
+
+  div.services{
+    top: 30%;
+    left: 50%;
+    transform: translate( -50%, 0);
+    width: 80%;
+    z-index: 9;
+  }
+
+  div.stories{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%,0);
+    height: 20vh;
+    width: 90%;
+  }
+
+  div.story_heading{
+    display: none;
+  }
+}
+
+/*RESPONSIVE*/
