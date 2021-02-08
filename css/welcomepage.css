@@ -260,16 +260,17 @@ div#menu-container div.menu-items:hover {
 /*PROFILE*/
 
 div.profile{
-  display: none;
+  /*display: none;*/
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate( -50%, 0);
   border-radius: 0 0 4vh 4vh;
   height: 20vh;
-  width: 50%;
+  width: 60%;
   overflow: hidden;
-  background-color: red;
+  background-color: rgb(31, 31, 31);
+  border: 0.2vh solid #EC4D37;
   z-index: 3;
 }
 
@@ -293,7 +294,29 @@ div.stats{
 }
 
 div.stats h2{
-  float: left;
+  position: absolute;
+  top: 50%;
+  right: 2vh;
+  transform: translate( 0%, -50%);
+  width: 45%;
+  height: auto;
+  font-size: 4vh;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #EC4D37;
+}
+
+div#stats{
+  position: absolute;
+  top: 50%;
+  left: 20vh;
+  transform: translate( 0,-50%);
+  overflow: hidden;
+  height: auto;
+  width: 30%;
+  font-size: 2.5vh;
+  font-family: 'Poppins', sans-serif;
+  color: #EC4D37;
 }
 
 /*PROFILE*/
