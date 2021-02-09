@@ -309,6 +309,9 @@ div.signin:hover::before{
 	height: 100%;
 	width: auto;
 	}
+	div.stuff {
+		display: none;
+	}
 }
 
 /*RESPONSIVE PHONE*/
@@ -324,5 +327,8 @@ div.signin:hover::before{
 	p.logo_heading{
 		text-align: center;
 		font-size: 8vh;
+	}
+    div.stuff {
+		display: none;
 	}
 }
