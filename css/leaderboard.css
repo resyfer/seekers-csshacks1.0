@@ -350,7 +350,7 @@ div.rank-container-1 div.rank-1 div.r1-name{
   font-size: 4.5vh;
   left:35%;
   transform: translate(0, -50%);
-  color: rgba(0, 0, 0, 0.705);
+  color: rgba(248, 248, 248, 0.9);
 }
 
 div.rank-container-1 div.rank-1 div.chest-1{
@@ -377,6 +377,7 @@ div.rank-container-1 div.rank-1 div.position {
   width: 18vh;
   height: 12vh;
   transform: translate(0, -50%);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 div.rank-container-1 div.rank-1 div.position div.p-rank {
@@ -446,7 +447,7 @@ div.rank-container-1 div.rank-2 div.r2-name{
   font-size: 4.5vh;
   left:35%;
   transform: translate(0, -50%);
-  color: rgba(0, 0, 0, 0.705);
+  color: rgba(248, 248, 248, 0.9);
 }
 
 div.rank-container-1 div.rank-2 div.chest-1{
@@ -473,6 +474,7 @@ div.rank-container-1 div.rank-2 div.position {
   width: 18vh;
   height: 12vh;
   transform: translate(0, -50%);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 div.rank-container-1 div.rank-2 div.position div.p-rank {
@@ -542,7 +544,7 @@ div.rank-container-1 div.rank-3 div.r3-name{
   font-size: 4.5vh;
   left:35%;
   transform: translate(0, -50%);
-  color: rgba(0, 0, 0, 0.705);
+  color: rgba(248, 248, 248, 0.9);
 }
 
 div.rank-container-1 div.rank-3 div.chest-1{
@@ -569,6 +571,7 @@ div.rank-container-1 div.rank-3 div.position {
   width: 18vh;
   height: 12vh;
   transform: translate(0, -50%);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 div.rank-container-1 div.rank-3 div.position div.p-rank {
