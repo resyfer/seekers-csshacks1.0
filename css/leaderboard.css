@@ -244,13 +244,29 @@ div#menu-container div.menu-items:hover {
 }
 /* Navbar */
 
+div.background-image {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  z-index: -3;
+}
+div.background-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
 div.travelog-logo-bar {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 10vh;
-  background-color: rgba(255, 0, 0, 0.212);
+  background-color: rgba(236, 90, 41, 0.712);
 }
 
 div.travelog-logo-bar div#travelog-logo {
@@ -277,7 +293,6 @@ div.rank-container-1 {
   top: 25%;
   width: 56%;
   height: 70vh;
-  background-color: rgba(0, 255, 64, 0.322);
 }
 
 div.rank-container-1 div.rank-1 {
@@ -287,7 +302,8 @@ div.rank-container-1 div.rank-1 {
   transform: translate(-50%, 0);
   height: 30%;
   margin: 1.75vh 0vh;
-  background-color:red;
+  background-color:rgba(245, 245, 245, 0.397);
+  border-radius: 0.9vh;
 }
 
 div.rank-container-1 div.rank-2 {
@@ -297,7 +313,8 @@ div.rank-container-1 div.rank-2 {
   transform: translate(-50%, 0);
   height: 30%;
   margin: 1.75vh 0vh;
-  background-color:red;
+  background-color:rgba(245, 245, 245, 0.397);
+  border-radius: 0.9vh;
 }
 
 div.rank-container-1 div.rank-3 {
@@ -307,7 +324,9 @@ div.rank-container-1 div.rank-3 {
   transform: translate(-50%, 0);
   height: 30%;
   margin: 1.75vh 0vh;
-  background-color:red;
+  background-color:rgba(245, 245, 245, 0.397);
+  border-radius: 0.9vh;
+
 }
 
 div.rank-container-2 {
@@ -316,7 +335,6 @@ div.rank-container-2 {
   right: 3.5%;
   width: 32%;
   height: 80vh;
-  background-color: rgba(0, 255, 64, 0.322);
 }
 
 div.rank-container-2 div.rank-container-2-inner {
@@ -334,7 +352,8 @@ div.rank-container-2 div.rank-block-1 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-2 {
   position: relative;
@@ -343,7 +362,8 @@ div.rank-container-2 div.rank-block-2 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-3 {
   position: relative;
@@ -352,7 +372,8 @@ div.rank-container-2 div.rank-block-3 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-4 {
   position: relative;
@@ -361,7 +382,8 @@ div.rank-container-2 div.rank-block-4 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 
 div.rank-container-2 div.rank-block-5 {
@@ -371,7 +393,8 @@ div.rank-container-2 div.rank-block-5 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
   overflow: hidden;
 }
 div.rank-container-2 div.rank-block-6 {
@@ -381,7 +404,8 @@ div.rank-container-2 div.rank-block-6 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-7 {
   position: relative;
@@ -390,7 +414,8 @@ div.rank-container-2 div.rank-block-7 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-8 {
   position: relative;
@@ -399,7 +424,8 @@ div.rank-container-2 div.rank-block-8 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-9 {
   position: relative;
@@ -408,7 +434,8 @@ div.rank-container-2 div.rank-block-9 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-10 {
   position: relative;
@@ -417,5 +444,6 @@ div.rank-container-2 div.rank-block-10 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
