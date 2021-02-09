@@ -302,10 +302,77 @@ div.rank-container-1 div.rank-1 {
   transform: translate(-50%, 0);
   height: 30%;
   margin: 1.75vh 0vh;
-  background-color:rgba(245, 245, 245, 0.397);
+  background-color:rgb(141,215,207);
   border-radius: 0.9vh;
 }
+ 
+div.rank-container-1 div.rank-1 div.profile-r1{
+  position:absolute;
+  left:3%;
+  top:50%;
+  transform: translate(0, -50%);
+  width:12vh;
+  height:8vh;
+  background-color: red;
+} 
 
+div.rank-container-1 div.rank-1 div.profile-img {
+  position: absolute;
+  left:16%;
+  top:50%;
+  transform: translate(0, -50%);
+  width:16vh;
+  height:16vh;
+  background-color:white;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-1 div.rank-1 div.profile-img img{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16.5vh;
+}
+
+div.rank-container-1 div.rank-1 div.r1-name{
+  position: absolute;
+  top: 45%;
+  font-size: 4.5vh;
+  left:35%;
+  transform: translate(0, -50%);
+  color: ;
+
+}
+
+div.rank-container-1 div.rank-1 div.chest-1{
+  position: absolute;
+  top:50%;
+  left:60%;
+  transform: translate(0, -50%);
+  width:10vh;
+  height: 10vh;
+}
+
+div.rank-container-1 div.rank-1 div.chest-1 img {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:20vh;
+}
+
+div.rank-container-1 div.rank-1 div.position{
+  position: absolute;
+  left:80%;
+  top:50%;
+  width: 5vh;
+  height: 5vh;
+  transform: translate(0, -50%);
+  background-color: red;
+  
+}
 div.rank-container-1 div.rank-2 {
   position: relative;
   width: 98%;
@@ -326,7 +393,6 @@ div.rank-container-1 div.rank-3 {
   margin: 1.75vh 0vh;
   background-color:rgba(245, 245, 245, 0.397);
   border-radius: 0.9vh;
-
 }
 
 div.rank-container-2 {
