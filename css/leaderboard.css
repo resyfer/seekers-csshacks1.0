@@ -244,13 +244,29 @@ div#menu-container div.menu-items:hover {
 }
 /* Navbar */
 
+div.background-image {
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  z-index: -3;
+}
+div.background-image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
 div.travelog-logo-bar {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 10vh;
-  background-color: rgba(255, 0, 0, 0.212);
+  background-color: rgba(236, 90, 41, 0.712);
 }
 
 div.travelog-logo-bar div#travelog-logo {
@@ -277,7 +293,6 @@ div.rank-container-1 {
   top: 25%;
   width: 56%;
   height: 70vh;
-  background-color: rgba(0, 255, 64, 0.322);
 }
 
 div.rank-container-1 div.rank-1 {
@@ -287,9 +302,77 @@ div.rank-container-1 div.rank-1 {
   transform: translate(-50%, 0);
   height: 30%;
   margin: 1.75vh 0vh;
-  background-color:red;
+  background-color:rgb(141,215,207);
+  border-radius: 0.9vh;
+}
+ 
+div.rank-container-1 div.rank-1 div.profile-r1{
+  position:absolute;
+  left:3%;
+  top:50%;
+  transform: translate(0, -50%);
+  width:12vh;
+  height:8vh;
+  background-color: red;
+} 
+
+div.rank-container-1 div.rank-1 div.profile-img {
+  position: absolute;
+  left:16%;
+  top:50%;
+  transform: translate(0, -50%);
+  width:16vh;
+  height:16vh;
+  background-color:white;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
+div.rank-container-1 div.rank-1 div.profile-img img{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16.5vh;
+}
+
+div.rank-container-1 div.rank-1 div.r1-name{
+  position: absolute;
+  top: 45%;
+  font-size: 4.5vh;
+  left:35%;
+  transform: translate(0, -50%);
+  color: ;
+
+}
+
+div.rank-container-1 div.rank-1 div.chest-1{
+  position: absolute;
+  top:50%;
+  left:60%;
+  transform: translate(0, -50%);
+  width:10vh;
+  height: 10vh;
+}
+
+div.rank-container-1 div.rank-1 div.chest-1 img {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:20vh;
+}
+
+div.rank-container-1 div.rank-1 div.position{
+  position: absolute;
+  left:80%;
+  top:50%;
+  width: 5vh;
+  height: 5vh;
+  transform: translate(0, -50%);
+  background-color: red;
+  
+}
 div.rank-container-1 div.rank-2 {
   position: relative;
   width: 98%;
@@ -297,7 +380,8 @@ div.rank-container-1 div.rank-2 {
   transform: translate(-50%, 0);
   height: 30%;
   margin: 1.75vh 0vh;
-  background-color:red;
+  background-color:rgba(245, 245, 245, 0.397);
+  border-radius: 0.9vh;
 }
 
 div.rank-container-1 div.rank-3 {
@@ -307,7 +391,8 @@ div.rank-container-1 div.rank-3 {
   transform: translate(-50%, 0);
   height: 30%;
   margin: 1.75vh 0vh;
-  background-color:red;
+  background-color:rgba(245, 245, 245, 0.397);
+  border-radius: 0.9vh;
 }
 
 div.rank-container-2 {
@@ -316,7 +401,6 @@ div.rank-container-2 {
   right: 3.5%;
   width: 32%;
   height: 80vh;
-  background-color: rgba(0, 255, 64, 0.322);
 }
 
 div.rank-container-2 div.rank-container-2-inner {
@@ -334,7 +418,8 @@ div.rank-container-2 div.rank-block-1 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-2 {
   position: relative;
@@ -343,7 +428,8 @@ div.rank-container-2 div.rank-block-2 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-3 {
   position: relative;
@@ -352,7 +438,8 @@ div.rank-container-2 div.rank-block-3 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-4 {
   position: relative;
@@ -361,7 +448,8 @@ div.rank-container-2 div.rank-block-4 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 
 div.rank-container-2 div.rank-block-5 {
@@ -371,7 +459,8 @@ div.rank-container-2 div.rank-block-5 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
   overflow: hidden;
 }
 div.rank-container-2 div.rank-block-6 {
@@ -381,7 +470,8 @@ div.rank-container-2 div.rank-block-6 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-7 {
   position: relative;
@@ -390,7 +480,8 @@ div.rank-container-2 div.rank-block-7 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-8 {
   position: relative;
@@ -399,7 +490,8 @@ div.rank-container-2 div.rank-block-8 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-9 {
   position: relative;
@@ -408,7 +500,8 @@ div.rank-container-2 div.rank-block-9 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
 div.rank-container-2 div.rank-block-10 {
   position: relative;
@@ -417,5 +510,6 @@ div.rank-container-2 div.rank-block-10 {
   height: 18vh;
   width: 98%;
   margin: 1vh 0vh;
-  background-color: red;
+  background-color: rgba(156, 156, 156, 0.74);
+  border-radius: 0.7vh;
 }
