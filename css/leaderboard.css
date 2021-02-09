@@ -243,3 +243,179 @@ div#menu-container div.menu-items:hover {
   box-shadow: 0 0 1vh 0.1vh var(--fg-1-100);
 }
 /* Navbar */
+
+div.travelog-logo-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(255, 0, 0, 0.212);
+}
+
+div.travelog-logo-bar div#travelog-logo {
+  position: absolute;
+  height: 10vh;
+  width: 20vh;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+div.travelog-logo-bar div#travelog-logo img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 10vh;
+  width: auto;
+}
+
+div.rank-container-1 {
+  position: absolute;
+  left: 5%;
+  top: 25%;
+  width: 56%;
+  height: 70vh;
+  background-color: rgba(0, 255, 64, 0.322);
+}
+
+div.rank-container-1 div.rank-1 {
+  position: relative;
+  width: 98%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 30%;
+  margin: 1.75vh 0vh;
+  background-color:red;
+}
+
+div.rank-container-1 div.rank-2 {
+  position: relative;
+  width: 98%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 30%;
+  margin: 1.75vh 0vh;
+  background-color:red;
+}
+
+div.rank-container-1 div.rank-3 {
+  position: relative;
+  width: 98%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 30%;
+  margin: 1.75vh 0vh;
+  background-color:red;
+}
+
+div.rank-container-2 {
+  position: absolute;
+  top: 18%;
+  right: 3.5%;
+  width: 32%;
+  height: 80vh;
+  background-color: rgba(0, 255, 64, 0.322);
+}
+
+div.rank-container-2 div.rank-container-2-inner {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+div.rank-container-2 div.rank-block-1 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+div.rank-container-2 div.rank-block-2 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+div.rank-container-2 div.rank-block-3 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+div.rank-container-2 div.rank-block-4 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+
+div.rank-container-2 div.rank-block-5 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+  overflow: hidden;
+}
+div.rank-container-2 div.rank-block-6 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+div.rank-container-2 div.rank-block-7 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+div.rank-container-2 div.rank-block-8 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+div.rank-container-2 div.rank-block-9 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
+div.rank-container-2 div.rank-block-10 {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 18vh;
+  width: 98%;
+  margin: 1vh 0vh;
+  background-color: red;
+}
