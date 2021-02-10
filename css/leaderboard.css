@@ -1090,3 +1090,22 @@ div.rank-container-2 div.rank-block-10 div.block-pos{
   transform: translate(0, -50%);
   font-size: 4vh;
 }
+
+@media screen and (max-width: 1200px) {
+  div.rank-container-1 {
+    position: relative;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+  }
+
+  div.rank-container-2 {
+     position: relative;
+     top: 20vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 80%;
+    overflow-y: ;
+  }
+}
