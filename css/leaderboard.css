@@ -621,7 +621,7 @@ div.rank-container-2 div.rank-block-1 {
   border-radius: 0.7vh;
 }
 
-div.rank-container-2 div.rank-block-1 div.block-1-img{
+div.rank-container-2 div.rank-block-1 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
@@ -633,7 +633,7 @@ div.rank-container-2 div.rank-block-1 div.block-1-img{
   overflow: hidden;
 }
 
-div.rank-container-2 div.rank-block-1 div.block-1-img img{
+div.rank-container-2 div.rank-block-1 div.block-img img{
   position:absolute;
   top:50%;
   left:50%;
@@ -641,7 +641,7 @@ div.rank-container-2 div.rank-block-1 div.block-1-img img{
   height: 100%;
 }
 
-div.rank-container-2 div.rank-block-1 div.block-1-name{
+div.rank-container-2 div.rank-block-1 div.block-name{
   position: absolute;
   top:50%;
   left:28%;
@@ -650,7 +650,7 @@ div.rank-container-2 div.rank-block-1 div.block-1-name{
   color: #000000e0;
 }
 
-div.rank-container-2 div.rank-block-1 div.block-1-pos{
+div.rank-container-2 div.rank-block-1 div.block-pos{
   position:absolute;
   top: 50%;
   right: 10%;
@@ -669,6 +669,43 @@ div.rank-container-2 div.rank-block-2 {
   border-radius: 0.7vh;
 }
 
+div.rank-container-2 div.rank-block-2 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-2 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-2 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-2 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+}
+
 div.rank-container-2 div.rank-block-3 {
   position: relative;
   left: 50%;
@@ -680,6 +717,43 @@ div.rank-container-2 div.rank-block-3 {
   border-radius: 0.7vh;
 }
 
+div.rank-container-2 div.rank-block-3 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-3 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-3 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-3 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+}
+
 div.rank-container-2 div.rank-block-4 {
   position: relative;
   left: 50%;
@@ -689,6 +763,43 @@ div.rank-container-2 div.rank-block-4 {
   margin: 1vh 0vh;
   background-color: rgba(156, 156, 156, 0.74);
   border-radius: 0.7vh;
+}
+
+div.rank-container-2 div.rank-block-4 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-4 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-4 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-4 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
 }
 
 div.rank-container-2 div.rank-block-5 {
@@ -703,6 +814,43 @@ div.rank-container-2 div.rank-block-5 {
   overflow: hidden;
 }
 
+div.rank-container-2 div.rank-block-5 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-5 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-5 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-5 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+}
+
 div.rank-container-2 div.rank-block-6 {
   position: relative;
   left: 50%;
@@ -712,6 +860,43 @@ div.rank-container-2 div.rank-block-6 {
   margin: 1vh 0vh;
   background-color: rgba(156, 156, 156, 0.74);
   border-radius: 0.7vh;
+}
+
+div.rank-container-2 div.rank-block-6 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-6 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-6 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-6 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
 }
 
 div.rank-container-2 div.rank-block-7 {
@@ -725,6 +910,43 @@ div.rank-container-2 div.rank-block-7 {
   border-radius: 0.7vh;
 }
 
+div.rank-container-2 div.rank-block-7 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-7 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-7 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-7 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+}
+
 div.rank-container-2 div.rank-block-8 {
   position: relative;
   left: 50%;
@@ -734,6 +956,43 @@ div.rank-container-2 div.rank-block-8 {
   margin: 1vh 0vh;
   background-color: rgba(156, 156, 156, 0.74);
   border-radius: 0.7vh;
+}
+
+div.rank-container-2 div.rank-block-8 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-8 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-8 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-8 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
 }
 
 div.rank-container-2 div.rank-block-9 {
@@ -747,6 +1006,43 @@ div.rank-container-2 div.rank-block-9 {
   border-radius: 0.7vh;
 }
 
+div.rank-container-2 div.rank-block-9 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-9 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-9 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-9 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+}
+
 div.rank-container-2 div.rank-block-10 {
   position: relative;
   left: 50%;
@@ -756,4 +1052,41 @@ div.rank-container-2 div.rank-block-10 {
   margin: 1vh 0vh;
   background-color: rgba(156, 156, 156, 0.74);
   border-radius: 0.7vh;
+}
+
+div.rank-container-2 div.rank-block-10 div.block-img{
+  position:absolute;
+  height:10vh;
+  width:10vh;
+  background-color: red;
+  top:50%;
+  left:5%;
+  transform: translate(0, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+div.rank-container-2 div.rank-block-10 div.block-img img{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height: 100%;
+}
+
+div.rank-container-2 div.rank-block-10 div.block-name{
+  position: absolute;
+  top:50%;
+  left:28%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
+  color: #000000e0;
+}
+
+div.rank-container-2 div.rank-block-10 div.block-pos{
+  position:absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  font-size: 4vh;
 }
