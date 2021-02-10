@@ -285,6 +285,7 @@ div.profile{
   background-color: rgb(31, 31, 31);
   border: 0.2vh solid #EC4D37;
   z-index: 3;
+  transition: 0.2s;
 }
 
 div.profile_pic{
@@ -317,6 +318,7 @@ div.stats h2{
   text-align: center;
   font-family: 'Poppins', sans-serif;
   color: #EC4D37;
+  transition: 0.2s;
 }
 
 div#stats{
@@ -347,6 +349,7 @@ div.services{
   overflow: auto;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  transition: 0.2s;
 }
 
 div.services::-webkit-scrollbar{
@@ -376,6 +379,7 @@ div#service_heading div{
   transform: translate( -50%, -50%) ;
   overflow: hidden;
   text-align: center;
+  transition: 0.2s;
 }
 
 div#service_heading div img{
@@ -399,6 +403,7 @@ div.service_item{
   margin: 2vh;
   margin-top: 4vh;
   margin-bottom: 4vh;
+  transition: 0.2s;
 }
 
 /*service item box*/
@@ -445,6 +450,7 @@ div.service_content p{
   overflow: hidden;
   height: 8vh;
   font-size: 3vh;
+  transition: 0.2s;
 }
 
 i.fas{
@@ -509,6 +515,7 @@ div.stories{
   border-radius: 4vh 4vh 4vh 4vh;
   box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5);
   overflow: auto;
+  transition: 0.2s;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -561,7 +568,7 @@ img.story{
     left: 50%;
     transform: translate( -50%, 0);
     width: 80%;
-    height: 67vh;
+    height: 69vh;
   }
 
   div.stories{
@@ -588,6 +595,8 @@ img.story{
     height: 11vh;
     width: 90%;
     overflow: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 
   div.story_container::-webkit-scrollbar{
@@ -611,7 +620,7 @@ img.story{
 @media screen and (max-width: 950px){
 
   div.profile{
-    width: 99%;
+    width: 98%;
     border-left: 0;
     border-right: 0;
     border-radius: 0;
@@ -630,7 +639,7 @@ img.story{
   }
 
   div.services{
-    width: 100%;
+    width: 98%;
     left: 50%;
     transform: translate(-50%, 0%);
   }
@@ -640,7 +649,7 @@ img.story{
     margin-top: 2vh;
     margin-bottom: 2vh;
     width: 95%;
-    height: 69vh;
+    height: 66vh;
     left: 50%;
     transform: translate( -50%, 0);
   }
