@@ -747,9 +747,11 @@ div#medals div#medals-medals::-webkit-scrollbar {
 div#medals-medals img {
   position: relative;
   top: 25%;
-  left: 2%;
+  left: 10%;
+  transform: translate(-50%, 0);
   height: 7.5vh;
   width: 7.5vh;
+  margin-right: 1.5vh;
 }
 
 div#medals-count {

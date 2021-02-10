@@ -456,6 +456,10 @@ div.service_content p{
 i.fas{
   color: #F24B6A;
 }
+i.fa-comment {
+  color: rgb(133, 243, 133);
+  font-size: 3.25vh;
+}
 
 /*service para*/
 

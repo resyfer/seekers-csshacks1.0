@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travelog - Travelling Reimagined</title>
+  <title>Plans - Travelog</title>
 
   <!--Google Fonts CDN Link-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,26 +19,21 @@
     -->
 
   <!--CSS-->
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/plans.css">
 
   <!--Favicon-->
   <link rel="shortcut icon" href="./img/favicon.png">
 </head>
 <body>
-  <!--
-    Logo Link - https://i.imgur.com/3l1xTVm.png
-  -->
-  <!--
-
-    Google Logo Fontawesome HTML code (use like text)
-
-    <i class="fab fa-google"></i>
-    
-  -->
+  <div id="profile-bg-img">
+    <div id="bg-img-tint"></div>
+    <div id="bg-img"><img src="img/profile_bg.jpg" loading="lazy" alt="Unable to load"></div>
+  </div>
+  
   <!--Loader-->
   <div id="loader-container">
     <div id="loader-logo">
-      <img src="./img/logo.png" alt="Browser not supported">
+      <img src="./img/logo.png" loading="lazy" alt="Browser not supported">
     </div>
     <div class="loader-item" id="loader-item-1"></div>
     <div class="loader-item" id="loader-item-2"></div>
@@ -48,35 +43,36 @@
   </div>
   <!--/Loader-->
 
-  <!--BACKGROUND VIDEO-->
-  <div class="background_vid">
-    <video class="background" src="vid\indexbgslideshow.mp4"  autoplay muted loop></video>
+  <!--Navbar-->
+    <!--Toggle On-->
+  <div id="navbar-toggle-on" onclick="openNav()">
+    <i class="fas fa-bars"></i>
   </div>
-  <div class="tint"></div>
-  <!--BACKGROUND VIDEO-->
-
-  <!--logo-->
-  <span class="logo_heading">
-    <p class="logo_heading">TRAVELOG</p>
-  </span>
-  <span class="logo">
-    <img class="logo" src="img/logotxt.png">
-  </span>
-  <span id="logo">
-    <img id="logo" src="img/logo.png" alt="this is an image">
-  </span>
-  <!--logo-->
-  <!--Content of ladnding page-->
-  <div class="stuff">
-    "I took the road less travelled by;<br><br>and that made all the difference"
-    <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;~<i>Robert Frost</i>
+    <!--/Toggle On-->
+    
+  <div id="navbar-container">
+    <!--Toggle Off-->
+    <div id="navbar-toggle-off" onclick="closeNav()">
+      <i class="fas fa-times"></i>
+    </div>
+    <!--/Toggle Off-->
+    
+    <div id="menu-container">
+      <a href="welcomepage.html"><div class="menu-items">Home</div></a>
+      <a href="map.html"><div class="menu-items">Map</div></a>
+      <a href="profile.html"><div class="menu-items">Profile</div></a>
+      <a href="#"><div class="menu-items active">Plans</div></a>
+      <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
+      <a href="index.html"><div class="menu-items">Sign Out</div></a>
+    </div>
   </div>
+  <!--/Navbar-->
   
-  <!--SIGN IN BUTTON-->
-  <a class="signin" href="welcomepage.html">
-    <div class="signin"><i class="fab fa-google"></i>  Sign In</div>
-  </a>
-  <!--SIGN IN BUTTON-->
+  <!--Travelog Logo-->
+  <div id="travelog-logo">
+    <img src="img/logotxt.png" loading="lazy" alt="Browser not supported">
+  </div>
+  <!--/Travelog Logo-->
 
 </body>
   <!--Fontawesome CDN-->
