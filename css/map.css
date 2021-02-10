@@ -2,6 +2,7 @@
 :root {
   --fg-1-100: #EC5929;
   --bg-1-100: rgba(36, 36, 36, 1);
+  --pbg:rgba(36, 36, 36, 0.411);
 }
 /* /Root */
 
@@ -203,7 +204,7 @@ div#navbar-container {
   height: 75%;
   width: 0;
   transform: translate(0, -50%);
-	background-color: rgba(32, 32, 32, 0.9);
+	background-color: rgba(36, 36, 36, 0.95);
   z-index: +3;
   display: none;
   box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
@@ -219,7 +220,7 @@ div#navbar-container {
     width: 0;
     transform: translate(0, -50%);
     border-radius: 0;
-    background-color: rgba(3, 3, 2, 0.9 );
+    background-color: rgba(36, 36, 36, 0.95);
   }
 }
 
@@ -309,6 +310,7 @@ div#navbar-container div.menu-items {
   left: 50%;
   transform: translate(-50%, 0);
   text-align: center;
+  color: var(--fg-1-100);
 }
 
 div#navbar-container div.active {
@@ -317,7 +319,7 @@ div#navbar-container div.active {
 }
 
 div#menu-container div.menu-items:hover {
-  background-color: rgb(255, 112, 17);
+  background-color: var(--fg-1-100);
   transition: 0.2s ease;
   box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
   color: rgba(255, 255, 255, 0.815);
@@ -340,12 +342,13 @@ div#profile-info {
   box-sizing: border-box;
   border: 0.25vh solid var(--fg-1-100);
   border-radius: 1.5vh;
+  box-shadow: 0 0 0.5vh 0.2vh rgb(125, 125, 125);
 }
 
 @media screen and (min-width: 1000px) {
   
   div#profile-info:hover {
-    box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
+    box-shadow: 0 0 1vh 0.5vh rgb(125, 125, 125);
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
     width: 57.5vh;
@@ -366,19 +369,17 @@ div#profile-info div#profile-pic {
   transform: translate(-50%, -50%);
   height: 15vh;
   width: 15vh;
-  box-sizing: border-box;
-  border: 0.25vh solid var(--fg-1-100);
   border-radius: 50%;
-  overflow: hidden;
+  box-sizing: border-box;
 }
 
 div#profile-info div#profile-pic img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 49.75%;
+  left: 49.75%;
   height: 100%;
-  z-index: -1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -444,7 +445,7 @@ div#profile-info div#profile-info-details div#progress-bar-total {
   background-color: rgb(175, 175, 175);
 }
 
-div#profile-info div#profile-info-details div#progress-bar-total div#progress-bar-done {
+div#progress-bar-total div#progress-bar-done {
   position: absolute;
   top: 50%;
   left: 0;
@@ -454,7 +455,7 @@ div#profile-info div#profile-info-details div#progress-bar-total div#progress-ba
   background-color: var(--fg-1-100);
 }
 
-div#profile-info div#profile-info-details div#xp-count {
+div#profile-info-details div#xp-count {
   position: relative;
   text-align: right;
   padding-right: 1vh;
@@ -491,10 +492,10 @@ div#info-container {
   height: 95%;
   width: 35%;
   box-sizing: border-box;
-  border: 0.3vh solid var(--fg-1-100);
+  border: 0.2vh solid var(--fg-1-100);
   border-radius: 1.5vh;
   background-color: rgba(36, 36, 36, 0.9);
-  box-shadow: 0 0 0.5vh 0.2vh rgb(125, 125, 125);
+  box-shadow: 0 0 1vh 0.5vh rgb(125, 125, 125);
 }
 
 @media screen and (max-width: 1000px) {
@@ -506,7 +507,7 @@ div#info-container {
     width: 100%;
     border-radius: 0.75vh 0.75vh 0 0;
     border: 0 solid var(--fg-1-100);
-    border-top: 0.3vh solid var(--fg-1-100);
+    border-top: 0.2vh solid var(--fg-1-100);
     overflow-y: scroll;
   }
 }
@@ -519,7 +520,6 @@ div#info-container div#info-title {
   height: 7.8%;
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid var(--fg-1-100);
   box-sizing: border-box;
   padding: 2vh;
   font-size: 3vh;
@@ -578,7 +578,7 @@ div#info-container div#info-pic {
   transform: translate(-50%, 0);
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid var(--fg-1-100);
+  border: 0.1vh solid var(--fg-1-100);
   overflow: hidden;
 }
 
@@ -610,11 +610,14 @@ div#info-container div#info-details {
   transform: translate(-50%, 0);
   border-radius: 1.5vh;
   background-color: rgba(255, 255, 255, 0.9);
-  border: 0.3vh solid var(--fg-1-100);
   box-sizing: border-box;
   padding: 2vh;
   text-align: justify;
   font-size: 2.3vh;
+}
+
+div#info-container div#info-details::-webkit-scrollbar {
+  width: 0;
 }
 
 @media screen and (min-width: 1000px) {
