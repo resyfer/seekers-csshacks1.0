@@ -454,7 +454,7 @@ div.service_content p{
 }
 
 i.fas{
-  color: #F24B6A;
+  color: var(--fg-1-100);
 }
 i.fa-comment {
   color: rgb(133, 243, 133);
