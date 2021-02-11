@@ -384,6 +384,7 @@ div.pen::before{
   width: 0;
   transition: 0.2s;
   z-index: -1;
+  border-radius: 50%;
 }
 
 div.pen:hover::before{
