@@ -268,7 +268,7 @@ div.travelog-logo-bar {
   top: 0;
   width: 100%;
   height: 10vh;
-  background-color: rgba(236, 90, 41, 0.712);
+  background-color: rgba(160, 40, 24, 0);
 }
 
 div.travelog-logo-bar div#travelog-logo {
@@ -287,6 +287,19 @@ div.travelog-logo-bar div#travelog-logo img {
   transform: translate(-50%, -50%);
   height: 10vh;
   width: auto;
+}
+
+div.my-rank
+{
+  position: absolute;
+  top:-10.5vh;
+  left:1.5vh;
+  font-size: 5vh;
+  color: white;
+  border: 0.3vw solid var(--fg-1-100);
+  border-radius: 5% 5% 5% 5% ;
+  padding:2vh 6vh;
+  
 }
 
 div.rank-container-1 {
@@ -624,7 +637,6 @@ div.rank-container-2 div.rank-block-1 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -672,7 +684,6 @@ div.rank-container-2 div.rank-block-2 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -720,7 +731,6 @@ div.rank-container-2 div.rank-block-3 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -768,7 +778,6 @@ div.rank-container-2 div.rank-block-4 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -817,7 +826,6 @@ div.rank-container-2 div.rank-block-5 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -865,7 +873,6 @@ div.rank-container-2 div.rank-block-6 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -913,7 +920,6 @@ div.rank-container-2 div.rank-block-7 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -961,7 +967,6 @@ div.rank-container-2 div.rank-block-8 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -1009,7 +1014,6 @@ div.rank-container-2 div.rank-block-9 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -1057,7 +1061,6 @@ div.rank-container-2 div.rank-block-10 div.block-img{
   position:absolute;
   height:10vh;
   width:10vh;
-  background-color: red;
   top:50%;
   left:5%;
   transform: translate(0, -50%);
@@ -1099,6 +1102,9 @@ div.rank-container-2 div.rank-block-10 div.block-pos{
     width: 80%;
   }
 
+  div.my-rank{
+    top:-11.5vh;
+  }
   div.rank-container-2 {
      position: relative;
      top: 20vh;
