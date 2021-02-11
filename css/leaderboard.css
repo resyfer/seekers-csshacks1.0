@@ -246,6 +246,7 @@ div#menu-container div.menu-items:hover {
 
 div.background-image {
   position: fixed;
+  top: 0;
   overflow: hidden;
   height: 100vh;
   width: 100%;
@@ -308,7 +309,7 @@ div.rank-container-1 div.rank-1 {
 }
  
 div.rank-container-1 div.rank-1 div.profile-r1{
-  position:absolute;
+  position:relative;
   left:3%;
   top:50%;
   transform: translate(0, -50%);
@@ -321,16 +322,16 @@ div.rank-container-1 div.rank-1 div.profile-r1 img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 12vh;
+  width: 6vw;
 }
 
 div.rank-container-1 div.rank-1 div.profile-img {
-  position: absolute;
-  left:16%;
-  top:50%;
+  position: relative;
+  left:16.5%;
+  top:14%;
   transform: translate(0, -50%);
-  width:16vh;
-  height:16vh;
+  width:8.8vw;
+  height:8.8vw;
   background-color:white;
   border-radius: 50%;
   overflow: hidden;
@@ -341,7 +342,7 @@ div.rank-container-1 div.rank-1 div.profile-img img{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16.5vh;
+  width: 9vw;
 }
 
 div.rank-container-1 div.rank-1 div.r1-name{
@@ -367,7 +368,7 @@ div.rank-container-1 div.rank-1 div.chest-1 img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:20vh;
+  width:10vw;
 }
 
 div.rank-container-1 div.rank-1 div.position {
@@ -383,14 +384,14 @@ div.rank-container-1 div.rank-1 div.position {
 div.rank-container-1 div.rank-1 div.position div.p-rank {
   position: relative;
   text-align: right;
-  font-size: 9vh;
+  font-size: 5vw;
   top: 5%;
 }
 
 div.rank-container-1 div.rank-1 div.position p {
   position: relative;
   text-align: right;
-  font-size: 2.7vh;
+  font-size: 1.3vw;
   top: 10%;
 }
 
@@ -406,7 +407,7 @@ div.rank-container-1 div.rank-2 {
 }
 
 div.rank-container-1 div.rank-2 div.profile-r2{
-  position:absolute;
+  position:relative;
   left:3%;
   top:50%;
   transform: translate(0, -50%);
@@ -419,16 +420,16 @@ div.rank-container-1 div.rank-2 div.profile-r2 img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 12vh;
+  width: 6vw;
 }
 
 div.rank-container-1 div.rank-2 div.profile-img {
-  position: absolute;
-  left:16%;
-  top:50%;
+  position: relative;
+  left:16.5%;
+  top:14%;
   transform: translate(0, -50%);
-  width:16vh;
-  height:16vh;
+  width:8.8vw;
+  height:8.8vw;
   background-color:white;
   border-radius: 50%;
   overflow: hidden;
@@ -439,7 +440,7 @@ div.rank-container-1 div.rank-2 div.profile-img img{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16.5vh;
+  width: 9vw;
 }
 
 div.rank-container-1 div.rank-2 div.r2-name{
@@ -465,7 +466,7 @@ div.rank-container-1 div.rank-2 div.chest-1 img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:20vh;
+  width:10vw;
 }
 
 div.rank-container-1 div.rank-2 div.position {
@@ -481,14 +482,14 @@ div.rank-container-1 div.rank-2 div.position {
 div.rank-container-1 div.rank-2 div.position div.p-rank {
   position: relative;
   text-align: right;
-  font-size: 9vh;
+  font-size: 5vw;
   top: 5%;
 }
 
 div.rank-container-1 div.rank-2 div.position p {
   position: relative;
   text-align: right;
-  font-size: 2.7vh;
+  font-size: 1.3vw;
   top: 10%;
 }
 
@@ -504,7 +505,7 @@ div.rank-container-1 div.rank-3 {
 }
 
 div.rank-container-1 div.rank-3 div.profile-r3{
-  position:absolute;
+  position:relative;
   left:3%;
   top:50%;
   transform: translate(0, -50%);
@@ -517,16 +518,16 @@ div.rank-container-1 div.rank-3 div.profile-r3 img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 12vh;
+  width: 6vw;
 }
 
 div.rank-container-1 div.rank-3 div.profile-img {
-  position: absolute;
-  left:16%;
-  top:50%;
+  position: relative;
+  left:16.5%;
+  top:14%;
   transform: translate(0, -50%);
-  width:16vh;
-  height:16vh;
+  width:8.8vw;
+  height:8.8vw;
   background-color:white;
   border-radius: 50%;
   overflow: hidden;
@@ -537,7 +538,7 @@ div.rank-container-1 div.rank-3 div.profile-img img{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16.5vh;
+  width: 9vw;
 }
 
 div.rank-container-1 div.rank-3 div.r3-name{
@@ -563,7 +564,7 @@ div.rank-container-1 div.rank-3 div.chest-1 img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:20vh;
+  width:10vw;
 }
 
 div.rank-container-1 div.rank-3 div.position {
@@ -579,14 +580,14 @@ div.rank-container-1 div.rank-3 div.position {
 div.rank-container-1 div.rank-3 div.position div.p-rank {
   position: relative;
   text-align: right;
-  font-size: 9vh;
+  font-size: 5vw;
   top: 5%;
 }
 
 div.rank-container-1 div.rank-3 div.position p {
   position: relative;
   text-align: right;
-  font-size: 2.7vh;
+  font-size: 1.3vw;
   top: 10%;
 }
 
@@ -1106,6 +1107,6 @@ div.rank-container-2 div.rank-block-10 div.block-pos{
     left: 50%;
     transform: translate(-50%, 0);
     width: 80%;
-    overflow-y: ;
+    overflow-y: hidden;
   }
 }
