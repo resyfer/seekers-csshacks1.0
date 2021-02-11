@@ -24,11 +24,11 @@
   <!--Favicon-->
   <link rel="shortcut icon" href="./img/favicon.png">
 </head>
-<body>
+<body>  
   <!--Loader-->
   <div id="loader-container">
     <div id="loader-logo">
-      <img src="./img/logo.png" alt="Browser not supported">
+      <img src="./img/logo.png" loading="lazy" alt="Browser not supported">
     </div>
     <div class="loader-item" id="loader-item-1"></div>
     <div class="loader-item" id="loader-item-2"></div>
@@ -40,20 +40,14 @@
 
   <!--Navbar-->
     <!--Toggle On-->
-  <div class="navbar-toggle-on" id="navbar-toggle-pc-on" onclick="openMapNav()">
-    <i class="fas fa-chevron-right"></i>
-  </div>
-  <div class="navbar-toggle-on" id="navbar-toggle-mob-on" onclick="openMobMapNav()">
+  <div id="navbar-toggle-on" onclick="openNav()">
     <i class="fas fa-bars"></i>
   </div>
     <!--/Toggle On-->
     
-    <div id="navbar-container">
+  <div id="navbar-container">
     <!--Toggle Off-->
-    <div  class="navbar-toggle-off" id="navbar-toggle-pc-off" onclick="closeMapNav()">
-      <i class="fas fa-chevron-left"></i>
-    </div>
-    <div  class="navbar-toggle-off" id="navbar-toggle-mob-off" onclick="closeMobMapNav()">
+    <div id="navbar-toggle-off" onclick="closeNav()">
       <i class="fas fa-times"></i>
     </div>
     <!--/Toggle Off-->
@@ -68,21 +62,29 @@
     </div>
   </div>
   <!--/Navbar-->
+  
+  <!--Travelog Logo-->
+  <div id="travelog-logo">
+    <img src="img/logotxt.png" loading="lazy" alt="Browser not supported">
+  </div>
+  <!--/Travelog Logo-->
 
   <!--ProfileInfo-->
-  <a href="profile.html" id="profile-redirect">
-    <div id="profile-info">
-      <div id="profile-pic">
-        <img src="./img/defaultprofilepic.jpg" loading="lazy" alt="Browser not supported">
-      </div>
-      
-      <div id="profile-info-details">
-        <div id="your-name">Name : Your Name</div>
-        <div id="your-level">Level : 92</div>
-        <div id="progress-bar-total">
-          <div id="progress-bar-done"></div>
+  <a href="profile.html">
+    <div id="profile">
+      <img src="./img/default_story.jpg" alt="Browser not supported">
+      <div id="profile-info">
+        <div id="profile-info-1">
+          <span id="rank">#78</span>
+          &emsp;&emsp;&nbsp; <span id="name">Liyue Mondstadt</span><br>
+          Level: 92
         </div>
-        <div id="xp-count"> 4,123 / 5,000 XP</div>
+        <div id="xp-bar">
+          <div id="xp-bar-actual"></div>
+        </div>
+        <div id="profile-info-2">
+          <span id="xp-count">XP: 4123 / 5000</span>
+        </div>
       </div>
     </div>
   </a>
@@ -93,34 +95,6 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.560717788796!2d-73.98276788153989!3d40.74794241826807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sen!2sin!4v1612123616475!5m2!1sen!2sin" width="auto" height="auto" frameborder="0" style="border:-2;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
   <!--/Map-->
-
-  <!--Info-->
-  <div id="info-container">
-
-    <!--Info Close Button-->
-    <div id="info-close" onclick="closeInfo()">
-      <i class="fas fa-times"></i>
-    </div>
-    
-    
-    <!--Info Title-->
-    <div id="info-title">Empire State Building</div>
-    
-    <!--Info Picture-->
-    <div id="info-pic">
-      <img src="./img/mapsInfoPic.jpg" loading="lazy" alt="Browser not supported">
-    </div>
-
-    <!--Info Details-->
-    <div id="info-details">
-      
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores dolor voluptatem fugiat doloremque esse similique, quidem quo fuga labore debitis culpa nesciunt assumenda at commodi quisquam, consectetur recusandae voluptas autem, a quos modi! Soluta vero sapiente asperiores facilis accusantium laboriosam dolorem delectus expedita eligendi?
-    <br><br>
-    Enim totam non sed, architecto adipisci corrupti a rerum tempore sunt neque molestias eaque inventore expedita hic minus quaerat necessitatibus? 
-    <br><br>
-    Excepturi repellendus saepe animi eveniet aut dicta molestias neque impedit provident tempore harum, nulla asperiores natus nemo repellat temporibus amet explicabo dignissimos sint earum quidem dolores facere. Dicta vero maiores dolore molestiae omnis sed eos sunt.</div>
-  </div>
-  <!--Info-->
 
 </body>
   <!--Fontawesome CDN-->
