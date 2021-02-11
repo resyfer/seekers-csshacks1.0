@@ -3,6 +3,12 @@
   --fg-1-100: #EC5929;
   --bg-1-100: rgba(36, 36, 36, 1);
   --pbg:rgba(36, 36, 36, 0.411);
+  --fc: #EC5929;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.85);
 }
 /* /Root */
 
@@ -10,14 +16,8 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Varela', sans-serif;
-}
-/* /Everything */
-
-body{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
 }
 /* /Everything */
 
@@ -29,7 +29,7 @@ div#loader-container {
   transform: translate(-50%, -50%);
   height: 100vh;
   width: 100%;
-	background-color: rgba(36, 36, 36, 1);
+  background-color: rgba(36, 36, 36, 1);
   z-index: +100;
   opacity: 100%;
 }
@@ -157,159 +157,81 @@ div#loader-container div#loader-item-5 {
 /* /Loader */
 
 /* Navbar */
-@media screen and (min-width: 1000px) {
-  div.navbar-toggle-on {
-    position: absolute;
-    top: 55%;
-    left: 0;
-    transform: translate(0, -50%);
-    height: 10vh;
-    width: 3vh;
-    text-align: center;
-    line-height: 10.5vh;
-    background-color: var(--bg-1-100);
-    border-radius: 0 1.5vh 1.5vh 0;
-    box-sizing: border-box;
-    border: 0.3vh solid var(--fg-1-100);
-    border-left: none;
-    cursor:pointer;
-    color: var(--fg-1-100);
-    box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
-    z-index: +3;
-  }
-  
-  div.navbar-toggle-on:hover {
-    box-shadow: 0 0 1vh 0.3vh rgb(125, 125, 125);
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  div.navbar-toggle-on {
-    position: absolute;
-    top: 1vh;
-    right: 1vh;
-    height: 5vh;
-    width: 5vh;
-    text-align: center;
-    font-size: 4.4vh;
-    line-height: 5.55vh;
-    color: var(--fg-1-100);
-  }
+div#navbar-toggle-on {
+	position: absolute;
+	top: 1vh;
+	left: 1vh;
+	height: 5vh;
+	width: 5vh;
+	text-align: center;
+	font-size: 5vh;
+	line-height: 5vh;
+	z-index: +2;
+	color: var(--fg-1-100);
 }
 
 div#navbar-container {
-  position: absolute;
-  top: 57.5%;
-  left: 0;
-  height: 75%;
-  width: 0;
-  transform: translate(0, -50%);
-	background-color: rgba(36, 36, 36, 0.95);
-  z-index: +3;
-  display: none;
-  box-shadow: 0 0 1vh 0.2vh rgb(73, 73, 73);
-  border-right: 0.2vh solid var(--fg-1-100);
-  border-radius: 0 2vh 2vh 0;
+  position: fixed;
+	top: 50%;
+	left: 0;
+	transform: translate(-100%, -50%);
+	height: 100%;
+  width: 30%;
+  box-sizing: border-box;
+	background-color: rgba(36, 36, 36, 0.9);
+	z-index: +3;
+	box-shadow: 0 0 0.8vh 0.2vh rgb(0, 0, 0);
+	border-right: 0.2vh solid var(--fg-1-100);
 }
 
 @media screen and (max-width: 1000px) {
-  div#navbar-container {
-    top: 50%;
-    left: 0;
-    height: 100%;
-    width: 0;
-    transform: translate(0, -50%);
-    border-radius: 0;
-    background-color: rgba(36, 36, 36, 0.95);
-  }
+	div#navbar-container {
+		width: 100%;
+		transform: translate(-100%, -50%);
+		border-radius: 0;
+	}
 }
 
-@media screen and (min-width: 1000px) {
-  div#navbar-container div.navbar-toggle-off {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(0, -50%);
-    height: 10vh;
-    width: 3vh;
-    text-align: center;
-    line-height: 10.5vh;
-    background-color: var(--bg-1-100);
-    border-radius: 1.5vh 0 0 1.5vh;
-    box-sizing: border-box;
-    border: 0.3vh solid var(--fg-1-100);
-    border-right: none;
-    cursor: pointer;
-    color: var(--fg-1-100);
-    box-shadow: 0 0 1vh 0.1vh rgb(125, 125, 125);
-    z-index: +4;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  div.navbar-toggle-off {
-    position: absolute;
-    top: 1vh;
-    right: 1vh;
-    height: 5vh;
-    width: 5vh;
-    text-align: center;
-    font-size: 4.4vh;
-    line-height: 5.55vh;
-    color: var(--fg-1-100);
-    border-radius: 1vh 1vh 1vh 1vh;
-  }
-  div.navbar-toggle-off:hover {
-    background-color: rgba(236, 90, 41, 0.774);
-    color: var(--bg-1-100);
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  div#navbar-toggle-mob-on, div#navbar-toggle-mob-off {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  div#navbar-toggle-pc-on, div#navbar-toggle-pc-off {
-    display: none;
-  }
+div#navbar-container div#navbar-toggle-off {
+	position: absolute;
+	top: 1vh;
+	left: 1vh;
+	height: 5vh;
+	width: 5vh;
+	text-align: center;
+	font-size: 5vh;
+	line-height: 5vh;
+	z-index: +3;
+	color: var(--fg-1-100);
 }
 
 div#navbar-container div#menu-container {
-  position: absolute;
-  top: 50%;
-  left: 48%;
-  width: 85%;
-  height: auto;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	height: auto;
+  width: 90%;
+  box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
   justify-content: space-between;
-  opacity: 0;
+  font-size: 3vh;
 }
 
-div#menu-container a {
-  text-decoration: none;
-  font-size: 2.7vh;
-  padding: 0.2vh;
-  color: var(--bg-1-100);
-  text-transform: uppercase;
-}
-
-div#navbar-container div.menu-items {
+div#menu-container div.menu-items {
   position: relative;
   background-color: rgba(255, 255, 255, 0.815);
   padding: 2vh 5vh;
   box-sizing: border-box;
   border-radius: 1.5vh 1.5vh 1.5vh 1.5vh;
-  border: 0.2vh solid rgba(236, 90, 41, 0.58);
+  border: 0.25vh solid rgba(236, 90, 41, 0.58);
   width: 100%;
-  left: 50%;
+  left: 47.5%;
   transform: translate(-50%, 0);
   text-align: center;
+  text-transform: uppercase;
+  margin: 1vh;
   color: var(--fg-1-100);
 }
 
@@ -319,150 +241,132 @@ div#navbar-container div.active {
 }
 
 div#menu-container div.menu-items:hover {
-  background-color: var(--fg-1-100);
-  transition: 0.2s ease;
-  box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
-  color: rgba(255, 255, 255, 0.815);
+  background-color:var(--fg-1-100);
+  color: white;
+  transition-duration: 0.15s;
+  box-shadow: white;
+  box-shadow: 0 0 1vh 0.1vh var(--fg-1-100);
 }
-/* /Navbar */
+/* Navbar */
 
-/* ProfileInfo */
-a#profile-redirect {
-  text-decoration: none;
-  color: black;
-}
-
-div#profile-info {
+/* Logo */
+div#travelog-logo {
   position: absolute;
-  top: 1vh;
-  left: 1vh;
-  height: 17.5vh;
-  width: 17.5vh;
+  height: 8vh;
+  width: 100%;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  overflow: hidden;
   background-color: var(--bg-1-100);
-  box-sizing: border-box;
-  border: 0.25vh solid var(--fg-1-100);
-  border-radius: 1.5vh;
-  box-shadow: 0 0 0.5vh 0.2vh rgb(125, 125, 125);
+  text-align: center;
+  border-bottom: 0.2vh solid var(--fg-1-100)
 }
 
-@media screen and (min-width: 1000px) {
-  
-  div#profile-info:hover {
-    box-shadow: 0 0 1vh 0.5vh rgb(125, 125, 125);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-    width: 57.5vh;
-  }
+div#travelog-logo img {
+  height: 100%;
 }
-@media screen and (max-width: 1000px) {
-  
-  div#profile-info {
-    height: 12.5vh;
-    width: 47.5vh;
-  }
-}
-  /* Profile Pic */
-div#profile-info div#profile-pic {
+/* /Logo */
+
+/* Profile */
+div#profile {
   position: absolute;
-  top: 50%;
-  left: 8.5vh;
-  transform: translate(-50%, -50%);
   height: 15vh;
   width: 15vh;
-  border-radius: 50%;
-  box-sizing: border-box;
+  top: 9vh;
+  right: 1vh;
 }
 
-div#profile-info div#profile-pic img {
-  position: absolute;
-  top: 49.75%;
-  left: 49.75%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 1000px) {
-  div#profile-info div#profile-pic {
-    left: 6.1vh;
-    height: 80%;
-    width: calc(12.5vh * 8 / 10);
-  }
-}
-
-  /* Profile Info Details*/
-div#profile-info div#profile-info-details {
+div#profile img {
   position: absolute;
   top: 50%;
-  left: 17.5vh;
-  transform: translate(0, -50%);
-  background-color: rgba(255, 255, 255, 0.9);
-  height: 90%;
-  width: calc((57.5vh - 17.5vh)*(95 / 100));
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  border: 0.3vh solid var(--fg-1-100);
   box-sizing: border-box;
-  padding-top: 1vh;
-  padding-left: 1vh;
-  opacity: 0;
-  border-radius: 1.5vh;
-  box-shadow: 0 0 0.5vh 0.2vh rgb(125, 125, 125);
-  font-size: 2.5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
-@media screen and (min-width: 1000px) {
-  div#profile-info:hover div#profile-info-details {
-    transition-delay: 0.2s;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-    opacity: 100%;
-  }
+div#profile:hover img {
+  box-shadow: 0 0 1.5vh 0.1vh var(--fg-1-100);
+  transition-duration: 0.2s;
+}
+
+div#profile div#profile-info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-105%, 0);
+  height: 20vh;
+  width: 50vh;
+  background-color: rgba(36, 36, 36, 0.9);
+  line-height: 4vh;
+  padding-left: 2vh;
+  padding-top: 3vh;
+  box-sizing: border-box;
+  border-radius: 2vh;
+  display: none;
+  opacity: none;
+}
+
+div#profile:hover div#profile-info {
+  opacity: 100%;
+  display: block;
+  transition-delay: 1s;
 }
 
 @media screen and (max-width: 1000px) {
-  div#profile-info div#profile-info-details {
-    font-size: 1.75vh;
-    left: 12.5vh;
-    width: calc((47.5vh - 12.5vh)*(95 / 100));
-    opacity: 100%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  div#profile-info div#profile-info-details {
-    transition-delay: 0.2s;
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-    opacity: 100%;
+  div#profile div#profile-info {
+    display: none;
   }
 }
 
-    /* Progress bar*/
-div#profile-info div#profile-info-details div#progress-bar-total {
+div#profile-info div#profile-info-1 {
+  font-size: 2.9vh;
+  line-height: 4vh;
+}
+
+div#profile-info div#profile-info-1 span#rank {
   position: relative;
-  height: 0.5vh;
-  width: 95%;
-  background-color: rgb(175, 175, 175);
+  left: 2vh;
+  font-size: 5vh;
+  color: rgb(134, 134, 134);
 }
 
-div#progress-bar-total div#progress-bar-done {
+div#profile-info-1 span#name {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.5vh;
+}
+
+div#profile-info div#xp-bar {
+  position: relative;
+  top: 5%;
+  left: 0;
+  height: 2vh;
+  width: 95%;
+  background-color: rgba(90, 90, 90, 0.7);
+}
+
+div#xp-bar div#xp-bar-actual {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
   height: 100%;
   width: calc(100% * (4123/5000));
-  background-color: var(--fg-1-100);
+  background-color: rgba(21, 191, 177, 0.5);
 }
 
-div#profile-info-details div#xp-count {
-  position: relative;
-  text-align: right;
-  padding-right: 1vh;
+span#xp-count {
+  position: absolute;
+  bottom: 9.5%;
+  right: 6%;
+  font-size: 2.6vh;
 }
-    /* /Progress Bar */
-  /* /Profile Info Details*/
-/* /ProfileInfo */
+/* /Profile */
 
 /* Map */
 div#map-container {
@@ -562,7 +466,6 @@ div#info-container div#info-close {
     height: 4vh;
   }
 }
-
 
 div#info-container div#info-close:hover {
   background-color: white;
