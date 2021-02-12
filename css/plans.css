@@ -338,6 +338,7 @@ div#no_plans_msg{
   border: 0.2vh solid #EC5929;
   text-align: center ;
   background-color: rgba(0, 0, 0, 0.247);
+  transition: 0.2s;
 }
 
 div#no_plans_msg h2{
@@ -356,6 +357,11 @@ div#no_plans_msg h2{
   div#no_plans_msg h2{
     font-size: 4vh;
   }
+
+  div#no_plans_msg{
+    width: 85%;
+    height: 82vh;
+  }
 }
 /*No plans message*/
 
@@ -370,6 +376,7 @@ div.pen{
   right: 3%;
   bottom: 4%;
   overflow: hidden;
+  transition: 0.2s;
   z-index: 2;
 }
 
@@ -396,11 +403,18 @@ div.pen i{
   color: #EC5929;
   font-size: 4vh;
   padding: 1.5vh;
+  transition: 0.2s;
   z-index: 5;
 }
 
 div.pen i:hover{
   color: rgb( 29, 29, 29);
+}
+
+@media screen and (max-width: 500px){
+  div.pen{
+    bottom: 2%;
+  }
 }
 
 /*pen/add icon*/
