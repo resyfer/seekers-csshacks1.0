@@ -79,7 +79,7 @@
   <div id="profile-items-container">
     <div class="profile-items" id="profile-info">
       <div id="profile-container">
-        <p> <i class="far fa-address-card"></i> PROFILE</p>
+        <i class="far fa-address-card"></i> PROFILE
       </div>
       <div id="profile-pic">
         <img src="./img/default_story.jpg" loading="lazy" alt="browser not supporting">
@@ -89,25 +89,26 @@
         <span id="profile-uid"> ID: 45940SDFDK09G </span>
       </div>
       <div id="user-info">
-        <span>#78</span>
+        <span id="rank">#78</span>
         <hr>
         <div id="xp-bar">
-          <div id="xp-bar-total">
-            <div id="xp-bar-count"></div>
+          <div id="xp-bar-total" title="5000">
+            <div id="xp-bar-count" title="4123"></div>
           </div>
-          <div id="xp-bar-num">Level: 92&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;XP: 4123 / 5000</div>
+          <div id="xp-bar-num"><span id="xp-bar-level">Level: 92</span>
+            <span id="xp-bar-xp">XP: 4123 / 5000</span></div>
         </div>
         <div id="user-info-short-stats">
-          <div id="user-info-trophy">
+          <div id="user-info-trophy" title="Achievements">
             <i class="fas fa-trophy"></i>&nbsp;&nbsp;169
           </div>
-          <div id="user-info-friends">
+          <div id="user-info-friends" title="Friends">
             <i class="fas fa-user-friends"></i>&nbsp;&nbsp;153
           </div>
-          <div id="user-info-favs">
+          <div id="user-info-favs" title="Likes">
             <i class="fas fa-heart"></i>&nbsp;&nbsp;25k
           </div>
-          <div id="user-info-favs">
+          <div id="user-info-favs" title="Coins">
             <i class="fas fa-coins"></i>&nbsp;&nbsp;100k
           </div>
         </div>
@@ -118,7 +119,7 @@
         <div id="stats-container-heading"><p> <i class="fas fa-chart-line"></i> STATS</p></div>
         <div id="stats-container-items">
           <p>Total Trips: 85 <br>
-            Total Services: 230 <br>
+            Total Posts: 230 <br>
             Places Visited: 140 <br>
             Hidden Locations Found: 20 <br>
             Highest Global Ranking: #15 </p>
@@ -130,24 +131,38 @@
         <p> <i class="fas fa-history"></i> History</p>
       </div>
       <div class="past-trips">
-        <div id="past-trip-1"> 
-          Bhutan <br>
-          July 2020
-        </div>
-        <div id="past-trip-2"> 
-          Paris <br>
-          May 2020
-        </div>
-        <div id="past-trip-3"> 
-          Italy <br>
+        <div class="past-trips-items">
+          <span class="past-trips-items-static" title="Shimla, India">
+          <span id="location-name">Shimla, India</span><br>
           July 2019
+          </span>
+          <span class="past-trips-items-hover">
+            From : 25/07/2019<br>
+            To: 02/08/2019
+          </span>
         </div>
-        <div id="past-trip-4"> 
-          Sikkim <br>
-          June 2019
+        <div class="past-trips-items">
+          <span class="past-trips-items-static" title="Shimla, India">
+          <span id="location-name">Thimpu, Bhutan</span><br>
+          September 2019
+          </span>
+          <span class="past-trips-items-hover">
+            From : 02/09/2019<br>
+            To: 11/09/2019
+          </span>
         </div>
-        <div id="view-all"> 
-          View all <i class="fas fa-arrow-right"></i>
+        <div class="past-trips-items">
+          <span class="past-trips-items-static" title="Shimla, India">
+          <span id="location-name">Paris, France</span><br>
+          October 2019
+          </span>
+          <span class="past-trips-items-hover">
+            From : 15/10/2019<br>
+            To: 21/10/2019
+          </span>
+        </div>
+        <div class="past-trips-items" id="view-all" title="View all"> 
+          <i class="fas fa-chevron-right"></i>
         </div>
       </div>
     </div>
