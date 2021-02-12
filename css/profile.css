@@ -474,7 +474,7 @@ div#xp-bar-total div#xp-bar-count {
   top: 0;
   left: 0;
   width: calc((4123/5000)*100%);
-  background-color: rgba(21, 191, 177, 0.5);
+  background-color: rgba(21, 191, 177, 0.7);
   height: 100%;
 }
 
@@ -487,6 +487,10 @@ div#xp-bar div#xp-bar-num {
   position: relative;
   text-align: right;
   font-size: 2.63vh;
+  height: 3vh;
+  width: 95%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 div#xp-bar-num span#xp-bar-level {
@@ -648,83 +652,82 @@ div#history div.past-trips {
   position: absolute;
   height: 65%;
   width: 93%;
-  right: 1vh;
-  bottom: 2vh;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-sizing: border-box;
 }
 
-div#history div.past-trips div#past-trip-1 {
-  position: absolute;
-  width: 17%;
-  height: 40%;
+div#history div.past-trips div.past-trips-items {
+  position: relative;
+  width: 25%;
+  height: 45%;
   line-height: 3vh;
-  left: 0;
   top: 50%;
   transform: translate(0, -50%);
   font-size: 2vh;
   color: rgba(255, 255, 255, 0.623);
   border: 0.3vh solid rgba(255, 255, 255, 0.219);
   border-radius: 0.5ch;
-  padding: 0.5vh 0.6vh;
+  padding-left: 1vh;
+  padding-top: 0.3vh;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
-div#history div.past-trips div#past-trip-2 {
-  position: absolute;
-  width: 17%;
-  height: 40%;
-  line-height: 3vh;
-  left: 20%;
-  top: 50%;
-  transform: translate(0, -50%);
-  font-size: 2vh;
-  color: rgba(255, 255, 255, 0.623);
-  border: 0.3vh solid rgba(255, 255, 255, 0.219);
-  border-radius: 0.5ch;
-  padding: 0.5vh 0.6vh;
+div#history div.past-trips div.past-trips-items:hover {
+  background-color: var(--fg-1-100);
+  transition-duration: 0.2s;
 }
 
-div#history div.past-trips div#past-trip-3 {
+div.past-trips div.past-trips-items span.past-trips-items-static {
+  opacity: 100%;
   position: absolute;
-  width: 17%;
-  height: 40%;
-  line-height: 3vh;
-  left: 40%;
   top: 50%;
-  transform: translate(0, -50%);
-  font-size: 2vh;
-  color: rgba(255, 255, 255, 0.623);
-  border: 0.3vh solid rgba(255, 255, 255, 0.219);
-  border-radius: 0.5ch;
-  padding: 0.5vh 0.6vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
 }
 
-div#history div.past-trips div#past-trip-4 {
+div.past-trips div.past-trips-items:hover span.past-trips-items-static {
+  opacity: 0;
+  transition-duration: 0.2s;
+}
+
+div.past-trips div.past-trips-items span.past-trips-items-hover {
+  opacity: 0;
   position: absolute;
-  width: 17%;
-  height: 40%;
-  line-height: 3vh;
-  left: 60%;
   top: 50%;
-  transform: translate(0, -50%);
-  font-size: 2vh;
-  color: rgba(255, 255, 255, 0.623);
-  border: 0.3vh solid rgba(255, 255, 255, 0.219);
-  border-radius: 0.5ch;
-  padding: 0.5vh 0.6vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+div.past-trips div.past-trips-items:hover span.past-trips-items-hover {
+  opacity: 100%;
+  transition-duration: 0.2s;
+}
+
+span#location-name {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 div#history div.past-trips div#view-all {
-  position: absolute;
-  width: 13%;
-  height: 20%;
-  line-height: 3vh;
-  left: 80%;
-  top: 50%;
-  transform: translate(0, -50%);
-  font-size: 2vh;
-  color: rgba(255, 255, 255, 0.616);
-  border: 0.3vh solid rgba(255, 255, 255, 0.219);
-  border-radius: 0.5ch;
-  padding: 0.5vh 0.6vh;
+  height: 5vh;
+  width: 5vh;
+  text-align: center;
+  line-height: 4.75vh;
+  padding: 0;
+}
+
+div#history div.past-trips div#view-all:hover {
+  border: 0.3vh solid rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 1);
+  background-color: var(--fg-1-100);
+  transition-duration: 0.2s;
 }
 
 div#medals {
