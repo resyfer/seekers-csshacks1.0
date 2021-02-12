@@ -397,13 +397,13 @@ div.service_item{
   left: 48%;
   transform: translate( -50%, 0);
   background-color: rgba(25, 25, 25, 0.7);
-  border: 0.2vh solid rgba(236, 89, 41, 0.5);
-  box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5);
-  border-radius: 2vh 2vh 2vh 2vh;
+  /* border: 0.4vh solid rgba(236, 89, 41, 0.5); */
+  /* box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5); */
+  border-radius: 1vh 1vh 1vh 1vh;
   overflow: hidden;
   margin: 2vh;
-  margin-top: 4vh;
-  margin-bottom: 4vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
   transition: 0.2s;
 }
 
@@ -515,10 +515,10 @@ div.stories{
   left:77%;
   height: 82vh;
   width: 20%;
-  border: 0.2vh solid rgba(236, 89, 41, 0.5);
+  /* border: 0.5vh solid rgba(236, 89, 41, 0.5); */
   background-color: rgba(25, 25, 25, 0.7);
-  border-radius: 4vh 4vh 4vh 4vh;
-  box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5);
+  border-radius: 1vh 1vh 1vh 1vh;
+  /* box-shadow: 0 0 1.5vh 0.4vh rgba(236, 89, 41, 0.5); */
   overflow: auto;
   transition: 0.2s;
   -ms-overflow-style: none;  /* IE and Edge */
@@ -579,10 +579,10 @@ img.story{
   div.stories{
     position: absolute;
     top: 14%;
-    left: 50%;
+    left: 49.5%;
     transform: translate(-50%,0);
     height: 15vh;
-    width: 90%;
+    width: 78%;
   }
   
   div.story_heading{
