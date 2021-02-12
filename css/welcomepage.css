@@ -273,7 +273,8 @@ div.tint{
 /*PROFILE*/
 
 div.profile{
-  display: none;
+  display: block;
+  opacity: 100%;
   position: absolute;
   top: 0;
   left: 50%;

@@ -356,4 +356,20 @@
   <script src="./js/backtotop.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/loader.js"></script>
+
+  <!--Page Specific JS File-->
+  <script>
+    $(window).on('load', function() {
+      $('.profile').css({
+        'opacity':'0',
+        'transition-delay':'3.5s',
+        'transition-duration':'500ms',
+      });
+      setTimeout(function(){
+        $('.profile').css({
+          'display':'none',
+        })
+      }, 4000);
+    });
+  </script>
 </html>
