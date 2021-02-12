@@ -1,6 +1,0 @@
-<resources>
-    <string name="app_name">Travelog</string>
-    <string name="nav_draw_open">open navigation drawer</string>
-    <string name="nav_draw_close">close navigation drawer</string>
-    <string name="title_activity_maps">Map</string>
-</resources>
