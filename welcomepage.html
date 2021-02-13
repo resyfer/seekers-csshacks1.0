@@ -74,15 +74,8 @@
 
     <!--PROFILE-->
     <div class="profile">
-      <!--<div class="profile_pic">
-        <img class="profile_pic" src="img/defaultprofilepic.jpg" alt="this is an image">
-      </div>-->
       <div class="stats">
         <h2 class="welcome">Welcome Back &lt;User&gt;</h2>
-        <!--<div id="stats">
-          <p class="trips">Total Trips: 40</p>
-          <p class="visits">Visits: 20</p>
-        </div>-->
       </div>
     </div>
   <!--PROFILE-->
@@ -361,15 +354,10 @@
   <script>
     $(window).on('load', function() {
       $('.profile').css({
-        'opacity':'0',
-        'transition-delay':'1.2s',
-        'transition-duration':'500ms',
-      });
-      setTimeout(function(){
-        $('.profile').css({
-          'display':'none',
-        })
-      }, 4000);
-    });
+        'transform':'translate(-50%,-100%)',
+        'transition-delay':'2000ms',
+        'transition-duration':'0.7s',
+      })  
+    })
   </script>
 </html>
