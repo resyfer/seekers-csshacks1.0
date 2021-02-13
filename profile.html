@@ -161,8 +161,8 @@
             To: 21/10/2019
           </span>
         </div>
-        <div class="past-trips-items" id="view-all" title="View all"> 
-          <i class="fas fa-chevron-right"></i>
+        <div class="past-trips-items" id="view-all" title="View All" onclick="viewAllHistoryOpen()"> 
+          <i class="fas fa-external-link-alt"></i>
         </div>
       </div>
     </div>
@@ -194,6 +194,74 @@
   </div>
   <!--/Profile Items-->
 
+  <!--View All-->
+  <div id="view-all-container">
+    <div id="view-all-close" onclick="viewAllHistoryClose()"><i class="fas fa-times"></i></div>
+    <div id="view-all-title"><i class="fas fa-history"></i> History</div>
+    <div id="view-all-items-container">
+      <div class="view-all-items">
+        <div class="view-all-items-left">
+          <span class="view-all-items-location">Shimla</span><br>
+          <span class="view-all-items-country">India</span>
+        </div>
+        <div class="view-all-items-right">
+          <span class="view-all-items-from">From : 25/07/2019<br>
+          <span class="view-all-items-to">To: 02/08/2019</span>
+        </div>
+      </div>
+      <div class="view-all-items">
+        <div class="view-all-items-left">
+          <span class="view-all-items-location">Shimla</span><br>
+          <span class="view-all-items-country">India</span>
+        </div>
+        <div class="view-all-items-right">
+          <span class="view-all-items-from">From : 25/07/2019<br>
+          <span class="view-all-items-to">To: 02/08/2019</span>
+        </div>
+      </div>
+      <div class="view-all-items">
+        <div class="view-all-items-left">
+          <span class="view-all-items-location">Shimla</span><br>
+          <span class="view-all-items-country">India</span>
+        </div>
+        <div class="view-all-items-right">
+          <span class="view-all-items-from">From : 25/07/2019<br>
+          <span class="view-all-items-to">To: 02/08/2019</span>
+        </div>
+      </div>
+      <div class="view-all-items">
+        <div class="view-all-items-left">
+          <span class="view-all-items-location">Shimla</span><br>
+          <span class="view-all-items-country">India</span>
+        </div>
+        <div class="view-all-items-right">
+          <span class="view-all-items-from">From : 25/07/2019<br>
+          <span class="view-all-items-to">To: 02/08/2019</span>
+        </div>
+      </div>
+      <div class="view-all-items">
+        <div class="view-all-items-left">
+          <span class="view-all-items-location">Thimpu</span><br>
+          <span class="view-all-items-country">Bhutan</span>
+        </div>
+        <div class="view-all-items-right">
+          <span class="view-all-items-from">From : 02/09/2019<br>
+          <span class="view-all-items-to">To: 11/09/2019</span>
+        </div>
+      </div>
+      <div class="view-all-items">
+        <div class="view-all-items-left">
+          <span class="view-all-items-location">Paris</span><br>
+          <span class="view-all-items-country">France</span>
+        </div>
+        <div class="view-all-items-right">
+          <span class="view-all-items-from">From : 15/10/2019<br>
+          <span class="view-all-items-to">To: 21/10/2019</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
   <!--Fontawesome CDN-->
   <script src="https://kit.fontawesome.com/0cd9f9ba48.js" crossorigin="anonymous"></script>
@@ -205,5 +273,20 @@
   <script src="./js/backtotop.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/loader.js"></script>
+
+  <!--Page Specific JS File-->
+  <script>
+  function viewAllHistoryOpen(){
+    $('#view-all-container').css({
+      'display':'block',
+    });
+  }
+
+  function viewAllHistoryClose(){
+    $('#view-all-container').css({
+      'display':'none',
+    });
+  }
+  </script>
 
 </html>
