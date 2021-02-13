@@ -794,3 +794,96 @@ div#medals-count {
   font-size: 2.5vh;
 }
 /* /Profile */
+
+/* View All */
+div#view-all-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75vh;
+  width: 50%;
+  background-color: rgba(36, 36, 36, 1);
+  border-radius: 1vh;
+  box-sizing: border-box;
+  border: 0.2vh solid var(--fg-1-100);
+  z-index: +4;
+  display: none;
+}
+
+div#view-all-container div#view-all-close {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  height: 5vh;
+  width: 5vh;
+  text-align: center;
+  line-height: 5vh;
+  font-size: 5vh;
+  cursor: pointer;
+  color: var(--fc);
+}
+
+div#view-all-container div#view-all-title {
+  position: absolute;
+  top: 2vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 3.5vh;
+  color: var(--fc);
+  text-transform: uppercase;
+}
+
+div#view-all-container div#view-all-items-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  overflow-y: scroll;
+}
+
+div#view-all-container div#view-all-items-container::-webkit-scrollbar {
+  width: 0; 
+}
+
+div#view-all-items-container div.view-all-items {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  width: 100%;
+  background-color: rgb(66, 66, 66);
+  box-sizing: border-box;
+  border: 0.1vh solid white;
+  margin-bottom: 1vh;
+  border-radius: 1vh;
+  border: 0.2vh solid var(--fg-1-100);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+div.view-all-items div.view-all-items-left {
+  position: absolute;
+  top: 50%;
+  left: 1vh;
+  transform: translate(0, -50%);
+}
+
+div.view-all-items-left span.view-all-items-location {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3vh;
+}
+
+div.view-all-items-left span.view-all-items-country{
+  color: rgba(255, 255, 255, 0.8);
+}
+
+div.view-all-items div.view-all-items-right {
+  position: absolute;
+  top: 50%;
+  right: 1vh;
+  transform: translate(0, -50%);
+  text-align: right;
+}
