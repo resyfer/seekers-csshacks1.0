@@ -289,16 +289,15 @@ div.travelog-logo-bar div#travelog-logo img {
   width: auto;
 }
 
-div.my-rank
-{
+div.my-rank{
   position: absolute;
-  top:-10.5vh;
+  top:-9vh;
   left:1.5vh;
-  font-size: 5vh;
+  font-size: 4.5vh;
   color: white;
-  border: 0.3vw solid var(--fg-1-100);
-  border-radius: 5% 5% 5% 5% ;
-  padding:2vh 6vh;
+  border: 0.4vh solid var(--fg-1-100);
+  border-radius: 0.8vh ;
+  padding:1vh 8vh 1vh 2vh;
   
 }
 
@@ -322,11 +321,11 @@ div.rank-container-1 div.rank-1 {
 }
  
 div.rank-container-1 div.rank-1 div.profile-r1{
-  position:relative;
+  position:absolute;
   left:3%;
   top:50%;
   transform: translate(0, -50%);
-  width:12vh;
+  width:6vw;
   height:8vh;
 } 
 
@@ -339,13 +338,12 @@ div.rank-container-1 div.rank-1 div.profile-r1 img {
 }
 
 div.rank-container-1 div.rank-1 div.profile-img {
-  position: relative;
+  position: absolute;
   left:16.5%;
-  top:14%;
+  top:50%;
   transform: translate(0, -50%);
   width:8.8vw;
   height:8.8vw;
-  background-color:white;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -420,11 +418,11 @@ div.rank-container-1 div.rank-2 {
 }
 
 div.rank-container-1 div.rank-2 div.profile-r2{
-  position:relative;
+  position:absolute;
   left:3%;
   top:50%;
   transform: translate(0, -50%);
-  width:12vh;
+  width:6vw;
   height:8vh;
 } 
 
@@ -437,13 +435,12 @@ div.rank-container-1 div.rank-2 div.profile-r2 img {
 }
 
 div.rank-container-1 div.rank-2 div.profile-img {
-  position: relative;
+  position: absolute;
   left:16.5%;
-  top:14%;
+  top:50%;
   transform: translate(0, -50%);
   width:8.8vw;
   height:8.8vw;
-  background-color:white;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -518,11 +515,11 @@ div.rank-container-1 div.rank-3 {
 }
 
 div.rank-container-1 div.rank-3 div.profile-r3{
-  position:relative;
+  position:absolute;
   left:3%;
   top:50%;
   transform: translate(0, -50%);
-  width:12vh;
+  width:6vw;
   height:8vh;
 } 
 
@@ -535,13 +532,12 @@ div.rank-container-1 div.rank-3 div.profile-r3 img {
 }
 
 div.rank-container-1 div.rank-3 div.profile-img {
-  position: relative;
+  position: absolute;
   left:16.5%;
-  top:14%;
+  top:50%;
   transform: translate(0, -50%);
   width:8.8vw;
   height:8.8vw;
-  background-color:white;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -655,9 +651,9 @@ div.rank-container-2 div.rank-block-1 div.block-img img{
 div.rank-container-2 div.rank-block-1 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -702,9 +698,9 @@ div.rank-container-2 div.rank-block-2 div.block-img img{
 div.rank-container-2 div.rank-block-2 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -749,9 +745,9 @@ div.rank-container-2 div.rank-block-3 div.block-img img{
 div.rank-container-2 div.rank-block-3 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -796,9 +792,9 @@ div.rank-container-2 div.rank-block-4 div.block-img img{
 div.rank-container-2 div.rank-block-4 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -844,9 +840,9 @@ div.rank-container-2 div.rank-block-5 div.block-img img{
 div.rank-container-2 div.rank-block-5 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -891,9 +887,9 @@ div.rank-container-2 div.rank-block-6 div.block-img img{
 div.rank-container-2 div.rank-block-6 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -938,9 +934,9 @@ div.rank-container-2 div.rank-block-7 div.block-img img{
 div.rank-container-2 div.rank-block-7 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -985,9 +981,9 @@ div.rank-container-2 div.rank-block-8 div.block-img img{
 div.rank-container-2 div.rank-block-8 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -1032,9 +1028,9 @@ div.rank-container-2 div.rank-block-9 div.block-img img{
 div.rank-container-2 div.rank-block-9 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -1079,9 +1075,9 @@ div.rank-container-2 div.rank-block-10 div.block-img img{
 div.rank-container-2 div.rank-block-10 div.block-name{
   position: absolute;
   top:50%;
-  left:28%;
+  left:30%;
   transform: translate(0, -50%);
-  font-size: 4vh;
+  font-size: 3.7vh;
   color: #000000e0;
 }
 
@@ -1102,9 +1098,52 @@ div.rank-container-2 div.rank-block-10 div.block-pos{
     width: 80%;
   }
 
-  div.my-rank{
-    top:-11.5vh;
+  div.rank-container-1 div.rank-1 div.profile-img {
+    width: 12vw;
+    height: 12vw;
+    left: 15%;
   }
+
+  div.rank-container-1 div.rank-1 div.r1-name {
+    font-size: 5vw;
+  }
+
+  div.rank-container-1 div.rank-1 div.profile-img img {
+    width: 12vw;
+  }
+
+  div.rank-container-1 div.rank-2 div.profile-img {
+    width: 12vw;
+    height: 12vw;
+    left: 15%;
+  }
+
+  div.rank-container-1 div.rank-2 div.r2-name {
+    font-size: 5vw;
+  }
+
+  div.rank-container-1 div.rank-2 div.profile-img img {
+    width: 12vw;
+  }
+
+  div.rank-container-1 div.rank-3 div.profile-img {
+    width: 12vw;
+    height: 12vw;
+    left: 15%;
+  }
+
+  div.rank-container-1 div.rank-3 div.r3-name {
+    font-size: 5vw;
+  }
+
+  div.rank-container-1 div.rank-3 div.profile-img img {
+    width: 12vw;
+  }
+
+  div.my-rank {
+    font-size: 4vw;
+  }
+
   div.rank-container-2 {
      position: relative;
      top: 20vh;
@@ -1127,5 +1166,15 @@ div.rank-container-2 div.rank-block-10 div.block-pos{
 @media screen and (min-width: 1200px){
   div.rank-container-2 div.rank-container-2-inner {
     overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 900px){
+  div.rank-container-1 {
+    width: 97%;
+  }
+
+  div.rank-container-2 {
+    width: 97%;
   }
 }
