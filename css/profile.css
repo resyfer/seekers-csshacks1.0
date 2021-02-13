@@ -863,6 +863,11 @@ div#view-all-items-container div.view-all-items {
   color: rgba(255, 255, 255, 0.7);
 }
 
+div#view-all-items-container div.view-all-items:hover {
+  background-color: var(--fg-1-100);
+  transition: 0.25s ease;
+}
+
 div.view-all-items div.view-all-items-left {
   position: absolute;
   top: 50%;
