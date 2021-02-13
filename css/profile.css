@@ -761,6 +761,30 @@ div#medals div#medals-container-heading {
   border-radius: 0.5vh 0.5vh;
 }
 
+div#medals div#view-all-button {
+  position: absolute;
+  top: 1.5vh;
+  right: 1.5vh;
+  height: 5vh;
+  width: 5vh;
+  font-size: 2vh;
+  line-height: 5vh;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.75vh;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.623);
+  border: 0.3vh solid rgba(255, 255, 255, 0.219);
+}
+
+div#medals div#view-all-button:hover {
+  background-color: var(--fc);
+  transition-duration: 0.2s;
+  color: rgba(255, 255, 255, 1);
+  border: 0.3vh solid rgba(255, 255, 255, 1);
+}
+
+
 div#medals div#medals-medals {
   position: relative;
   width: 95%;
@@ -795,7 +819,7 @@ div#medals-count {
 }
 /* /Profile */
 
-/* View All */
+/* History View All */
 div#view-all-container {
   position: absolute;
   top: 50%;
@@ -892,3 +916,70 @@ div.view-all-items div.view-all-items-right {
   transform: translate(0, -50%);
   text-align: right;
 }
+/* / History View All */
+
+/* Medals View All */
+div#medals-view-all {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 75vh;
+  width: 50%;
+  background-color: rgba(36, 36, 36, 1);
+  border-radius: 1vh;
+  box-sizing: border-box;
+  border: 0.2vh solid var(--fg-1-100);
+  z-index: +4;
+  display: none;
+}
+
+div#medals-view-all div#medals-view-all-close {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  height: 5vh;
+  width: 5vh;
+  text-align: center;
+  line-height: 5vh;
+  font-size: 5vh;
+  cursor: pointer;
+  color: var(--fc);
+}
+
+div#medals-view-all div#medals-view-all-title {
+  position: absolute;
+  top: 2vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 3.5vh;
+  color: var(--fc);
+  text-transform: uppercase;
+}
+
+div#medals-view-all div#medals-view-all-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+div#medals-view-all div#medals-view-all-container::-webkit-scrollbar {
+  width: 0;
+}
+
+div#medals-view-all div#medals-view-all-container img {
+  position: relative;
+  height: 10vh;
+  width: 10vh;
+  margin-top: 3vh;
+  margin-right: 3vh;
+}
+/* /Medals View All */
