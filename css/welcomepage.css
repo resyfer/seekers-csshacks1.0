@@ -280,10 +280,10 @@ div.profile{
   left: 50%;
   transform: translate( -50%, 0);
   border-radius: 0 0 4vh 4vh;
-  height: 20vh;
-  width: 65%;
+  height: 13vh;
+  width: 60%;
   overflow: hidden;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(31 ,31, 31);
   border: 0.2vh solid #EC4D37;
   z-index: 3;
   transition: 0.2s;
@@ -311,13 +311,14 @@ div.stats{
 div.stats h2{
   position: absolute;
   top: 50%;
-  right: 8vh;
-  transform: translate( 0%, -50%);
-  width: 45%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  width: auto;
   height: auto;
   font-size: 5vh;
   text-align: center;
   font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   color: #EC4D37;
   transition: 0.2s;
 }
@@ -474,10 +475,10 @@ div.story_heading{
   position: sticky;
   background-color: rgb(25, 25, 25);
   border-radius: 1vh 1vh 0 0 ;
-  top: 0%;
+  top: -0.05%;
   left: 0%;
   height: 10vh;
-  width: 99%;
+  width: 100%;
   z-index: 1;
 }
 
@@ -625,7 +626,7 @@ img.story{
 @media screen and (max-width: 950px){
 
   div.profile{
-    width: 98%;
+    width: 100%;
     border-left: 0;
     border-right: 0;
     border-radius: 0;
@@ -684,7 +685,7 @@ img.story{
 @media screen and (max-width: 500px){
 
   div.profile{
-    height: 15vh;
+    height: 10vh;
   }
 
   div.profile_pic{
@@ -694,8 +695,8 @@ img.story{
 
   div.stats h2{
     font-size: 3vh;
-    width: 70%;
-    left: 60%;
+    width: 50%;
+    left: 50%;
     transform: translate( -50%, -50%);
   }
 
