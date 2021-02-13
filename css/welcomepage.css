@@ -253,7 +253,8 @@ div#menu-container div.menu-items:hover {
   color: white;
   transition-duration: 0.15s;
   box-shadow: white;
-  box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
+  width:103%;
+  /* box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252); */
 }
 /* Navbar */
 
