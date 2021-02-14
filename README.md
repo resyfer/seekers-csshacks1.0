@@ -76,7 +76,7 @@ In it's current prototype stage of development, our website uses the following s
 3. Vanilla Javascript (JS)
 4. JQuery
 
-&nbsp;&nbsp;and aspires to incorporate the MERN stack in the near future as a strp forth in its development to enhance the user experience,which includes:&nbsp;@nbsp;
+&nbsp;&nbsp;and aspires to incorporate the MERN stack in the near future as a strp forth in its development to enhance the user experience,which includes:&nbsp;
  1. MongoDB
  2. Express
  3. ReactJS
