@@ -253,7 +253,8 @@ div#menu-container div.menu-items:hover {
   color: white;
   transition-duration: 0.15s;
   box-shadow: white;
-  box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252);
+  width:103%;
+  /* box-shadow: 0 0 1.5vh 0.2vh rgb(255, 252, 252); */
 }
 /* Navbar */
 
@@ -279,7 +280,7 @@ div.profile{
   top: 0;
   left: 50%;
   transform: translate( -50%, 0);
-  border-radius: 0 0 4vh 4vh;
+  border-radius: 0 0 2vh 2vh;
   height: 13vh;
   width: 60%;
   overflow: hidden;
@@ -597,10 +598,10 @@ img.story{
 @media screen and (max-width: 950px){
 
   div.profile{
-    width: 100%;
+    width: 97%;
     border-left: 0;
     border-right: 0;
-    border-radius: 0;
+    border-radius: 0 0 3vh 3vh;
   }
 
   div.stats h2{
