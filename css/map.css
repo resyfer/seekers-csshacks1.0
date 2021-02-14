@@ -386,6 +386,18 @@ div#map-container iframe {
   height: 100%;
   width: 100%;
 }
+
+div#map-container div#mapLocation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1.5vh;
+  width: 1.5vh;
+  background-color: rgba(0, 0, 255, 0.603);
+  border-radius: 50%;
+}
+
 /* /Map */
 
 /* Info */
