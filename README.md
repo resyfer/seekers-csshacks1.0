@@ -1,7 +1,7 @@
 # Seekers-CSSHacks1.0
 Project Name- Travelog:Travelling Reimagined
 
-To use it on your local machine, [please follow these instructions](#Installation)
+To use it on your local machine, [please follow these instructions](#installation)
 ## Aim:
 ---  
 The aim of our project is to make travelling an engagimg and interactive experience  while helping local buisnesses  
@@ -125,7 +125,7 @@ The project needs database integration to function properly.&nbsp;
 Thank you,&nbsp;  
 Regards.
 &nbsp; &nbsp;&nbsp;  
-### Installation :
+## Installation :
 
 1. Get the code:
   ```
