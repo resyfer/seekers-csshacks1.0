@@ -18,19 +18,19 @@ $(document).on('load',checkSignIn());
 
 function checkSignIn() {
   var signInVal = localStorage.getItem("signedIn");
-  if(signInVal == "1" && (window.location.href == "https://seekers-csshacks-1-0.netlify.app/" || window.location.href == "https://seekers-csshacks-1-0.netlify.app/index.html")) {
-    window.location.href = "https://seekers-csshacks-1-0.netlify.app/welcome-page.html";
-  } else if (signInVal == "0" && (window.location.href != "https://seekers-csshacks-1-0.netlify.app/" && window.location.href != "https://seekers-csshacks-1-0.netlify.app/index.html")) {
-    window.location.href = "https://seekers-csshacks-1-0.netlify.app/";
+  if(signInVal == "1" && (window.location.href == "http://localhost:5500/" || window.location.href == "http://localhost:5500/index.html")) {
+    window.location.href = "http://localhost:5500/welcome-page.html";
+  } else if (signInVal == "0" && (window.location.href != "http://localhost:5500/" && window.location.href != "http://localhost:5500/index.html")) {
+    window.location.href = "http://localhost:5500/";
   }
 }
 
 setInterval(function() {
   var signInVal = localStorage.getItem("signedIn");
-  if(signInVal == "1" && (window.location.href == "https://seekers-csshacks-1-0.netlify.app/" || window.location.href == "https://seekers-csshacks-1-0.netlify.app/index.html")) {
-    window.location.href = "https://seekers-csshacks-1-0.netlify.app/welcome-page.html";
-  } else if (signInVal == "0" && (window.location.href != "https://seekers-csshacks-1-0.netlify.app/" && window.location.href != "https://seekers-csshacks-1-0.netlify.app/index.html")) {
-    window.location.href = "https://seekers-csshacks-1-0.netlify.app/";
+  if(signInVal == "1" && (window.location.href == "http://localhost:5500/" || window.location.href == "http://localhost:5500/index.html")) {
+    window.location.href = "http://localhost:5500/welcome-page.html";
+  } else if (signInVal == "0" && (window.location.href != "http://localhost:5500/" && window.location.href != "http://localhost:5500/index.html")) {
+    window.location.href = "http://localhost:5500/";
   }
 }, 500);
 
