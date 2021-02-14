@@ -125,7 +125,7 @@ The project needs database integration to function properly.&nbsp;
 Thank you,&nbsp;  
 Regards.
 &nbsp; &nbsp;&nbsp;  
-## Installation :
+### Installation :
 
 1. Get the code:
   ```
