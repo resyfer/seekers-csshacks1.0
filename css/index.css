@@ -179,7 +179,7 @@ div.tint{
 /*/BACKGROUND*/
 
 /*logo*/
-span.logo_heading{
+span.logoHeading{
 	display: none;
 }
 
@@ -213,7 +213,7 @@ div.stuff{
 
 /*SIGN IN BUTTON*/
 
-div.signin{
+div.signIn{
 	position: absolute;
 	background-color: none;
 	left: 85%;
@@ -232,14 +232,14 @@ div.signin{
 	overflow: hidden;
 }
 
-div.signin:hover{
+div.signIn:hover{
 	transition: 0.3s;
 	border: 0 solid var(--fg-1-100);
 	color: var(--fg-1-100);
 	box-shadow: 0 0 0.8vh 0.4vh var(--fg-1-100);
 }
 
-div.signin::before{
+div.signIn::before{
 	content: "";
 	position: absolute;
 	left: 0;
@@ -251,7 +251,7 @@ div.signin::before{
 	top: 0;
 	border-radius: 0 0 50% 50%;
 }
-div.signin:hover::before{
+div.signIn:hover::before{
 	height: 180%;
 	transition: 0.3s;
 }
@@ -267,7 +267,7 @@ div.signin:hover::before{
 	}
 
 	/*SIGN IN BUTTON*/
-	div.signin{
+	div.signIn{
 		left: 50%;
 		top: 70%;
 		transform: translate(-50%, -50%);
@@ -275,11 +275,11 @@ div.signin:hover::before{
 
 	/*LOGO*/
 
-	span.logo_heading{
+	span.logoHeading{
 		display: block;
 		float: none;
 	}
-	p.logo_heading{
+	p.logoHeading{
 		text-align: center;
 		font-size: 10vh;
 		color: white;
@@ -320,11 +320,11 @@ div.signin:hover::before{
     
 	/*LOGO HEADING*/
 	
-	span.logo_heading{
+	span.logoHeading{
 		float: none;
 	}
 
-	p.logo_heading{
+	p.logoHeading{
 		text-align: center;
 		font-size: 8vh;
 	}
