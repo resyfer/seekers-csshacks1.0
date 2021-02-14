@@ -1,5 +1,7 @@
 # Seekers-CSSHacks1.0
 Project Name- Travelog:Travelling Reimagined
+
+To use it on your local machine, [please follow these instructions](#Installation)
 ## Aim:
 ---  
 The aim of our project is to make travelling an engagimg and interactive experience  while helping local buisnesses  
@@ -69,12 +71,12 @@ The *Sign-In* button allows the user to sign in directly through their Google ac
 ## Technical Stack
 
 In it's current prototype stage of development, our website uses the following stack:
-1. Hyper Text Markup Language(HTML).&nbsp;
+1. Hyper Text Markup Language(HTML).
 2. Cascading Style Sheets (CSS).
 3. Vanilla Javascript (JS)
 4. JQuery
 
-&nbsp;and aspires to incorporate the MERN stack in the near future as a strp forth in its development to enhance the user experience,which includes:&nbsp;@nbsp;
+&nbsp;&nbsp;and aspires to incorporate the MERN stack in the near future as a strp forth in its development to enhance the user experience,which includes:&nbsp;@nbsp;
  1. MongoDB
  2. Express
  3. ReactJS
@@ -122,6 +124,29 @@ The project needs database integration to function properly.&nbsp;
     
 Thank you,&nbsp;  
 Regards.
+&nbsp; &nbsp;&nbsp;  
+## Installation :
 
+1. Get the code:
+  ```
+  git clone https://github.com/resyfer/seekers-csshacks1.0.git
+  ```
 
+2. Use Visual Studio Code (download from [here](https://code.visualstudio.com/) if not installed)
 
+3. Install the extension `Live Server Extension` in Visual Studio Code.
+
+4. `Open the folder` in Visual Studio Code
+
+5. Using `Live Server Extension` open the the port using port `5500`
+
+6. The URL of the landing page should be of the form
+```
+  http://localhost:5500/
+```
+
+and **NOT**
+
+```
+  http://127.0.0.1:5500/
+```
