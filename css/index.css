@@ -332,3 +332,8 @@ div.signin:hover::before{
 		display: none;
 	}
 }
+
+/* Google OAuth */
+div.g-signin2 {
+	display: none;
+}

@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travelog - Travelling Reimagined</title>
 
+  <!-- Google OAuth -->
+  <meta name="google-signin-client_id" content="344814890774-98pb7erarmiq4q2evprthqhd1aq5srmu.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   <!--Google Fonts CDN Link-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap" rel="stylesheet">
@@ -73,10 +77,13 @@
   </div>
   
   <!--SIGN IN BUTTON-->
-  <a class="signin" href="welcomepage.html">
+  <a class="signin sign-in-link" href="#" onclick="checkSignIn()">
     <div class="signin"><i class="fab fa-google"></i>  Sign In</div>
   </a>
   <!--SIGN IN BUTTON-->
+
+  <!-- Google OAuth -->
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>
 
 </body>
   <!--Fontawesome CDN-->
@@ -86,8 +93,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!--JS Scripts-->
-  <script src="./js/backtotop.js"></script>
+  <script src="./js/backToTop.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/loader.js"></script>
+  <script src="./js/goauth.js"></script>
 
 </html>

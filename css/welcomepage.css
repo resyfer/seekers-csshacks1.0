@@ -739,3 +739,8 @@ img.story{
 }
 
 /*RESPONSIVE*/
+
+/* Google OAuth */
+div.g-signin2 {
+	display: none;
+}
