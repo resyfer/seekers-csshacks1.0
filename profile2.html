@@ -26,6 +26,13 @@
   <!--CSS-->
   <link rel="stylesheet" href="./css/profile.css">
 
+    <!-- page-specific-css -->
+    <style>
+      div#xp-bar-total div#xp-bar-count {
+        width: calc((8123/10000)*100%);
+      }
+    </style>  
+
   <!--Favicon-->
   <link rel="shortcut icon" href="./img/favicon.png">
 </head>
@@ -65,7 +72,7 @@
     <div id="menu-container">
       <a href="welcome-page.html"><div class="menu-items">Home</div></a>
       <a href="map.html"><div class="menu-items">Map</div></a>
-      <a href="#"><div class="menu-items active">Profile</div></a>
+      <a href="profile.html"><div class="menu-items">Profile</div></a>
       <a href="plans.html"><div class="menu-items">Plans</div></a>
       <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
       <a href="#" onclick="signOut()"><div class="menu-items">Sign Out</div></a>
