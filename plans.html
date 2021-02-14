@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Plans - Travelog</title>
 
+  <!-- Google OAuth -->
+  <meta name="google-signin-client_id" content="344814890774-98pb7erarmiq4q2evprthqhd1aq5srmu.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   <!--Google Fonts CDN Link-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap" rel="stylesheet">
@@ -27,7 +31,7 @@
 <body>
   <div id="profile-bg-img">
     <div id="bg-img-tint"></div>
-    <div id="bg-img"><img src="img/profile_bg.jpg" loading="lazy" alt="Unable to load"></div>
+    <div id="bg-img"><img src="img/profile-bg.jpg" loading="lazy" alt="Unable to load"></div>
   </div>
   
   <!--Loader-->
@@ -58,19 +62,19 @@
     <!--/Toggle Off-->
     
     <div id="menu-container">
-      <a href="welcomepage.html"><div class="menu-items">Home</div></a>
+      <a href="welcome-page.html"><div class="menu-items">Home</div></a>
       <a href="map.html"><div class="menu-items">Map</div></a>
       <a href="profile.html"><div class="menu-items">Profile</div></a>
       <a href="#"><div class="menu-items active">Plans</div></a>
       <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
-      <a href="index.html"><div class="menu-items">Sign Out</div></a>
+      <a href="#" onclick="signOut()"><div class="menu-items">Sign Out</div></a>
     </div>
   </div>
   <!--/Navbar-->
   
   <!--Travelog Logo-->
   <div id="travelog-logo">
-    <img src="img/logotxt.png" loading="lazy" alt="Browser not supported">
+    <img src="img/logo-txt.png" loading="lazy" alt="Browser not supported">
   </div>
   <!--/Travelog Logo-->
 
@@ -89,8 +93,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!--JS Scripts-->
-  <script src="./js/backtotop.js"></script>
+  <script src="./js/backToTop.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/loader.js"></script>
+  <script src="./js/goauth.js"></script>
 
 </html>

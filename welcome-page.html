@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome - Travelog</title>
+
+    <!-- Google OAuth -->
+    <meta name="google-signin-client_id" content="344814890774-98pb7erarmiq4q2evprthqhd1aq5srmu.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!--Google Fonts CDN Link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      Font CSS:
+      Poppins:
+      font-family: 'Poppins', sans-serif;
+      
+      Varela:
+      font-family: 'Varela', sans-serif;
+    -->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/welcome-page.css" />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/favicon.png" />
+  </head>
+  <body>
+
+    <!--Loader-->
+    <div id="loader-container">
+      <div id="loader-logo">
+        <img src="./img/logo.png" alt="Browser not supported" />
+      </div>
+      <div class="loader-item" id="loader-item-1"></div>
+      <div class="loader-item" id="loader-item-2"></div>
+      <div class="loader-item" id="loader-item-3"></div>
+      <div class="loader-item" id="loader-item-4"></div>
+      <div class="loader-item" id="loader-item-5"></div>
+    </div>
+    <!--/Loader-->
+
+    <!--Navbar-->
+    <!--Toggle On-->
+    <div id="navbar-toggle-on" onclick="openNav()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <!--/Toggle On-->
+
+    <div id="navbar-container">
+      <!--Toggle Off-->
+      <div id="navbar-toggle-off" onclick="closeNav()">
+        <i class="fas fa-times"></i>
+      </div>
+      <!--/Toggle Off-->
+
+      <div id="menu-container">
+        <a href="#"><div class="menu-items active">Home</div></a>
+        <a href="map.html"><div class="menu-items">Map</div></a>
+        <a href="profile.html"><div class="menu-items">Profile</div></a>
+        <a href="plans.html"><div class="menu-items">Plans</div></a>
+        <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
+        <a href="#" onclick="signOut()"><div class="menu-items">Sign Out</div></a>
+      </div>
+    </div>
+    <!--/Navbar-->
+
+    <!--BACKGROUND-->
+    <div class="tint">
+    </div>
+    <!--BACKGROUND-->
+
+    <!--PROFILE-->
+    <div class="profile">
+      <div class="stats">
+        <h2 class="welcome">Welcome Back <span id="username"></span></h2>
+      </div>
+    </div>
+  <!--PROFILE-->
+
+    <!--SERVICES-->
+    <div id="serviceHeading">
+      <div><img src="img/logotxt.png" alt=""></div>
+    </div>
+
+    <div class="services">
+    
+    
+      <a href="#">
+        <div class="serviceItem">
+          <div class="serviceImg">
+            <img
+              loading="lazy"
+              src="img/placeholder-image.png"
+              alt="this is an image"
+            />
+          </div>
+          <div class="serviceContent">
+            <br>
+            <i class="fas fa-heart"></i> 29.7k&emsp;<i class="far fa-comment"></i><br><br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumq.
+            </p>
+          </div>
+        </div>
+      </a>
+
+       <a href="#">
+        <div class="serviceItem">
+          <div class="serviceImg">
+            <img
+              loading="lazy"
+              src="img/placeholder-image.png"
+              alt="this is an image"
+            />
+          </div>
+          <div class="serviceContent">
+            <br>
+            <i class="fas fa-heart"></i> 15.2k&emsp;<i class="far fa-comment"></i><br><br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="serviceItem">
+          <div class="serviceImg">
+            <img
+              loading="lazy"
+              src="img/placeholder-image.png"
+              alt="this is an image"
+            />
+          </div>
+          <div class="serviceContent">
+            <br>
+            <i class="fas fa-heart"></i> 12.5k&emsp;<i class="far fa-comment"></i><br><br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="serviceItem">
+          <div class="serviceImg">
+            <img
+              loading="lazy"
+              src="img/placeholder-image.png"
+              alt="this is an image"
+            />
+          </div>
+          <div class="serviceContent">
+            <br>
+            <i class="fas fa-heart"></i> 11.0k&emsp;<i class="far fa-comment"></i><br><br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="serviceItem">
+          <div class="serviceImg">
+            <img
+              loading="lazy"
+              src="img/placeholder-image.png"
+              alt="this is an image"
+            />
+          </div>
+          <div class="serviceContent">
+            <br>
+            <i class="fas fa-heart"></i> 7.2k&emsp;<i class="far fa-comment"></i><br><br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#">
+        <div class="serviceItem">
+          <div class="serviceImg">
+            <img
+              loading="lazy"
+              src="img/placeholder-image.png"
+              alt="this is an image"
+            />
+          </div>
+          <div class="serviceContent">
+            <br>
+            <i class="fas fa-heart"></i> 3.2k&emsp;<i class="far fa-comment"></i><br><br>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+              reiciendis soluta odio itaque exercitationem? Ullam aut fuga
+              cumque.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!--SERVICES-->
+
+    <!--STORIES-->
+
+    <div class="stories">
+      <div class="storyHeading">
+        <p>Stories</p>
+      </div>
+
+      <div class="storyContainer">
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+        
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+
+        <div class="storyImg">
+          <img
+            class="story"
+            loading="lazy"
+            src="img/default-story.jpg"
+            alt="this is an image"
+          />
+        </div>
+        
+
+        </div>
+      </div>
+    </div>
+
+    <!--STORIES-->
+  </body>
+  <!--Fontawesome CDN-->
+  <script
+    src="https://kit.fontawesome.com/0cd9f9ba48.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!--JS Scripts-->
+  <script src="./js/backToTop.js"></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/loader.js"></script>
+  <script src="./js/goauth.js"></script>
+
+  <!--Page Specific JS File-->
+  <script>
+    $(window).on('load', function() {
+      $('.profile').css({
+        'transform':'translate(-50%,-100%)',
+        'transition-delay':'2000ms',
+        'transition-duration':'0.7s',
+      })  
+    })
+  </script>
+</html>
