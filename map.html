@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Map - Travelog</title>
 
+  <!-- Google OAuth -->
+  <meta name="google-signin-client_id" content="344814890774-98pb7erarmiq4q2evprthqhd1aq5srmu.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   <!--Google Fonts CDN Link-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap" rel="stylesheet">
@@ -58,7 +62,7 @@
       <a href="profile.html"><div class="menu-items">Profile</div></a>
       <a href="plans.html"><div class="menu-items">Plans</div></a>
       <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
-      <a href="index.html"><div class="menu-items">Sign Out</div></a>
+      <a href="#" onclick="signOut()"><div class="menu-items">Sign Out</div></a>
     </div>
   </div>
   <!--/Navbar-->
@@ -72,11 +76,11 @@
   <!--ProfileInfo-->
   <a href="profile.html">
     <div id="profile">
-      <img src="./img/default_story.jpg" alt="Browser not supported">
+      <img id="profile-pic-img" loading="lazy" alt="browser not supporting">
       <div id="profile-info">
         <div id="profile-info-1">
           <span id="rank">#78</span>
-          &emsp;&emsp;&nbsp; <span id="name">Liyue Mondstadt</span><br>
+          &emsp;&emsp;&nbsp; <span id="username"></span><br>
           Level: 92
         </div>
         <div id="xp-bar">
@@ -92,7 +96,7 @@
 
   <!--Map-->
   <div id="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d683.8268922208736!2d-73.98567539552482!3d40.748534746877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!3m2!1sen!2sin!4v1613193775750!5m2!1sen!2sin" width="auto" height="auto" frameborder="0" style="border:-2;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe width="auto" height="auto" frameborder="0" style="border:-2;" allowfullscreen="" aria-hidden="false" tabindex="0" id="map"></iframe>
   </div>
   <!--/Map-->
 
@@ -104,9 +108,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
   <!--JS Scripts-->
-  <script src="./js/backtotop.js"></script>
+  <script src="./js/backToTop.js"></script>
   <script src="./js/navbar.js"></script>
-  <script src="./js/mapinfotoggle.js"></script>
   <script src="./js/loader.js"></script>
+  <script src="./js/goauth.js"></script>
+  <script src="./js/mapLocation.js"></script>
 
+
+  <script>
+    $('#profile-pic-img').attr('src', localStorage.getItem("ImageURL"));
+  </script>
 </html>

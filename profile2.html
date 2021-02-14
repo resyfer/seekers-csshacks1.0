@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile - Travelog</title>
+  <title>Profile 2 - Travelog</title>
+
+  <!-- Google OAuth -->
+  <meta name="google-signin-client_id" content="344814890774-98pb7erarmiq4q2evprthqhd1aq5srmu.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
 
   <!--Google Fonts CDN Link-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -64,7 +68,7 @@
       <a href="#"><div class="menu-items active">Profile</div></a>
       <a href="plans.html"><div class="menu-items">Plans</div></a>
       <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
-      <a href="index.html"><div class="menu-items">Sign Out</div></a>
+      <a href="#" onclick="signOut()"><div class="menu-items">Sign Out</div></a>
     </div>
   </div>
   <!--/Navbar-->
@@ -358,9 +362,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!--JS Scripts-->
-  <script src="./js/backtotop.js"></script>
+  <script src="./js/backToTop.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/loader.js"></script>
+  <script src="./js/goauth.js"></script>
 
   <!--Page Specific JS File-->
   <script>

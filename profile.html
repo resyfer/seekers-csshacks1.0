@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile - Travelog</title>
 
+  <!-- Google OAuth -->
+  <meta name="google-signin-client_id" content="344814890774-98pb7erarmiq4q2evprthqhd1aq5srmu.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
   <!--Google Fonts CDN Link-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Varela&display=swap" rel="stylesheet">
@@ -64,7 +68,7 @@
       <a href="#"><div class="menu-items active">Profile</div></a>
       <a href="plans.html"><div class="menu-items">Plans</div></a>
       <a href="leaderboard.html"><div class="menu-items">Leaderboard</div></a>
-      <a href="index.html"><div class="menu-items">Sign Out</div></a>
+      <a href="#" onclick="signOut()"><div class="menu-items">Sign Out</div></a>
     </div>
   </div>
   <!--/Navbar-->
@@ -82,10 +86,10 @@
         <i class="far fa-address-card"></i> PROFILE
       </div>
       <div id="profile-pic">
-        <img src="./img/default_story.jpg" loading="lazy" alt="browser not supporting">
+        <img id="profile-pic-img" loading="lazy" alt="browser not supporting">
       </div>
       <div id="profile-name">
-        Liyue Mondstadt<br>
+        <span id="username"></span><br>
         <span id="profile-uid"> ID: 45940SDFDK09G </span>
       </div>
       <div id="user-info">
@@ -358,9 +362,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!--JS Scripts-->
-  <script src="./js/backtotop.js"></script>
+  <script src="./js/backToTop.js"></script>
   <script src="./js/navbar.js"></script>
   <script src="./js/loader.js"></script>
+  <script src="./js/goauth.js"></script>
 
   <!--Page Specific JS File-->
   <script>
@@ -387,6 +392,8 @@
       'display':'none',
     })
   }
+  
+  $('#profile-pic-img').attr('src', localStorage.getItem("ImageURL"));
   </script>
 
 </html>
