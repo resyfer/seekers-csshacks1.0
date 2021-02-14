@@ -19,6 +19,34 @@ sending feedbacks by trying out services around an area, etc and this enables le
 
 The points won by a user in his profile can be redeemed for real-world coupons and discounts that would aid them in their quests to travel  
 around the globe and dicover and experince new places and cultures.
+
+
+## Installation :
+---
+
+1. Get the code:
+  ```
+  git clone https://github.com/resyfer/seekers-csshacks1.0.git
+  ```
+
+2. Use Visual Studio Code (download from [here](https://code.visualstudio.com/) if not installed)
+
+3. Install the extension `Live Server Extension` in Visual Studio Code.
+
+4. `Open the folder` in Visual Studio Code
+
+5. Using `Live Server Extension` open the the port using port `5500`
+
+6. The URL of the landing page should be of the form
+```
+  http://localhost:5500/
+```
+
+and **NOT**
+
+```
+  http://127.0.0.1:5500/
+```
   
 ## Segmentation:
 ---
@@ -125,28 +153,3 @@ The project needs database integration to function properly.&nbsp;
 Thank you,&nbsp;  
 Regards.
 &nbsp; &nbsp;&nbsp;  
-## Installation :
-
-1. Get the code:
-  ```
-  git clone https://github.com/resyfer/seekers-csshacks1.0.git
-  ```
-
-2. Use Visual Studio Code (download from [here](https://code.visualstudio.com/) if not installed)
-
-3. Install the extension `Live Server Extension` in Visual Studio Code.
-
-4. `Open the folder` in Visual Studio Code
-
-5. Using `Live Server Extension` open the the port using port `5500`
-
-6. The URL of the landing page should be of the form
-```
-  http://localhost:5500/
-```
-
-and **NOT**
-
-```
-  http://127.0.0.1:5500/
-```
